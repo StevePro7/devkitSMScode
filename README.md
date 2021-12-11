@@ -1,2 +1,2 @@
 # devkitSMS Code
-Test repository for devkitSMS code samples
+Test repository for devkitSMS code samples!
