@@ -35,6 +35,8 @@ S:G$devkit_SMS_mapROMBank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableSRAMBank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_disableSRAM$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_SRAM$0$0({2}DF,DG,SC:U),C,0,0
+S:G$devkit_SMS_waitForVBlank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSTMcompressedTileMap$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
@@ -48,7 +50,6 @@ S:G$devkit_SMS_addSprite_bulk8$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_addSprite_bulk12$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_initSprites$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_finalizeSprites$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SMS_waitForVBlank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),C,0,0
