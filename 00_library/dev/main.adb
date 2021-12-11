@@ -79,10 +79,10 @@ S:G$devkit_PORT_A_KEY_RIGHT$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_1$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_2$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_START$0$0({2}DF,SI:U),C,0,0
-S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SMS_resetPauseRequest$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_addSprite_bulk8$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_addSprite_bulk12$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSG_STOPPED$0$0({2}DF,SC:U),C,0,0

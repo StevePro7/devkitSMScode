@@ -138,8 +138,16 @@ unsigned int devkit_PORT_A_KEY_START();
 unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
 
+// SMS_VDPType
+//unsigned char devkit_SMS_VDPType( void );
+
+// SMS_VDPFlags
 unsigned char devkit_isCollisionDetected();
 
+//void SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ) __z88dk_fastcall;
+//void SMS_setLineCounter( unsigned char count ) __z88dk_fastcall;
+//#define SMS_enableLineInterrupt()   SMS_VDPturnOnFeature(0x0010)   /* turns on line IRQ */
+//#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
 
 void devkit_UNSAFE_SMS_copySpritestoSAT();
 

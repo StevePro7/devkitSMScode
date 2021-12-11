@@ -85,3 +85,6 @@ Input
 #define CARTRIDGE_SLOT          0x2000          /* ??? */
 #define PORT_A_TH               0x4000          /* for light gun */
 #define PORT_B_TH               0x8000          /* for light gun */
+
+
+SMS_VDPType

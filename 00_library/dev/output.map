@@ -1103,41 +1103,41 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000ADE  C$_sms_manager.c$309$1$191         _sms_manager
      00000ADE  C$_sms_manager.c$311$1$192         _sms_manager
      00000ADE  C$_sms_manager.c$312$1$192         _sms_manager
-     00000ADE  G$devkit_UNSAFE_SMS_copySpritest   _sms_manager
-     00000ADE  XG$devkit_UNSAFE_SMS_copySprites   _sms_manager
-     00000ADE  _devkit_UNSAFE_SMS_copySpritesto   _sms_manager
+     00000ADE  G$devkit_SMS_queryPauseRequested   _sms_manager
+     00000ADE  XG$devkit_SMS_queryPauseRequeste   _sms_manager
+     00000ADE  _devkit_SMS_queryPauseRequested    _sms_manager
      00000AE1  A$_sms_manager$1574                _sms_manager
-     00000AE1  C$_sms_manager.c$318$1$192         _sms_manager
-     00000AE1  C$_sms_manager.c$320$1$193         _sms_manager
-     00000AE1  C$_sms_manager.c$321$1$193         _sms_manager
-     00000AE1  G$devkit_SMS_queryPauseRequested   _sms_manager
-     00000AE1  XG$devkit_SMS_queryPauseRequeste   _sms_manager
-     00000AE1  _devkit_SMS_queryPauseRequested    _sms_manager
-     00000AE4  A$_sms_manager$1591                _sms_manager
-     00000AE4  C$_sms_manager.c$322$1$193         _sms_manager
-     00000AE4  C$_sms_manager.c$324$1$194         _sms_manager
-     00000AE4  C$_sms_manager.c$325$1$194         _sms_manager
-     00000AE4  G$devkit_SMS_resetPauseRequest$0   _sms_manager
-     00000AE4  XG$devkit_SMS_resetPauseRequest$   _sms_manager
-     00000AE4  _devkit_SMS_resetPauseRequest      _sms_manager
-     00000AE7  A$_sms_manager$1604                _sms_manager
-     00000AE7  C$_sms_manager.c$327$1$194         _sms_manager
-     00000AE7  C$_sms_manager.c$329$1$195         _sms_manager
-     00000AE7  G$devkit_isCollisionDetected$0$0   _sms_manager
-     00000AE7  _devkit_isCollisionDetected        _sms_manager
-     00000AEA  A$_sms_manager$1605                _sms_manager
-     00000AEC  A$_sms_manager$1606                _sms_manager
-     00000AED  A$_sms_manager$1611                _sms_manager
-     00000AED  C$_sms_manager.c$330$1$195         _sms_manager
-     00000AED  XG$devkit_isCollisionDetected$0$   _sms_manager
+     00000AE1  C$_sms_manager.c$313$1$192         _sms_manager
+     00000AE1  C$_sms_manager.c$315$1$193         _sms_manager
+     00000AE1  C$_sms_manager.c$316$1$193         _sms_manager
+     00000AE1  G$devkit_SMS_resetPauseRequest$0   _sms_manager
+     00000AE1  XG$devkit_SMS_resetPauseRequest$   _sms_manager
+     00000AE1  _devkit_SMS_resetPauseRequest      _sms_manager
+     00000AE4  A$_sms_manager$1587                _sms_manager
+     00000AE4  C$_sms_manager.c$325$1$193         _sms_manager
+     00000AE4  C$_sms_manager.c$327$1$194         _sms_manager
+     00000AE4  G$devkit_isCollisionDetected$0$0   _sms_manager
+     00000AE4  _devkit_isCollisionDetected        _sms_manager
+     00000AE7  A$_sms_manager$1588                _sms_manager
+     00000AE9  A$_sms_manager$1589                _sms_manager
+     00000AEA  A$_sms_manager$1594                _sms_manager
+     00000AEA  C$_sms_manager.c$328$1$194         _sms_manager
+     00000AEA  XG$devkit_isCollisionDetected$0$   _sms_manager
+     00000AEB  A$_sms_manager$1611                _sms_manager
+     00000AEB  C$_sms_manager.c$336$1$194         _sms_manager
+     00000AEB  C$_sms_manager.c$338$1$195         _sms_manager
+     00000AEB  C$_sms_manager.c$339$1$195         _sms_manager
+     00000AEB  G$devkit_UNSAFE_SMS_copySpritest   _sms_manager
+     00000AEB  XG$devkit_UNSAFE_SMS_copySprites   _sms_manager
+     00000AEB  _devkit_UNSAFE_SMS_copySpritesto   _sms_manager
      00000AEE  A$_sms_manager$1621                _sms_manager
-     00000AEE  C$_sms_manager.c$336$1$195         _sms_manager
+     00000AEE  C$_sms_manager.c$348$1$195         _sms_manager
      00000AEE  G$devkit_SMS_addSprite_bulk8$0$0   _sms_manager
      00000AEE  _devkit_SMS_addSprite_bulk8        _sms_manager
      00000AF0  A$_sms_manager$1622                _sms_manager
      00000AF4  A$_sms_manager$1623                _sms_manager
      00000AF6  A$_sms_manager$1627                _sms_manager
-     00000AF6  C$_sms_manager.c$338$1$197         _sms_manager
+     00000AF6  C$_sms_manager.c$350$1$197         _sms_manager
      00000AF9  A$_sms_manager$1628                _sms_manager
      00000AFC  A$_sms_manager$1629                _sms_manager
      00000AFD  A$_sms_manager$1630                _sms_manager
@@ -1147,7 +1147,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B07  A$_sms_manager$1634                _sms_manager
      00000B08  A$_sms_manager$1635                _sms_manager
      00000B09  A$_sms_manager$1639                _sms_manager
-     00000B09  C$_sms_manager.c$339$1$197         _sms_manager
+     00000B09  C$_sms_manager.c$351$1$197         _sms_manager
      00000B0C  A$_sms_manager$1640                _sms_manager
      00000B0F  A$_sms_manager$1641                _sms_manager
      00000B10  A$_sms_manager$1642                _sms_manager
@@ -1174,7 +1174,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B23  A$_sms_manager$1654                _sms_manager
      00000B24  A$_sms_manager$1655                _sms_manager
      00000B25  A$_sms_manager$1659                _sms_manager
-     00000B25  C$_sms_manager.c$341$1$197         _sms_manager
+     00000B25  C$_sms_manager.c$353$1$197         _sms_manager
      00000B28  A$_sms_manager$1660                _sms_manager
      00000B2B  A$_sms_manager$1661                _sms_manager
      00000B2C  A$_sms_manager$1662                _sms_manager
@@ -1195,7 +1195,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B42  A$_sms_manager$1677                _sms_manager
      00000B43  A$_sms_manager$1678                _sms_manager
      00000B44  A$_sms_manager$1682                _sms_manager
-     00000B44  C$_sms_manager.c$342$1$197         _sms_manager
+     00000B44  C$_sms_manager.c$354$1$197         _sms_manager
      00000B47  A$_sms_manager$1683                _sms_manager
      00000B4A  A$_sms_manager$1684                _sms_manager
      00000B4B  A$_sms_manager$1685                _sms_manager
@@ -1209,7 +1209,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B55  A$_sms_manager$1693                _sms_manager
      00000B56  A$_sms_manager$1694                _sms_manager
      00000B57  A$_sms_manager$1698                _sms_manager
-     00000B57  C$_sms_manager.c$344$1$197         _sms_manager
+     00000B57  C$_sms_manager.c$356$1$197         _sms_manager
      00000B5A  A$_sms_manager$1699                _sms_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
 Hexadecimal  [32-Bits]
@@ -1241,7 +1241,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B78  A$_sms_manager$1718                _sms_manager
      00000B79  A$_sms_manager$1719                _sms_manager
      00000B7A  A$_sms_manager$1723                _sms_manager
-     00000B7A  C$_sms_manager.c$345$1$197         _sms_manager
+     00000B7A  C$_sms_manager.c$357$1$197         _sms_manager
      00000B7D  A$_sms_manager$1724                _sms_manager
      00000B7F  A$_sms_manager$1725                _sms_manager
      00000B80  A$_sms_manager$1726                _sms_manager
@@ -1256,7 +1256,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000B8E  A$_sms_manager$1735                _sms_manager
      00000B8F  A$_sms_manager$1736                _sms_manager
      00000B90  A$_sms_manager$1740                _sms_manager
-     00000B90  C$_sms_manager.c$347$1$197         _sms_manager
+     00000B90  C$_sms_manager.c$359$1$197         _sms_manager
      00000B93  A$_sms_manager$1741                _sms_manager
      00000B95  A$_sms_manager$1742                _sms_manager
      00000B96  A$_sms_manager$1743                _sms_manager
@@ -1288,7 +1288,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000BB1  A$_sms_manager$1760                _sms_manager
      00000BB2  A$_sms_manager$1761                _sms_manager
      00000BB3  A$_sms_manager$1765                _sms_manager
-     00000BB3  C$_sms_manager.c$348$1$197         _sms_manager
+     00000BB3  C$_sms_manager.c$360$1$197         _sms_manager
      00000BB6  A$_sms_manager$1766                _sms_manager
      00000BB8  A$_sms_manager$1767                _sms_manager
      00000BB9  A$_sms_manager$1768                _sms_manager
@@ -1302,16 +1302,16 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000BC6  A$_sms_manager$1776                _sms_manager
      00000BC7  A$_sms_manager$1777                _sms_manager
      00000BC9  A$_sms_manager$1782                _sms_manager
-     00000BC9  C$_sms_manager.c$349$1$197         _sms_manager
+     00000BC9  C$_sms_manager.c$361$1$197         _sms_manager
      00000BC9  XG$devkit_SMS_addSprite_bulk8$0$   _sms_manager
      00000BCA  A$_sms_manager$1792                _sms_manager
-     00000BCA  C$_sms_manager.c$350$1$197         _sms_manager
+     00000BCA  C$_sms_manager.c$362$1$197         _sms_manager
      00000BCA  G$devkit_SMS_addSprite_bulk12$0$   _sms_manager
      00000BCA  _devkit_SMS_addSprite_bulk12       _sms_manager
      00000BCC  A$_sms_manager$1793                _sms_manager
      00000BD0  A$_sms_manager$1794                _sms_manager
      00000BD2  A$_sms_manager$1798                _sms_manager
-     00000BD2  C$_sms_manager.c$352$1$199         _sms_manager
+     00000BD2  C$_sms_manager.c$364$1$199         _sms_manager
      00000BD5  A$_sms_manager$1799                _sms_manager
      00000BD6  A$_sms_manager$1800                _sms_manager
      00000BD7  A$_sms_manager$1801                _sms_manager
@@ -1324,7 +1324,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000BE4  A$_sms_manager$1808                _sms_manager
      00000BE5  A$_sms_manager$1809                _sms_manager
      00000BE6  A$_sms_manager$1813                _sms_manager
-     00000BE6  C$_sms_manager.c$353$1$199         _sms_manager
+     00000BE6  C$_sms_manager.c$365$1$199         _sms_manager
      00000BE7  A$_sms_manager$1814                _sms_manager
      00000BE8  A$_sms_manager$1815                _sms_manager
      00000BEB  A$_sms_manager$1816                _sms_manager
@@ -1351,7 +1351,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000BFC  A$_sms_manager$1828                _sms_manager
      00000BFD  A$_sms_manager$1829                _sms_manager
      00000BFE  A$_sms_manager$1833                _sms_manager
-     00000BFE  C$_sms_manager.c$354$1$199         _sms_manager
+     00000BFE  C$_sms_manager.c$366$1$199         _sms_manager
      00000BFF  A$_sms_manager$1834                _sms_manager
      00000C00  A$_sms_manager$1835                _sms_manager
      00000C01  A$_sms_manager$1836                _sms_manager
@@ -1369,7 +1369,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C14  A$_sms_manager$1848                _sms_manager
      00000C15  A$_sms_manager$1849                _sms_manager
      00000C16  A$_sms_manager$1853                _sms_manager
-     00000C16  C$_sms_manager.c$356$1$199         _sms_manager
+     00000C16  C$_sms_manager.c$368$1$199         _sms_manager
      00000C17  A$_sms_manager$1854                _sms_manager
      00000C18  A$_sms_manager$1855                _sms_manager
      00000C19  A$_sms_manager$1856                _sms_manager
@@ -1400,7 +1400,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000C32  C$_sms_manager.c$357$1$199         _sms_manager
+     00000C32  C$_sms_manager.c$369$1$199         _sms_manager
      00000C33  A$_sms_manager$1878                _sms_manager
      00000C35  A$_sms_manager$1879                _sms_manager
      00000C36  A$_sms_manager$1880                _sms_manager
@@ -1414,7 +1414,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C40  A$_sms_manager$1888                _sms_manager
      00000C41  A$_sms_manager$1889                _sms_manager
      00000C42  A$_sms_manager$1893                _sms_manager
-     00000C42  C$_sms_manager.c$358$1$199         _sms_manager
+     00000C42  C$_sms_manager.c$370$1$199         _sms_manager
      00000C43  A$_sms_manager$1894                _sms_manager
      00000C45  A$_sms_manager$1895                _sms_manager
      00000C46  A$_sms_manager$1896                _sms_manager
@@ -1428,7 +1428,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C50  A$_sms_manager$1904                _sms_manager
      00000C51  A$_sms_manager$1905                _sms_manager
      00000C52  A$_sms_manager$1909                _sms_manager
-     00000C52  C$_sms_manager.c$360$1$199         _sms_manager
+     00000C52  C$_sms_manager.c$372$1$199         _sms_manager
      00000C53  A$_sms_manager$1910                _sms_manager
      00000C55  A$_sms_manager$1911                _sms_manager
      00000C56  A$_sms_manager$1912                _sms_manager
@@ -1449,7 +1449,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C6C  A$_sms_manager$1927                _sms_manager
      00000C6D  A$_sms_manager$1928                _sms_manager
      00000C6E  A$_sms_manager$1932                _sms_manager
-     00000C6E  C$_sms_manager.c$361$1$199         _sms_manager
+     00000C6E  C$_sms_manager.c$373$1$199         _sms_manager
      00000C6F  A$_sms_manager$1933                _sms_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
 Hexadecimal  [32-Bits]
@@ -1473,7 +1473,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C7D  A$_sms_manager$1944                _sms_manager
      00000C7E  A$_sms_manager$1945                _sms_manager
      00000C7F  A$_sms_manager$1949                _sms_manager
-     00000C7F  C$_sms_manager.c$362$1$199         _sms_manager
+     00000C7F  C$_sms_manager.c$374$1$199         _sms_manager
      00000C80  A$_sms_manager$1950                _sms_manager
      00000C82  A$_sms_manager$1951                _sms_manager
      00000C83  A$_sms_manager$1952                _sms_manager
@@ -1487,7 +1487,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000C8D  A$_sms_manager$1960                _sms_manager
      00000C8E  A$_sms_manager$1961                _sms_manager
      00000C8F  A$_sms_manager$1965                _sms_manager
-     00000C8F  C$_sms_manager.c$364$1$199         _sms_manager
+     00000C8F  C$_sms_manager.c$376$1$199         _sms_manager
      00000C90  A$_sms_manager$1966                _sms_manager
      00000C92  A$_sms_manager$1967                _sms_manager
      00000C93  A$_sms_manager$1968                _sms_manager
@@ -1508,7 +1508,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000CA9  A$_sms_manager$1983                _sms_manager
      00000CAA  A$_sms_manager$1984                _sms_manager
      00000CAB  A$_sms_manager$1988                _sms_manager
-     00000CAB  C$_sms_manager.c$365$1$199         _sms_manager
+     00000CAB  C$_sms_manager.c$377$1$199         _sms_manager
      00000CAC  A$_sms_manager$1989                _sms_manager
      00000CAE  A$_sms_manager$1990                _sms_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
@@ -1532,7 +1532,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000CBA  A$_sms_manager$2000                _sms_manager
      00000CBB  A$_sms_manager$2001                _sms_manager
      00000CBC  A$_sms_manager$2005                _sms_manager
-     00000CBC  C$_sms_manager.c$366$1$199         _sms_manager
+     00000CBC  C$_sms_manager.c$378$1$199         _sms_manager
      00000CBD  A$_sms_manager$2006                _sms_manager
      00000CBF  A$_sms_manager$2007                _sms_manager
      00000CC0  A$_sms_manager$2008                _sms_manager
@@ -1545,7 +1545,7 @@ _CODE                               00000200    000032EF =       13039. bytes (R
      00000CC9  A$_sms_manager$2015                _sms_manager
      00000CCA  A$_sms_manager$2016                _sms_manager
      00000CCC  A$_sms_manager$2021                _sms_manager
-     00000CCC  C$_sms_manager.c$367$1$199         _sms_manager
+     00000CCC  C$_sms_manager.c$379$1$199         _sms_manager
      00000CCC  XG$devkit_SMS_addSprite_bulk12$0   _sms_manager
      00000CCD  F_sms_manager$__str_0$0$0          _sms_manager
      00000CDB  F_sms_manager$__str_1$0$0          _sms_manager

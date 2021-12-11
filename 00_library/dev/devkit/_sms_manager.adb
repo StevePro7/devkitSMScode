@@ -116,10 +116,10 @@ F:G$devkit_PORT_A_KEY_RIGHT$0$0({2}DF,SI:U),Z,0,0,0,0,0
 F:G$devkit_PORT_A_KEY_1$0$0({2}DF,SI:U),Z,0,0,0,0,0
 F:G$devkit_PORT_A_KEY_2$0$0({2}DF,SI:U),Z,0,0,0,0,0
 F:G$devkit_PORT_A_KEY_START$0$0({2}DF,SI:U),Z,0,0,0,0,0
-F:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:G$devkit_SMS_resetPauseRequest$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),Z,0,0,0,0,0
+F:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$devkit_SMS_addSprite_bulk8$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:L_sms_manager.devkit_SMS_addSprite_bulk8$x$1$196({1}SC:U),B,1,4
 S:L_sms_manager.devkit_SMS_addSprite_bulk8$y$1$196({1}SC:U),B,1,5
