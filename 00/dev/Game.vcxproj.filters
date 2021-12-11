@@ -21,15 +21,15 @@
     <Filter Include="Source Files\engine">
       <UniqueIdentifier>{741adb6f-8ef6-4422-953c-1a6aa5238433}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\output">
-      <UniqueIdentifier>{87b1fc85-9cd8-4f69-a39a-75bd87f4a81c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\output">
-      <UniqueIdentifier>{cfb2b2df-6766-4430-834a-9be77cbcff2b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\content">
+      <UniqueIdentifier>{fe082cec-de7e-4671-84ea-0ad842be588e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\content">
+      <UniqueIdentifier>{7433a005-f9f7-4737-8864-de74bf52c688}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -41,9 +41,6 @@
     </ClCompile>
     <ClCompile Include="devkit\_sms_manager.c">
       <Filter>Source Files\devkit</Filter>
-    </ClCompile>
-    <ClCompile Include="gfx.c">
-      <Filter>Source Files\output</Filter>
     </ClCompile>
     <ClCompile Include="engine\content_manager.c">
       <Filter>Source Files\engine</Filter>
@@ -59,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="engine\sprite_manager.c">
       <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="content\gfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
+    <ClCompile Include="content\psg.c">
+      <Filter>Source Files\content</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,9 +79,6 @@
     <ClInclude Include="devkit\_sms_manager.h">
       <Filter>Header Files\devkit</Filter>
     </ClInclude>
-    <ClInclude Include="gfx.h">
-      <Filter>Header Files\output</Filter>
-    </ClInclude>
     <ClInclude Include="engine\content_manager.h">
       <Filter>Header Files\engine</Filter>
     </ClInclude>
@@ -93,6 +93,12 @@
     </ClInclude>
     <ClInclude Include="engine\sprite_manager.h">
       <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="content\gfx.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="content\psg.h">
+      <Filter>Header Files\content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

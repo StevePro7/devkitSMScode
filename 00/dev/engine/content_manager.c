@@ -1,6 +1,6 @@
 #include "content_manager.h"
-#include "..\devkit\_sms_manager.h"
-#include "..\gfx.h"
+#include "../devkit/_sms_manager.h"
+#include "../content/gfx.h"
 
 #define TREE_TILES		64
 #define FONT_TILES		0

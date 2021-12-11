@@ -1,6 +1,6 @@
 #include "font_manager.h"
-#include "..\devkit\_sms_manager.h"
-#include "..\gfx.h"
+#include "../devkit/_sms_manager.h"
+#include "../content/gfx.h"
 
 #define TEXT_ROOT	32		// 32 is " " in ASCII.
 #define DATA_ROOT	16		// 16 is "0" (48=16+32)
