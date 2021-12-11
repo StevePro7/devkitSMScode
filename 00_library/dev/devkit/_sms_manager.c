@@ -25,12 +25,19 @@ void devkit_SMS_VDPturnOffFeature( unsigned int feature )
 	SMS_VDPturnOffFeature( feature );
 }
 
+/* group 0 */
 unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL()
 {
 	return VDPFEATURE_HIDEFIRSTCOL;
 }
 
+/* group 1 */
+unsigned int devkit_VDPFEATURE_SHOWDISPLAY()
+{
+	return VDPFEATURE_SHOWDISPLAY;
+}
 
+/* handy macros :) */
 void devkit_SMS_displayOn()
 {
 	SMS_displayOn();
@@ -38,10 +45,6 @@ void devkit_SMS_displayOn()
 void devkit_SMS_displayOff()
 {
 	SMS_displayOff();
-}
-void devkit_SMS_mapROMBank( unsigned char n )
-{
-	SMS_mapROMBank( n );
 }
 
 void devkit_SMS_setBGScrollX( unsigned char scrollX )
@@ -52,6 +55,28 @@ void devkit_SMS_setBGScrollY( unsigned char scrollY )
 {
 	SMS_setBGScrollY( scrollY );
 }
+void devkit_SMS_setBackdropColor( unsigned char entry )
+{
+	SMS_setBackdropColor( entry );
+}
+void devkit_SMS_useFirstHalfTilesforSprites( unsigned char usefirsthalf )
+{
+	SMS_useFirstHalfTilesforSprites( usefirsthalf );
+}
+void devkit_SMS_setSpriteMode( unsigned char mode )
+{
+	SMS_setSpriteMode( mode );
+}
+
+
+
+
+void devkit_SMS_mapROMBank( unsigned char n )
+{
+	SMS_mapROMBank( n );
+}
+
+
 
 void devkit_SMS_enableSRAM()
 {
@@ -67,18 +92,8 @@ void devkit_SMS_disableSRAM()
 }
 
 
-void devkit_SMS_setSpriteMode( unsigned char mode )
-{
-	SMS_setSpriteMode( mode );
-}
-void devkit_SMS_useFirstHalfTilesforSprites_False()
-{
-	SMS_useFirstHalfTilesforSprites( false );
-}
-void devkit_SMS_useFirstHalfTilesforSprites_True()
-{
-	SMS_useFirstHalfTilesforSprites( true );
-}
+
+
 
 
 void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )

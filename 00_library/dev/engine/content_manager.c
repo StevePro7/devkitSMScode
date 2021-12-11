@@ -9,13 +9,12 @@
 void engine_content_manager_load_tiles()
 {
 	// Tree tiles.
-	devkit_SMS_loadPSGaidencompressedTiles( tree_avoid__tiles__psgcompr, TREE_TILES );
-	devkit_SMS_loadBGPalette( ( void * ) tree_avoid__palette__bin );
+//	devkit_SMS_loadPSGaidencompressedTiles( tree_avoid__tiles__psgcompr, TREE_TILES );
+//	devkit_SMS_loadBGPalette( ( void * ) tree_avoid__palette__bin );
 
 	// Font tiles.
 	devkit_SMS_loadPSGaidencompressedTiles( font_tiles__tiles__psgcompr, FONT_TILES );
 	devkit_SMS_loadBGPalette( ( void * ) font_tiles__palette__bin );
-
 }
 
 void engine_content_manager_load_sprites()

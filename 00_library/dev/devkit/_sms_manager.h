@@ -1,7 +1,10 @@
 #ifndef _SMS_MANAGER_H_
 #define _SMS_MANAGER_H_
 
+/* library initialization. you don't need to call this if you use devkitSMS crt0.rel */
 void devkit_SMS_init();
+
+/* VDP operative mode handling functions */
 void devkit_SMS_VDPturnOnFeature( unsigned int feature );
 void devkit_SMS_VDPturnOffFeature( unsigned int feature );
 
@@ -9,22 +12,27 @@ void devkit_SMS_VDPturnOffFeature( unsigned int feature );
 unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL();
 
 /* group 1 */
+unsigned int devkit_VDPFEATURE_SHOWDISPLAY();
 
 /* handy macros :) */
 void devkit_SMS_displayOn();
 void devkit_SMS_displayOff();
-void devkit_SMS_mapROMBank( unsigned char n );
 
 void devkit_SMS_setBGScrollX( unsigned char scrollX );
 void devkit_SMS_setBGScrollY( unsigned char scrollY );
+void devkit_SMS_setBackdropColor( unsigned char entry );
+void devkit_SMS_useFirstHalfTilesforSprites( unsigned char usefirsthalf );
+void devkit_SMS_setSpriteMode( unsigned char mode );
+/* modes for SMS_setSpriteMode */
+
+void devkit_SMS_mapROMBank( unsigned char n );
+
+
 
 void devkit_SMS_enableSRAM();
 void devkit_SMS_enableSRAMBank( unsigned char n );
 void devkit_SMS_disableSRAM();
 
-void devkit_SMS_setSpriteMode( unsigned char mode );
-void devkit_SMS_useFirstHalfTilesforSprites_False();
-void devkit_SMS_useFirstHalfTilesforSprites_True();
 
 void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom );
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
