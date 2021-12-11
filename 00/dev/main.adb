@@ -9,9 +9,9 @@ S:G$_ultoa$0$0({2}DF,SV:S),C,0,0
 S:G$_ltoa$0$0({2}DF,SV:S),C,0,0
 S:G$rand$0$0({2}DF,SI:S),C,0,0
 S:G$srand$0$0({2}DF,SV:S),C,0,0
-S:G$calloc$0$0({2}DF,DX,SV:S),C,0,0
-S:G$malloc$0$0({2}DF,DX,SV:S),C,0,0
-S:G$realloc$0$0({2}DF,DX,SV:S),C,0,0
+S:G$calloc$0$0({2}DF,DG,SV:S),C,0,0
+S:G$malloc$0$0({2}DF,DG,SV:S),C,0,0
+S:G$realloc$0$0({2}DF,DG,SV:S),C,0,0
 S:G$free$0$0({2}DF,SV:S),C,0,0
 S:G$abs$0$0({2}DF,SI:S),C,0,0
 S:G$labs$0$0({2}DF,SL:S),C,0,0

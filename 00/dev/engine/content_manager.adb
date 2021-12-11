@@ -42,11 +42,3 @@ S:G$devkit_PORT_A_KEY_1$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_2$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
-S:G$font_tiles__palette__bin$0$0({0}DA0d,SC:U),D,0,0
-S:G$font_tiles__tilemap__bin$0$0({0}DA0d,SC:U),D,0,0
-S:G$font_tiles__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0
-S:G$sprites__palette__bin$0$0({0}DA0d,SC:U),D,0,0
-S:G$sprites__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0
-S:G$tree_avoid__palette__bin$0$0({0}DA0d,SC:U),D,0,0
-S:G$tree_avoid__tilemap__bin$0$0({0}DA0d,SC:U),D,0,0
-S:G$tree_avoid__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0

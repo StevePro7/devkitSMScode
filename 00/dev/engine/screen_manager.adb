@@ -6,4 +6,3 @@ S:G$engine_font_manager_draw_text$0$0({2}DF,SV:S),C,0,0
 S:G$engine_font_manager_draw_data$0$0({2}DF,SV:S),C,0,0
 S:G$engine_font_manager_draw_data_ZERO$0$0({2}DF,SV:S),C,0,0
 S:G$engine_sprite_manager_draw$0$0({2}DF,SV:S),C,0,0
-S:Fscreen_manager$__str_0$0$0({26}DA26d,SC:S),D,0,0
