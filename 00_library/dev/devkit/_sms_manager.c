@@ -239,6 +239,62 @@ void devkit_SMS_zeroSpritePalette( void )
 	SMS_zeroSpritePalette();
 }
 
+/* text renderer */
+//void SMS_configureTextRenderer( signed int ascii_to_tile_offset );
+//void SMS_autoSetUpTextRenderer( void );
+
+/* decompress ZX7-compressed data to RAM */
+//void SMS_decompressZX7( const void *src, void *dst );
+
+/* functions to read joypad(s) */
+unsigned int devkit_SMS_getKeysStatus()
+{
+	return SMS_getKeysStatus();
+}
+unsigned int devkit_SMS_getKeysPressed()
+{
+	return SMS_getKeysPressed();
+}
+unsigned int devkit_SMS_getKeysHeld()
+{
+	return SMS_getKeysHeld();
+}
+unsigned int devkit_SMS_getKeysReleased()
+{
+	return SMS_getKeysReleased();
+}
+
+/* handy defines for joypad(s) handling */
+unsigned int devkit_PORT_A_KEY_UP()
+{
+	return PORT_A_KEY_UP;
+}
+unsigned int devkit_PORT_A_KEY_DOWN()
+{
+	return PORT_A_KEY_DOWN;
+}
+unsigned int devkit_PORT_A_KEY_LEFT()
+{
+	return PORT_A_KEY_LEFT;
+}
+unsigned int devkit_PORT_A_KEY_RIGHT()
+{
+	return PORT_A_KEY_RIGHT;
+}
+unsigned int devkit_PORT_A_KEY_1()
+{
+	return PORT_A_KEY_1;
+}
+unsigned int devkit_PORT_A_KEY_2()
+{
+	return PORT_A_KEY_2;
+}
+unsigned int devkit_PORT_A_KEY_START()
+{
+	return PORT_A_KEY_START;
+}
+
+
 
 void devkit_UNSAFE_SMS_copySpritestoSAT()
 {
@@ -264,34 +320,7 @@ unsigned char devkit_isCollisionDetected()
 }
 
 // Input.
-unsigned int devkit_SMS_getKeysStatus()
-{
-	return SMS_getKeysStatus();
-}
-unsigned int devkit_PORT_A_KEY_UP()
-{
-	return PORT_A_KEY_UP;
-}
-unsigned int devkit_PORT_A_KEY_DOWN()
-{
-	return PORT_A_KEY_DOWN;
-}
-unsigned int devkit_PORT_A_KEY_LEFT()
-{
-	return PORT_A_KEY_LEFT;
-}
-unsigned int devkit_PORT_A_KEY_RIGHT()
-{
-	return PORT_A_KEY_RIGHT;
-}
-unsigned int devkit_PORT_A_KEY_1()
-{
-	return PORT_A_KEY_1;
-}
-unsigned int devkit_PORT_A_KEY_2()
-{
-	return PORT_A_KEY_2;
-}
+
 
 // Helper functions.
 void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile )

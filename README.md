@@ -55,3 +55,33 @@ void UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst 
 //#define UNSAFE_SMS_loadZX7compressedTiles(src,tilefrom) UNSAFE_SMS_loadZX7compressedTilesatAddr((src),TILEtoADDR(tilefrom))
 //void UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst );
 //#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))
+
+
+
+Sprites
+void SMS_addTwoAdjoiningSprites (unsigned char x, unsigned char y, unsigned char tile) __naked __preserves_regs(iyh,iyl);     /* doesn't return anything */
+void SMS_addThreeAdjoiningSprites (unsigned char x, unsigned char y, unsigned char tile) __naked __preserves_regs(iyh,iyl);   /* doesn't return anything */
+signed char SMS_reserveSprite (void);
+void SMS_updateSpritePosition (signed char sprite, unsigned char x, unsigned char y);
+void SMS_updateSpriteImage (signed char sprite, unsigned char tile);
+void SMS_hideSprite (signed char sprite);
+void SMS_setClippingWindow (unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1);
+signed char SMS_addSpriteClipping (int x, int y, unsigned char tile);   /* returns -1 if no more sprites are available or sprite clipped */
+void SMS_finalizeSprites (void);     // *DEPRECATED* - will be dropped at some point in 2018
+void SMS_copySpritestoSAT (void);
+
+
+
+Input
+#define PORT_B_KEY_UP           0x0040
+#define PORT_B_KEY_DOWN         0x0080
+#define PORT_B_KEY_LEFT         0x0100
+#define PORT_B_KEY_RIGHT        0x0200
+#define PORT_B_KEY_1            0x0400
+#define PORT_B_KEY_2            0x0800
+#define PORT_B_KEY_START        PORT_B_KEY_1    /* handy alias */
+
+#define RESET_KEY               0x1000          /* (absent on SMS II) */
+#define CARTRIDGE_SLOT          0x2000          /* ??? */
+#define PORT_A_TH               0x4000          /* for light gun */
+#define PORT_B_TH               0x8000          /* for light gun */

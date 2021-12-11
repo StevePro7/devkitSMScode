@@ -104,8 +104,25 @@ void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette );
 void devkit_SMS_zeroBGPalette( void );
 void devkit_SMS_zeroSpritePalette( void );
 
-void devkit_SMS_setTile( const unsigned char tile );
+/* text renderer */
 
+//void SMS_configureTextRenderer( signed int ascii_to_tile_offset );
+//void SMS_autoSetUpTextRenderer( void );
+
+/* functions to read joypad(s) */
+unsigned int devkit_SMS_getKeysStatus();
+unsigned int devkit_SMS_getKeysPressed();
+unsigned int devkit_SMS_getKeysHeld();
+unsigned int devkit_SMS_getKeysReleased();
+
+/* handy defines for joypad(s) handling */
+unsigned int devkit_PORT_A_KEY_UP();
+unsigned int devkit_PORT_A_KEY_DOWN();
+unsigned int devkit_PORT_A_KEY_LEFT();
+unsigned int devkit_PORT_A_KEY_RIGHT();
+unsigned int devkit_PORT_A_KEY_1();
+unsigned int devkit_PORT_A_KEY_2();
+unsigned int devkit_PORT_A_KEY_START();
 
 
 
@@ -123,14 +140,6 @@ void devkit_SMS_resetPauseRequest();
 // collision
 unsigned char devkit_isCollisionDetected();
 
-// input
-unsigned int devkit_SMS_getKeysStatus();
-unsigned int devkit_PORT_A_KEY_UP();
-unsigned int devkit_PORT_A_KEY_DOWN();
-unsigned int devkit_PORT_A_KEY_LEFT();
-unsigned int devkit_PORT_A_KEY_RIGHT();
-unsigned int devkit_PORT_A_KEY_1();
-unsigned int devkit_PORT_A_KEY_2();
 
 // Helper functions.
 void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
