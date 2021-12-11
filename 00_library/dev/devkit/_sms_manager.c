@@ -105,12 +105,56 @@ void devkit_SMS_waitForVBlank()
 	SMS_waitForVBlank();
 }
 
+void devkit_SMS_crt0_RST08( unsigned int addr )
+{
+	SMS_crt0_RST08( addr );
+}
+void devkit_SMS_crt0_RST18( unsigned int tile )
+{
+	SMS_crt0_RST18( tile );
+}
 
+/* function for setting tiles/moving 'cursor' */
+void devkit_SMS_setTile( const unsigned char tile )
+{
+	SMS_setTile( tile );
+}
+void devkit_SMS_setAddr( const unsigned char addr )
+{
+	SMS_setAddr( addr );
+}
 
-void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )
+/* PNT define (has address and VDP flags) */
+void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
+{
+	SMS_setNextTileatXY( x, y );
+}
+
+/* functions to load tiles into VRAM */
+void devkit_SMS_loadTiles( void *src, unsigned int tilefrom, unsigned int size )
+{
+	SMS_loadTiles( src, tilefrom, size );
+}
+void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom )
 {
 	SMS_loadPSGaidencompressedTiles( src, tilefrom );
 }
+
+/* functions for the tilemap */
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size )
+{
+	SMS_loadTileMap( x, y, src, size );
+}
+void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src, unsigned char width )
+{
+	SMS_loadSTMcompressedTileMapArea( x, y, src, width );
+}
+void devkit_SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, unsigned char width, unsigned char height )
+{
+	SMS_loadTileMapArea( x, y, src, width, height );
+}
+
+// turning SMS_loadSTMcompressedTileMap into a define
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src )
 {
 	SMS_loadSTMcompressedTileMap( x, y, src );
@@ -130,18 +174,7 @@ void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned
 	SMS_setSpritePaletteColor( entry, color );
 }
 
-void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
-{
-	SMS_setNextTileatXY( x, y );
-}
-void devkit_SMS_setTile( const unsigned char tile )
-{
-	SMS_setTile( tile );
-}
-void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size)
-{
-	SMS_loadTileMap( x, y, src, size );
-}
+
 
 void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile )
 {

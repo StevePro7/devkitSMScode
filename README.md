@@ -19,9 +19,17 @@ TODO wrap functions
 #define VDPFEATURE_FRAMEIRQ         0x0120
 //#define VDPFEATURE_SHOWDISPLAY      0x0140
 
-
 /* modes for SMS_setSpriteMode */
 //#define SPRITEMODE_NORMAL         0x00
 #define SPRITEMODE_TALL           0x01
 #define SPRITEMODE_ZOOMED         0x02
 #define SPRITEMODE_TALL_ZOOMED    0x03
+
+
+#define XYtoADDR(x,y)             (SMS_PNTAddress|((unsigned int)(y)<<6)|((unsigned char)(x)<<1))
+//#define SMS_setNextTileatXY(x,y)  SMS_setAddr(XYtoADDR((x),(y)))
+#define SMS_setNextTileatLoc(loc) SMS_setAddr(SMS_PNTAddress|((unsigned int)(loc)<<1))
+#define SMS_setNextTileatAddr(a)  SMS_setAddr(a)
+#define SMS_setTileatXY(x,y,tile) {SMS_setAddr(XYtoADDR((x),(y)));SMS_setTile(tile);}
+
+

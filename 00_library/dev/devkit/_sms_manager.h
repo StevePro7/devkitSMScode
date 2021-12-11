@@ -40,17 +40,34 @@ unsigned char* devkit_SMS_SRAM();
 /* wait until next VBlank starts */
 void devkit_SMS_waitForVBlank();
 
+void devkit_SMS_crt0_RST08( unsigned int addr );
+void devkit_SMS_crt0_RST18( unsigned int tile );
 
+/* function for setting tiles/moving 'cursor' */
+void devkit_SMS_setTile( const unsigned char tile );
+void devkit_SMS_setAddr( const unsigned char addr );
+
+/* PNT define (has address and VDP flags) */
+void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
+
+/* functions to load tiles into VRAM */
+void devkit_SMS_loadTiles( void *src, unsigned int tilefrom, unsigned int size );
 void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom );
+
+/* functions for the tilemap */
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size );
+void SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src, unsigned char width );
+void SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, unsigned char width, unsigned char height );
+
+// turning SMS_loadSTMcompressedTileMap into a define
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
 
 void devkit_SMS_loadBGPalette( void *palette );
 void devkit_SMS_loadSpritePalette( void *palette );
 void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
 
-void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
 void devkit_SMS_setTile( const unsigned char tile );
-void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size );
+
 
 void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile );
 void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
