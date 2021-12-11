@@ -33,3 +33,20 @@ TODO wrap functions
 #define SMS_setTileatXY(x,y,tile) {SMS_setAddr(XYtoADDR((x),(y)));SMS_setTile(tile);}
 
 
+
+#define SMS_VDPVRAMWrite          0x4000
+/* macro for turning tile numbers into VRAM addr for writing */
+#define TILEtoADDR(tile)          (SMS_VDPVRAMWrite|((tile)*32))
+
+/* handy defines for tilemaps entry */
+#define TILE_FLIPPED_X            0x0200
+#define TILE_FLIPPED_Y            0x0400
+#define TILE_USE_SPRITE_PALETTE   0x0800
+#define TILE_PRIORITY             0x1000
+
+
+
+void UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst );
+//#define UNSAFE_SMS_loadZX7compressedTiles(src,tilefrom) UNSAFE_SMS_loadZX7compressedTilesatAddr((src),TILEtoADDR(tilefrom))
+//void UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst );
+//#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))

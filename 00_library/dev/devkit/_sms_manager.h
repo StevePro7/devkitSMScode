@@ -52,15 +52,26 @@ void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
 
 /* functions to load tiles into VRAM */
 void devkit_SMS_loadTiles( void *src, unsigned int tilefrom, unsigned int size );
+void devkit_SMS_load1bppTiles( const void *src, unsigned int tilefrom, unsigned int size, unsigned char color0, unsigned char color1 );
+
+/* functions to load compressed tiles into VRAM */
+void devkit_SMS_loadPSGaidencompressedTilesatAddr( const void *src, unsigned int dst );
 void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom );
+
+/* UNSAFE functions to load compressed tiles into VRAM */
+//void UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst );
+//#define UNSAFE_SMS_loadZX7compressedTiles(src,tilefrom) UNSAFE_SMS_loadZX7compressedTilesatAddr((src),TILEtoADDR(tilefrom))
+//void UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst );
+//#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))
 
 /* functions for the tilemap */
 void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size );
-void SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src, unsigned char width );
 void SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, unsigned char width, unsigned char height );
 
-// turning SMS_loadSTMcompressedTileMap into a define
-void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
+//void devkit_SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *src );
+//void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
+//void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src, unsigned char w );
+
 
 void devkit_SMS_loadBGPalette( void *palette );
 void devkit_SMS_loadSpritePalette( void *palette );

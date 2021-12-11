@@ -44,11 +44,11 @@ S:G$devkit_SMS_crt0_RST18$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setAddr$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setNextTileatXY$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadTiles$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_load1bppTiles$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadPSGaidencompressedTilesatAddr$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadTileMap$0$0({2}DF,SV:S),C,0,0
-S:G$SMS_loadSTMcompressedTileMapArea$0$0({2}DF,SV:S),C,0,0
 S:G$SMS_loadTileMapArea$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SMS_loadSTMcompressedTileMap$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSpritePalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpritePaletteColor$0$0({2}DF,SV:S),C,0,0
