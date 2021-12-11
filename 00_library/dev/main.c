@@ -10,11 +10,12 @@ void main( void )
 	devkit_SMS_useFirstHalfTilesforSprites( false );
 	//devkit_SMS_useFirstHalfTilesforSprites( true );
 	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_HIDEFIRSTCOL() );
-	devkit_SMS_setSpritePaletteColor( 0, 0, 0, 3 );
+
 	//engine_content_manager_load_tiles();
 	//engine_content_manager_load_sprites();
 	engine_screen_manager_init();
 
+	devkit_SMS_setSpritePaletteColor( 0, devkit_RGB( 0, 0, 3 ) );
 	devkit_SMS_displayOn();
 	for( ;; )
 	{

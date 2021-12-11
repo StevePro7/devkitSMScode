@@ -198,17 +198,13 @@ void devkit_SMS_copySpritestoSAT()
 }
 
 /* SMS functions to set a color / load a palette */
-static const unsigned char GetColor( const unsigned char r, const unsigned char g, const unsigned char b )
+void devkit_SMS_setBGPaletteColor( unsigned char entry, unsigned char color )
 {
-	return RGB( r, g, b );
+	SMS_setBGPaletteColor( entry, color );
 }
-void devkit_SMS_setBGPaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
+void devkit_SMS_setSpritePaletteColor( unsigned char entry, unsigned char color )
 {
-	SMS_setBGPaletteColor( entry, GetColor( r, g, b ) );
-}
-void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
-{
-	SMS_setSpritePaletteColor( entry, GetColor( r, g, b ) );
+	SMS_setSpritePaletteColor( entry, color );
 }
 void devkit_SMS_loadBGPalette( void *palette )
 {
@@ -219,9 +215,29 @@ void devkit_SMS_loadSpritePalette( void *palette )
 	SMS_loadSpritePalette( palette );
 }
 
-
-
-
+/* SMS macros for colors */
+unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	return RGB( r, g, b );
+}
+//#define RGB8(r,g,b)       (((r)>>6)|(((g)>>6)<<2)|(((b)>>6)<<4))
+//#define RGBHTML(RGB24bit) (((RGB24bit)>>22)|((((RGB24bit)&0xFFFF)>>14)<<2)|((((RGB24bit)&0xFF)>>6)<<4))
+void devkit_SMS_loadBGPaletteHalfBrightness( void *palette )
+{
+	SMS_loadBGPaletteHalfBrightness( palette );
+}
+void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette )
+{
+	SMS_loadSpritePaletteHalfBrightness( palette );
+}
+void devkit_SMS_zeroBGPalette( void )
+{
+	SMS_zeroBGPalette();
+}
+void devkit_SMS_zeroSpritePalette( void )
+{
+	SMS_zeroSpritePalette();
+}
 
 
 void devkit_UNSAFE_SMS_copySpritestoSAT()

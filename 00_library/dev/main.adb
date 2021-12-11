@@ -60,6 +60,11 @@ S:G$devkit_SMS_setBGPaletteColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpritePaletteColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSpritePalette$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGB$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SMS_loadBGPaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSpritePaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroBGPalette$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroSpritePalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setTile$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),C,0,0

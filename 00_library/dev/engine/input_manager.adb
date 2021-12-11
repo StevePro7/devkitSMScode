@@ -13,9 +13,9 @@ F:G$engine_input_manager_move_right$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:G$engine_input_manager_move_fire1$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:G$engine_input_manager_move_fire2$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:Finput_manager$engine_input_manager_hold$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Linput_manager.engine_input_manager_hold$data$1$47({2}SI:U),B,1,4
+S:Linput_manager.engine_input_manager_hold$data$1$52({2}SI:U),B,1,4
 F:Finput_manager$engine_input_manager_move$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Linput_manager.engine_input_manager_move$data$1$49({2}SI:U),B,1,4
+S:Linput_manager.engine_input_manager_move$data$1$54({2}SI:U),B,1,4
 S:Finput_manager$curr_joypad1$0$0({2}SI:U),E,0,0
 S:Finput_manager$prev_joypad1$0$0({2}SI:U),E,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
@@ -58,6 +58,11 @@ S:G$devkit_SMS_setBGPaletteColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpritePaletteColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSpritePalette$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGB$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SMS_loadBGPaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSpritePaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroBGPalette$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroSpritePalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setTile$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),C,0,0
