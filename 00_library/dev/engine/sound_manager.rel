@@ -1,0 +1,109 @@
+;!FILE sound_manager.asm
+XL2
+H 9 areas 41 global symbols
+M sound_manager
+O -mz80
+S _devkit_SFX_CHANNEL2 Ref0000
+S .__.ABS. Def0000
+S _sound1_psg Ref0000
+S _phone_psg Ref0000
+S _sound2_psg Ref0000
+S _devkit_PSGPlayNoRepeat Ref0000
+S _sound3_psg Ref0000
+S _music_psg Ref0000
+S _devkit_PSGSFXPlay Ref0000
+A _CODE size 42 flags 0 addr 0
+S A$sound_manager$130 Def003A
+S A$sound_manager$131 Def003B
+S A$sound_manager$132 Def003C
+S A$sound_manager$114 Def002B
+S C$sound_manager.c$22$1$42 Def0016
+S C$sound_manager.c$15$1$40 Def0000
+S A$sound_manager$133 Def003F
+S A$sound_manager$115 Def002E
+S A$sound_manager$106 Def0023
+S C$sound_manager.c$16$1$40 Def0010
+S A$sound_manager$134 Def0040
+S A$sound_manager$125 Def0033
+S A$sound_manager$107 Def0026
+S C$sound_manager.c$17$1$40 Def0015
+S A$sound_manager$126 Def0034
+S A$sound_manager$108 Def0027
+S A$sound_manager$127 Def0037
+S A$sound_manager$109 Def0028
+S C$sound_manager.c$35$1$42 Def0033
+S C$sound_manager.c$26$1$42 Def0023
+S C$sound_manager.c$24$2$43 Def001E
+S C$sound_manager.c$19$1$40 Def0016
+S A$sound_manager$128 Def0038
+S C$sound_manager.c$36$1$42 Def0041
+S C$sound_manager.c$32$2$45 Def0030
+S A$sound_manager$129 Def0039
+S A$sound_manager$139 Def0041
+S C$sound_manager.c$28$2$44 Def002B
+S C$sound_manager.c$13$0$0 Def0000
+S A$sound_manager$60 Def0003
+S A$sound_manager$61 Def0004
+S A$sound_manager$62 Def0005
+S A$sound_manager$72 Def0010
+S A$sound_manager$63 Def0006
+S A$sound_manager$73 Def0011
+S A$sound_manager$64 Def0008
+S A$sound_manager$92 Def0016
+S A$sound_manager$74 Def0014
+S A$sound_manager$65 Def000B
+S A$sound_manager$93 Def0019
+S G$engine_music_manager_play$0$0 Def0000
+S A$sound_manager$94 Def001A
+S A$sound_manager$67 Def000D
+S A$sound_manager$95 Def001B
+S A$sound_manager$59 Def0000
+S A$sound_manager$96 Def001C
+S A$sound_manager$79 Def0015
+S G$engine_sound_manager_play$0$0 Def0016
+S _engine_music_manager_play Def0000
+S _engine_sound_manager_play Def0016
+S XG$engine_music_manager_play$0$0 Def0015
+S XG$engine_sound_manager_play$0$0 Def0041
+S A$sound_manager$100 Def001E
+S A$sound_manager$110 Def0029
+S A$sound_manager$101 Def0021
+S A$sound_manager$120 Def0030
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 21 02 00 39 7E B7 20 05 01 00 00 18 03
+R 00 00 00 00 02 0B 07 00
+T 0D 00
+R 00 00 00 00
+T 0D 00 01 00 00
+R 00 00 00 00 02 03 03 00
+T 10 00
+R 00 00 00 00
+T 10 00 C5 CD 00 00 F1 C9
+R 00 00 00 00 02 04 05 00
+T 16 00
+R 00 00 00 00
+T 16 00 21 02 00 39 7E B7 20 05 01 00 00 18 10
+R 00 00 00 00 02 0B 02 00
+T 23 00
+R 00 00 00 00
+T 23 00 21 02 00 39 7E 3D 20 05 01 00 00 18 03
+R 00 00 00 00 02 0B 04 00
+T 30 00
+R 00 00 00 00
+T 30 00 01 00 00
+R 00 00 00 00 02 03 06 00
+T 33 00
+R 00 00 00 00
+T 33 00 C5 CD 00 00 55 C1 D5 33 C5 CD 00 00 F1 33
+R 00 00 00 00 02 04 00 00 02 0C 08 00
+T 41 00 C9
+R 00 00 00 00
