@@ -48,11 +48,11 @@ Area                                    Addr        Size        Decimal Bytes (A
      000000EB  l__DATA                         
      0000012A  l__HEADER5                      
      00000200  s__CODE                         
-     00001117  l__CODE                         
-     00001317  s__HOME                         
-     00001317  s__INITIALIZER                  
-     0000131B  s__GSINIT                       
-     0000132A  s__GSFINAL                      
+     00001115  l__CODE                         
+     00001315  s__HOME                         
+     00001315  s__INITIALIZER                  
+     00001319  s__GSINIT                       
+     00001328  s__GSFINAL                      
      00008000  G$SMS_SRAM$0$0                     _sms_manager
      00008000  _SMS_SRAM                          SMSlib_loadTileMap
      0000C000  s__DATA                         
@@ -78,7 +78,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -137,7 +137,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -197,7 +197,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -257,7 +257,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -317,7 +317,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -377,7 +377,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -437,7 +437,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -497,7 +497,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -557,7 +557,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -617,7 +617,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -677,7 +677,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -737,7 +737,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -797,7 +797,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -857,7 +857,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -917,7 +917,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -977,7 +977,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1037,7 +1037,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1097,7 +1097,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1157,7 +1157,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1217,7 +1217,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1277,7 +1277,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1337,7 +1337,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1397,7 +1397,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1457,7 +1457,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1517,7 +1517,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1531,180 +1531,180 @@ _CODE                               00000200    00001117 =        4375. bytes (R
      00000805  C$screen_manager.c$8$1$6           screen_manager
      00000805  XG$engine_screen_manager_init$0$   screen_manager
      00000806  Fscreen_manager$__str_0$0$0        screen_manager
-     00000823  A$screen_manager$86                screen_manager
-     00000823  C$screen_manager.c$10$1$6          screen_manager
-     00000823  C$screen_manager.c$12$1$7          screen_manager
-     00000823  G$engine_screen_manager_update$0   screen_manager
-     00000823  _engine_screen_manager_update      screen_manager
-     00000826  A$screen_manager$87                screen_manager
-     00000827  A$screen_manager$88                screen_manager
-     0000082A  A$screen_manager$89                screen_manager
-     0000082B  A$screen_manager$90                screen_manager
-     0000082E  A$screen_manager$91                screen_manager
-     0000082F  A$screen_manager$92                screen_manager
-     00000830  A$screen_manager$97                screen_manager
-     00000830  C$screen_manager.c$13$1$7          screen_manager
-     00000830  XG$engine_screen_manager_update$   screen_manager
-     00000831  A$sprite_manager$53                sprite_manager
-     00000831  C$sprite_manager.c$4$0$0           sprite_manager
-     00000831  G$engine_sprite_manager_draw$0$0   sprite_manager
-     00000831  _engine_sprite_manager_draw        sprite_manager
-     00000833  A$sprite_manager$54                sprite_manager
-     00000837  A$sprite_manager$55                sprite_manager
-     00000839  A$sprite_manager$59                sprite_manager
-     00000839  C$sprite_manager.c$6$1$20          sprite_manager
-     0000083C  A$sprite_manager$60                sprite_manager
-     0000083F  A$sprite_manager$61                sprite_manager
-     00000840  A$sprite_manager$62                sprite_manager
-     00000843  A$sprite_manager$63                sprite_manager
-     00000846  A$sprite_manager$64                sprite_manager
-     00000847  A$sprite_manager$65                sprite_manager
-     0000084A  A$sprite_manager$66                sprite_manager
-     0000084B  A$sprite_manager$67                sprite_manager
-     0000084C  A$sprite_manager$71                sprite_manager
-     0000084C  C$sprite_manager.c$7$1$20          sprite_manager
-     0000084F  A$sprite_manager$72                sprite_manager
-     00000852  A$sprite_manager$73                sprite_manager
-     00000853  A$sprite_manager$74                sprite_manager
-     00000856  A$sprite_manager$75                sprite_manager
-     00000858  A$sprite_manager$76                sprite_manager
-     00000859  A$sprite_manager$77                sprite_manager
-     0000085A  A$sprite_manager$78                sprite_manager
-     0000085B  A$sprite_manager$79                sprite_manager
-     0000085E  A$sprite_manager$80                sprite_manager
+     00000821  A$screen_manager$86                screen_manager
+     00000821  C$screen_manager.c$10$1$6          screen_manager
+     00000821  C$screen_manager.c$12$1$7          screen_manager
+     00000821  G$engine_screen_manager_update$0   screen_manager
+     00000821  _engine_screen_manager_update      screen_manager
+     00000824  A$screen_manager$87                screen_manager
+     00000825  A$screen_manager$88                screen_manager
+     00000828  A$screen_manager$89                screen_manager
+     00000829  A$screen_manager$90                screen_manager
+     0000082C  A$screen_manager$91                screen_manager
+     0000082D  A$screen_manager$92                screen_manager
+     0000082E  A$screen_manager$97                screen_manager
+     0000082E  C$screen_manager.c$13$1$7          screen_manager
+     0000082E  XG$engine_screen_manager_update$   screen_manager
+     0000082F  A$sprite_manager$53                sprite_manager
+     0000082F  C$sprite_manager.c$4$0$0           sprite_manager
+     0000082F  G$engine_sprite_manager_draw$0$0   sprite_manager
+     0000082F  _engine_sprite_manager_draw        sprite_manager
+     00000831  A$sprite_manager$54                sprite_manager
+     00000835  A$sprite_manager$55                sprite_manager
+     00000837  A$sprite_manager$59                sprite_manager
+     00000837  C$sprite_manager.c$6$1$20          sprite_manager
+     0000083A  A$sprite_manager$60                sprite_manager
+     0000083D  A$sprite_manager$61                sprite_manager
+     0000083E  A$sprite_manager$62                sprite_manager
+     00000841  A$sprite_manager$63                sprite_manager
+     00000844  A$sprite_manager$64                sprite_manager
+     00000845  A$sprite_manager$65                sprite_manager
+     00000848  A$sprite_manager$66                sprite_manager
+     00000849  A$sprite_manager$67                sprite_manager
+     0000084A  A$sprite_manager$71                sprite_manager
+     0000084A  C$sprite_manager.c$7$1$20          sprite_manager
+     0000084D  A$sprite_manager$72                sprite_manager
+     00000850  A$sprite_manager$73                sprite_manager
+     00000851  A$sprite_manager$74                sprite_manager
+     00000854  A$sprite_manager$75                sprite_manager
+     00000856  A$sprite_manager$76                sprite_manager
+     00000857  A$sprite_manager$77                sprite_manager
+     00000858  A$sprite_manager$78                sprite_manager
+     00000859  A$sprite_manager$79                sprite_manager
+     0000085C  A$sprite_manager$80                sprite_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000085F  A$sprite_manager$81                sprite_manager
-     00000860  A$sprite_manager$82                sprite_manager
-     00000861  A$sprite_manager$83                sprite_manager
-     00000862  A$sprite_manager$84                sprite_manager
-     00000865  A$sprite_manager$85                sprite_manager
-     00000866  A$sprite_manager$86                sprite_manager
-     00000867  A$sprite_manager$87                sprite_manager
-     00000868  A$sprite_manager$91                sprite_manager
-     00000868  C$sprite_manager.c$8$1$20          sprite_manager
-     0000086B  A$sprite_manager$92                sprite_manager
-     0000086E  A$sprite_manager$93                sprite_manager
-     0000086F  A$sprite_manager$94                sprite_manager
-     00000870  A$sprite_manager$95                sprite_manager
-     00000873  A$sprite_manager$96                sprite_manager
-     00000875  A$sprite_manager$97                sprite_manager
-     00000876  A$sprite_manager$98                sprite_manager
-     00000877  A$sprite_manager$99                sprite_manager
-     00000878  A$sprite_manager$100               sprite_manager
-     00000879  A$sprite_manager$101               sprite_manager
-     0000087A  A$sprite_manager$102               sprite_manager
-     0000087B  A$sprite_manager$103               sprite_manager
-     0000087E  A$sprite_manager$104               sprite_manager
-     0000087F  A$sprite_manager$105               sprite_manager
-     00000880  A$sprite_manager$106               sprite_manager
-     00000883  A$sprite_manager$107               sprite_manager
-     00000884  A$sprite_manager$108               sprite_manager
-     00000885  A$sprite_manager$109               sprite_manager
-     00000886  A$sprite_manager$110               sprite_manager
-     00000887  A$sprite_manager$114               sprite_manager
-     00000887  C$sprite_manager.c$9$1$20          sprite_manager
-     0000088A  A$sprite_manager$115               sprite_manager
-     0000088D  A$sprite_manager$116               sprite_manager
-     0000088E  A$sprite_manager$117               sprite_manager
-     0000088F  A$sprite_manager$118               sprite_manager
-     00000890  A$sprite_manager$119               sprite_manager
-     00000891  A$sprite_manager$120               sprite_manager
-     00000892  A$sprite_manager$121               sprite_manager
-     00000893  A$sprite_manager$122               sprite_manager
-     00000896  A$sprite_manager$123               sprite_manager
-     00000897  A$sprite_manager$124               sprite_manager
-     00000898  A$sprite_manager$125               sprite_manager
-     0000089A  A$sprite_manager$130               sprite_manager
-     0000089A  C$sprite_manager.c$10$1$20         sprite_manager
-     0000089A  XG$engine_sprite_manager_draw$0$   sprite_manager
-     0000089B  G$font_tiles__palette__bin$0$0     gfx
-     0000089B  _font_tiles__palette__bin          gfx
-     000008AB  G$font_tiles__tilemap__bin$0$0     gfx
-     000008AB  _font_tiles__tilemap__bin          gfx
-     0000092B  G$font_tiles__tiles__psgcompr$0$   gfx
-     0000092B  _font_tiles__tiles__psgcompr       gfx
-     00000BC2  G$sprites__palette__bin$0$0        gfx
+     0000085D  A$sprite_manager$81                sprite_manager
+     0000085E  A$sprite_manager$82                sprite_manager
+     0000085F  A$sprite_manager$83                sprite_manager
+     00000860  A$sprite_manager$84                sprite_manager
+     00000863  A$sprite_manager$85                sprite_manager
+     00000864  A$sprite_manager$86                sprite_manager
+     00000865  A$sprite_manager$87                sprite_manager
+     00000866  A$sprite_manager$91                sprite_manager
+     00000866  C$sprite_manager.c$8$1$20          sprite_manager
+     00000869  A$sprite_manager$92                sprite_manager
+     0000086C  A$sprite_manager$93                sprite_manager
+     0000086D  A$sprite_manager$94                sprite_manager
+     0000086E  A$sprite_manager$95                sprite_manager
+     00000871  A$sprite_manager$96                sprite_manager
+     00000873  A$sprite_manager$97                sprite_manager
+     00000874  A$sprite_manager$98                sprite_manager
+     00000875  A$sprite_manager$99                sprite_manager
+     00000876  A$sprite_manager$100               sprite_manager
+     00000877  A$sprite_manager$101               sprite_manager
+     00000878  A$sprite_manager$102               sprite_manager
+     00000879  A$sprite_manager$103               sprite_manager
+     0000087C  A$sprite_manager$104               sprite_manager
+     0000087D  A$sprite_manager$105               sprite_manager
+     0000087E  A$sprite_manager$106               sprite_manager
+     00000881  A$sprite_manager$107               sprite_manager
+     00000882  A$sprite_manager$108               sprite_manager
+     00000883  A$sprite_manager$109               sprite_manager
+     00000884  A$sprite_manager$110               sprite_manager
+     00000885  A$sprite_manager$114               sprite_manager
+     00000885  C$sprite_manager.c$9$1$20          sprite_manager
+     00000888  A$sprite_manager$115               sprite_manager
+     0000088B  A$sprite_manager$116               sprite_manager
+     0000088C  A$sprite_manager$117               sprite_manager
+     0000088D  A$sprite_manager$118               sprite_manager
+     0000088E  A$sprite_manager$119               sprite_manager
+     0000088F  A$sprite_manager$120               sprite_manager
+     00000890  A$sprite_manager$121               sprite_manager
+     00000891  A$sprite_manager$122               sprite_manager
+     00000894  A$sprite_manager$123               sprite_manager
+     00000895  A$sprite_manager$124               sprite_manager
+     00000896  A$sprite_manager$125               sprite_manager
+     00000898  A$sprite_manager$130               sprite_manager
+     00000898  C$sprite_manager.c$10$1$20         sprite_manager
+     00000898  XG$engine_sprite_manager_draw$0$   sprite_manager
+     00000899  G$font_tiles__palette__bin$0$0     gfx
+     00000899  _font_tiles__palette__bin          gfx
+     000008A9  G$font_tiles__tilemap__bin$0$0     gfx
+     000008A9  _font_tiles__tilemap__bin          gfx
+     00000929  G$font_tiles__tiles__psgcompr$0$   gfx
+     00000929  _font_tiles__tiles__psgcompr       gfx
+     00000BC0  G$sprites__palette__bin$0$0        gfx
 ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000BC2  _sprites__palette__bin             gfx
-     00000BD2  G$sprites__tiles__psgcompr$0$0     gfx
-     00000BD2  _sprites__tiles__psgcompr          gfx
-     00000C10  G$tree_avoid__palette__bin$0$0     gfx
-     00000C10  _tree_avoid__palette__bin          gfx
-     00000C20  G$tree_avoid__tilemap__bin$0$0     gfx
-     00000C20  _tree_avoid__tilemap__bin          gfx
-     00000C28  G$tree_avoid__tiles__psgcompr$0$   gfx
-     00000C28  _tree_avoid__tiles__psgcompr       gfx
-     00000C7A  __divuint                          
-     00000C82  __divuchar                         
-     00000C89  __divu8                            
-     00000C8C  __divu16                           
-     00000CBB  _UNSAFE_SMS_copySpritestoSAT       SMSlib_UNSAFE
-     00000CD3  _UNSAFE_SMS_VRAMmemcpy32           SMSlib_UNSAFE
-     00000CF0  _UNSAFE_SMS_VRAMmemcpy64           SMSlib_UNSAFE
-     00000D0D  _UNSAFE_SMS_VRAMmemcpy128          SMSlib_UNSAFE
-     00000D2A  _SMS_init                          SMSlib
-     00000D7E  _VDPReg_init                       SMSlib
-     00000D89  _SMS_VDPType                       SMSlib
-     00000D91  _SMS_VDPturnOnFeature              SMSlib
-     00000DA8  _SMS_VDPturnOffFeature             SMSlib
-     00000DC1  _SMS_setBGScrollX                  SMSlib
-     00000DCB  _SMS_setBGScrollY                  SMSlib
-     00000DD5  _SMS_setBackdropColor              SMSlib
-     00000DDF  _SMS_useFirstHalfTilesforSprites   SMSlib
-     00000DF3  _SMS_setSpriteMode                 SMSlib
-     00000E38  _SMS_setBGPaletteColor             SMSlib
-     00000E4C  _SMS_setSpritePaletteColor         SMSlib
-     00000E60  _SMS_loadBGPalette                 SMSlib
-     00000E74  _SMS_loadSpritePalette             SMSlib
-     00000E88  _SMS_setColor                      SMSlib
-     00000E8C  _SMS_initSprites                   SMSlib
-     00000E92  _SMS_addSprite                     SMSlib
-     00000EE7  _SMS_finalizeSprites               SMSlib
-     00000EF9  _SMS_copySpritestoSAT              SMSlib
-     00000F22  _SMS_waitForVBlank                 SMSlib
-     00000F2F  _SMS_getKeysStatus                 SMSlib
-     00000F33  _SMS_getKeysPressed                SMSlib
-     00000F50  _SMS_getKeysHeld                   SMSlib
-     00000F67  _SMS_getKeysReleased               SMSlib
-     00000F84  _SMS_queryPauseRequested           SMSlib
-     00000F8C  _SMS_resetPauseRequest             SMSlib
-     00000F92  _SMS_setLineInterruptHandler       SMSlib
-     00000FA3  _SMS_setLineCounter                SMSlib
-     00000FB2  _SMS_getVCount                     SMSlib
-     00000FB6  _SMS_getHCount                     SMSlib
-     00000FBA  _SMS_isr                           SMSlib
-     00000FF0  _SMS_nmi_isr                       SMSlib
-     00001003  _SMS_loadSTMcompressedTileMapAre   SMSlib_STMcomp
-     000011E4  ___sdcc_call_hl                    
+     00000BC0  _sprites__palette__bin             gfx
+     00000BD0  G$sprites__tiles__psgcompr$0$0     gfx
+     00000BD0  _sprites__tiles__psgcompr          gfx
+     00000C0E  G$tree_avoid__palette__bin$0$0     gfx
+     00000C0E  _tree_avoid__palette__bin          gfx
+     00000C1E  G$tree_avoid__tilemap__bin$0$0     gfx
+     00000C1E  _tree_avoid__tilemap__bin          gfx
+     00000C26  G$tree_avoid__tiles__psgcompr$0$   gfx
+     00000C26  _tree_avoid__tiles__psgcompr       gfx
+     00000C78  __divuint                          
+     00000C80  __divuchar                         
+     00000C87  __divu8                            
+     00000C8A  __divu16                           
+     00000CB9  _UNSAFE_SMS_copySpritestoSAT       SMSlib_UNSAFE
+     00000CD1  _UNSAFE_SMS_VRAMmemcpy32           SMSlib_UNSAFE
+     00000CEE  _UNSAFE_SMS_VRAMmemcpy64           SMSlib_UNSAFE
+     00000D0B  _UNSAFE_SMS_VRAMmemcpy128          SMSlib_UNSAFE
+     00000D28  _SMS_init                          SMSlib
+     00000D7C  _VDPReg_init                       SMSlib
+     00000D87  _SMS_VDPType                       SMSlib
+     00000D8F  _SMS_VDPturnOnFeature              SMSlib
+     00000DA6  _SMS_VDPturnOffFeature             SMSlib
+     00000DBF  _SMS_setBGScrollX                  SMSlib
+     00000DC9  _SMS_setBGScrollY                  SMSlib
+     00000DD3  _SMS_setBackdropColor              SMSlib
+     00000DDD  _SMS_useFirstHalfTilesforSprites   SMSlib
+     00000DF1  _SMS_setSpriteMode                 SMSlib
+     00000E36  _SMS_setBGPaletteColor             SMSlib
+     00000E4A  _SMS_setSpritePaletteColor         SMSlib
+     00000E5E  _SMS_loadBGPalette                 SMSlib
+     00000E72  _SMS_loadSpritePalette             SMSlib
+     00000E86  _SMS_setColor                      SMSlib
+     00000E8A  _SMS_initSprites                   SMSlib
+     00000E90  _SMS_addSprite                     SMSlib
+     00000EE5  _SMS_finalizeSprites               SMSlib
+     00000EF7  _SMS_copySpritestoSAT              SMSlib
+     00000F20  _SMS_waitForVBlank                 SMSlib
+     00000F2D  _SMS_getKeysStatus                 SMSlib
+     00000F31  _SMS_getKeysPressed                SMSlib
+     00000F4E  _SMS_getKeysHeld                   SMSlib
+     00000F65  _SMS_getKeysReleased               SMSlib
+     00000F82  _SMS_queryPauseRequested           SMSlib
+     00000F8A  _SMS_resetPauseRequest             SMSlib
+     00000F90  _SMS_setLineInterruptHandler       SMSlib
+     00000FA1  _SMS_setLineCounter                SMSlib
+     00000FB0  _SMS_getVCount                     SMSlib
+     00000FB4  _SMS_getHCount                     SMSlib
+     00000FB8  _SMS_isr                           SMSlib
+     00000FEE  _SMS_nmi_isr                       SMSlib
+     00001001  _SMS_loadSTMcompressedTileMapAre   SMSlib_STMcomp
+     000011E2  ___sdcc_call_hl                    
 ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00001117 =        4375. bytes (REL,CON)
+_CODE                               00000200    00001115 =        4373. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000011E5  _SMS_loadPSGaidencompressedTiles   SMSlib_PSGaiden
-     000012C7  _SMS_loadTileMap                   SMSlib_loadTileMap
-     00001300  __moduchar                         
-     0000130C  __moduint                          
+     000011E3  _SMS_loadPSGaidencompressedTiles   SMSlib_PSGaiden
+     000012C5  _SMS_loadTileMap                   SMSlib_loadTileMap
+     000012FE  __moduchar                         
+     0000130A  __moduint                          
 ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
 Hexadecimal  [32-Bits]
 
@@ -1773,7 +1773,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZER                        00001317    00000004 =           4. bytes (REL,CON)
+_INITIALIZER                        00001315    00000004 =           4. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1782,18 +1782,18 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSINIT                             0000131B    0000000F =          15. bytes (REL,CON)
+_GSINIT                             00001319    0000000F =          15. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000131B  gsinit                             crt0
+     00001319  gsinit                             crt0
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSFINAL                            0000132A    00000001 =           1. bytes (REL,CON)
+_GSFINAL                            00001328    00000001 =           1. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------

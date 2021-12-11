@@ -6,33 +6,33 @@ O -mz80
 S _engine_sprite_manager_draw Ref0000
 S _engine_font_manager_draw_text Ref0000
 S .__.ABS. Def0000
-A _CODE size 39 flags 0 addr 0
+A _CODE size 37 flags 0 addr 0
 S _engine_screen_manager_init Def0000
-S G$engine_screen_manager_update$0$0 Def002B
+S G$engine_screen_manager_update$0$0 Def0029
 S XG$engine_screen_manager_init$0$0 Def000D
-S _engine_screen_manager_update Def002B
-S XG$engine_screen_manager_update$0$0 Def0038
-S C$screen_manager.c$10$1$6 Def002B
+S _engine_screen_manager_update Def0029
+S XG$engine_screen_manager_update$0$0 Def0036
+S C$screen_manager.c$10$1$6 Def0029
 S A$screen_manager$60 Def0004
-S C$screen_manager.c$12$1$7 Def002B
+S C$screen_manager.c$12$1$7 Def0029
 S A$screen_manager$61 Def0007
-S C$screen_manager.c$13$1$7 Def0038
+S C$screen_manager.c$13$1$7 Def0036
 S A$screen_manager$62 Def0008
-S A$screen_manager$90 Def0033
+S A$screen_manager$90 Def0031
 S A$screen_manager$63 Def000B
-S A$screen_manager$91 Def0036
+S A$screen_manager$91 Def0034
 S A$screen_manager$64 Def000C
-S A$screen_manager$92 Def0037
+S A$screen_manager$92 Def0035
 S A$screen_manager$58 Def0000
-S A$screen_manager$86 Def002B
+S A$screen_manager$86 Def0029
 S A$screen_manager$59 Def0003
-S A$screen_manager$87 Def002E
+S A$screen_manager$87 Def002C
 S A$screen_manager$69 Def000D
 S Fscreen_manager$__str_0$0$0 Def000E
-S A$screen_manager$97 Def0038
-S A$screen_manager$88 Def002F
+S A$screen_manager$97 Def0036
+S A$screen_manager$88 Def002D
 S C$screen_manager.c$5$0$0 Def0000
-S A$screen_manager$89 Def0032
+S A$screen_manager$89 Def0030
 S G$engine_screen_manager_init$0$0 Def0000
 S C$screen_manager.c$7$1$6 Def0000
 S C$screen_manager.c$8$1$6 Def000D
@@ -52,11 +52,9 @@ T 0E 00
 R 00 00 00 00
 T 0E 00 48 45 4C 4C 4F 20 53 45 47 41 20 4D 41 53
 R 00 00 00 00
-T 1C 00 54 45 52 20 53 59 53 54 45 4D 2E 2E 2E 21
+T 1C 00 54 45 52 20 53 59 53 54 45 4D 21 21 00
 R 00 00 00 00
-T 2A 00 00
+T 29 00
 R 00 00 00 00
-T 2B 00
-R 00 00 00 00
-T 2B 00 21 00 01 E5 21 78 58 E5 CD 00 00 F1 F1 C9
+T 29 00 21 00 01 E5 21 78 58 E5 CD 00 00 F1 F1 C9
 R 00 00 00 00 02 0B 00 00
