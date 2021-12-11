@@ -6,7 +6,7 @@
 
 void engine_screen_manager_init()
 {
-	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM!", 3, 5 );
+	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM!!", 3, 5 );
 }
 
 void engine_screen_manager_update()
@@ -16,7 +16,7 @@ void engine_screen_manager_update()
 	if( input )
 	{
 		//engine_music_manager_play( 0 );
-		engine_sound_manager_play( 2 );
+		engine_sound_manager_play( 1 );
 		return;
 	}
 
