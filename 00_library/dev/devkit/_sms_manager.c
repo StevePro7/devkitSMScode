@@ -9,10 +9,28 @@
 #include "../../lib/SMSlib.h"
 #endif
 
+/* library initialization. you don't need to call this if you use devkitSMS crt0.rel */
 void devkit_SMS_init()
 {
 	SMS_init();
 }
+
+/* VDP operative mode handling functions */
+void devkit_SMS_VDPturnOnFeature( unsigned int feature )
+{
+	SMS_VDPturnOnFeature( feature );
+}
+void devkit_SMS_VDPturnOffFeature( unsigned int feature )
+{
+	SMS_VDPturnOffFeature( feature );
+}
+
+unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL()
+{
+	return VDPFEATURE_HIDEFIRSTCOL;
+}
+
+
 void devkit_SMS_displayOn()
 {
 	SMS_displayOn();
@@ -61,10 +79,7 @@ void devkit_SMS_useFirstHalfTilesforSprites_True()
 {
 	SMS_useFirstHalfTilesforSprites( true );
 }
-void devkit_SMS_VDPturnOnFeature( unsigned int feature )
-{
-	SMS_VDPturnOnFeature( feature );
-}
+
 
 void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )
 {
@@ -208,10 +223,6 @@ unsigned int devkit_PORT_A_KEY_2()
 unsigned char devkit_SPRITEMODE_NORMAL()
 {
 	return SPRITEMODE_NORMAL;
-}
-unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL()
-{
-	return VDPFEATURE_HIDEFIRSTCOL;
 }
 
 // Sega header.

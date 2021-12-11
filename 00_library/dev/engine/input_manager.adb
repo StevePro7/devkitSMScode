@@ -13,12 +13,14 @@ F:G$engine_input_manager_move_right$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:G$engine_input_manager_move_fire1$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:G$engine_input_manager_move_fire2$0$0({2}DF,SC:U),Z,0,0,0,0,0
 F:Finput_manager$engine_input_manager_hold$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Linput_manager.engine_input_manager_hold$data$1$33({2}SI:U),B,1,4
+S:Linput_manager.engine_input_manager_hold$data$1$34({2}SI:U),B,1,4
 F:Finput_manager$engine_input_manager_move$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Linput_manager.engine_input_manager_move$data$1$35({2}SI:U),B,1,4
+S:Linput_manager.engine_input_manager_move$data$1$36({2}SI:U),B,1,4
 S:Finput_manager$curr_joypad1$0$0({2}SI:U),E,0,0
 S:Finput_manager$prev_joypad1$0$0({2}SI:U),E,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_VDPturnOnFeature$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_VDPturnOffFeature$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_mapROMBank$0$0({2}DF,SV:S),C,0,0
@@ -30,7 +32,6 @@ S:G$devkit_SMS_disableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpriteMode$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SMS_VDPturnOnFeature$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSTMcompressedTileMap$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0

@@ -125,7 +125,7 @@ void SMS_initSprites (void) {}
 #ifdef NO_SPRITE_CHECKS
 void SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}
 #else
-signed char SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ { returns - 1 }  /* returns -1 if no more sprites are available, -2 if invalid Y coord */
+signed char SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ { return -1; }  /* returns -1 if no more sprites are available, -2 if invalid Y coord */
 #endif
 void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}  /* doesn't return anything */
 void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}   /* doesn't return anything */

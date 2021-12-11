@@ -1,6 +1,6 @@
 ;!FILE _sms_manager.asm
 XL2
-H E areas 361 global symbols
+H E areas 36C global symbols
 M _sms_manager
 O -mz80
 S _SMS_loadPSGaidencompressedTilesatAddr Ref0000
@@ -34,831 +34,842 @@ S _SMS_useFirstHalfTilesforSprites Ref0000
 S _SMS_loadSTMcompressedTileMapatAddr Ref0000
 S _SMS_setSpriteMode Ref0000
 S _SMS_resetPauseRequest Ref0000
-A _CODE size 3D6 flags 0 addr 0
-S A$_sms_manager$1370 Def037E
-S A$_sms_manager$1352 Def037B
-S A$_sms_manager$1334 Def0377
-S A$_sms_manager$1316 Def0373
-S A$_sms_manager$1280 Def036B
-S A$_sms_manager$1262 Def0367
-S A$_sms_manager$1244 Def0361
-S A$_sms_manager$1190 Def0354
-S A$_sms_manager$1082 Def0341
-S A$_sms_manager$1073 Def0335
-S A$_sms_manager$1064 Def032D
-S A$_sms_manager$1055 Def0323
-S A$_sms_manager$1046 Def031B
-S A$_sms_manager$1037 Def0310
-S A$_sms_manager$1028 Def0306
-S A$_sms_manager$1019 Def02FB
-S C$_sms_manager.c$80$1$106 Def00B3
-S G$devkit_SMS_loadSTMcompressedTileMap$0$0 Def0086
-S XG$devkit_SMS_setBGScrollY$0$0 Def002D
-S A$_sms_manager$1227 Def0360
-S A$_sms_manager$1173 Def0351
-S A$_sms_manager$1083 Def0342
-S A$_sms_manager$1074 Def0337
-S A$_sms_manager$1065 Def0330
-S A$_sms_manager$1056 Def0324
-S A$_sms_manager$1047 Def031C
-S A$_sms_manager$1038 Def0311
-S XG$devkit_SMS_initSprites$0$0 Def0345
-S C$_sms_manager.c$81$1$106 Def00B7
-S C$_sms_manager.c$69$1$100 Def0068
-S A$_sms_manager$1156 Def034E
-S A$_sms_manager$1075 Def0338
-S A$_sms_manager$1066 Def0331
-S A$_sms_manager$1057 Def0326
-S A$_sms_manager$1048 Def031F
-S A$_sms_manager$1039 Def0312
-S XG$devkit_PORT_A_KEY_UP$0$0 Def0367
-S C$_sms_manager.c$94$1$112 Def00F1
-S C$_sms_manager.c$82$1$106 Def00BA
-S C$_sms_manager.c$75$1$104 Def008E
-S _devkit_PORT_A_KEY_1 Def0374
-S A$_sms_manager$1139 Def034B
-S A$_sms_manager$1076 Def0339
-S A$_sms_manager$1067 Def0332
-S A$_sms_manager$1058 Def0327
-S A$_sms_manager$1049 Def0320
-S G$devkit_PORT_A_KEY_RIGHT$0$0 Def0370
-S XG$devkit_SMS_getKeysStatus$0$0 Def0361
-S XG$devkit_SMS_addSprite$0$0 Def0165
-S C$_sms_manager.c$95$1$112 Def0106
-S C$_sms_manager.c$88$1$110 Def00C1
-S G$devkit_SMS_loadBGPalette$0$0 Def00B3
-S C$_sms_manager.c$76$1$104 Def00B2
-S _devkit_PORT_A_KEY_2 Def0378
-S A$_sms_manager$1383 Def037F
-S A$_sms_manager$1365 Def037C
-S A$_sms_manager$1347 Def0378
-S A$_sms_manager$1329 Def0374
-S A$_sms_manager$1293 Def036C
-S A$_sms_manager$1275 Def0368
-S A$_sms_manager$1257 Def0364
-S A$_sms_manager$1077 Def033A
-S A$_sms_manager$1068 Def0333
-S A$_sms_manager$1059 Def0328
-S C$_sms_manager.c$96$1$112 Def010B
-S C$_sms_manager.c$89$1$110 Def00DB
-S A$_sms_manager$1078 Def033B
-S C$_sms_manager.c$78$1$104 Def00B3
-S A$_sms_manager$1088 Def0344
-S A$_sms_manager$1079 Def033C
-S C$_sms_manager.c$84$1$108 Def00BA
-S G$devkit_SMS_finalizeSprites$0$0 Def0348
-S C$_sms_manager.c$85$1$108 Def00BE
-S G$devkit_SMS_VDPturnOnFeature$0$0 Def0061
-S _devkit_SMS_copySpritestoSAT Def034E
-S XG$devkit_PORT_A_KEY_LEFT$0$0 Def036F
-S XG$devkit_SMS_addSprite_bulk8$0$0 Def0241
-S C$_sms_manager.c$98$1$114 Def010B
-S C$_sms_manager.c$86$1$108 Def00C1
-S A$_sms_manager$1388 Def0382
-S A$_sms_manager$1298 Def036F
-S A$_sms_manager$400 Def007B
-S A$_sms_manager$310 Def004F
-S XG$devkit_SMS_queryPauseRequested$0$0 Def0354
-S C$_sms_manager.c$99$1$114 Def0116
-S XG$devkit_SMS_loadSpritePalette$0$0 Def00BE
-S _devkit_PORT_A_KEY_DOWN Def0368
-S A$_sms_manager$401 Def007C
-S A$_sms_manager$311 Def0051
-S G$devkit_SMS_setNextTileatXY$0$0 Def00E9
-S _devkit_SMS_displayOn Def0003
-S A$_sms_manager$600 Def0116
-S A$_sms_manager$510 Def00C4
-S A$_sms_manager$402 Def007D
-S A$_sms_manager$213 Def0021
-S XG$devkit_SMS_mapROMBank$0$0 Def0017
+A _CODE size 3DD flags 0 addr 0
+S A$_sms_manager$1244 Def0366
+S A$_sms_manager$1127 Def034C
+S A$_sms_manager$1082 Def0330
+S A$_sms_manager$1073 Def0329
+S A$_sms_manager$1064 Def031C
+S A$_sms_manager$1055 Def030F
+S A$_sms_manager$1046 Def0307
+S A$_sms_manager$1028 Def02F5
+S G$devkit_SMS_loadSTMcompressedTileMap$0$0 Def008D
+S C$_sms_manager.c$74$1$103 Def006F
+S C$_sms_manager.c$66$1$102 Def0065
+S XG$devkit_SMS_setBGScrollY$0$0 Def003B
+S A$_sms_manager$1083 Def0331
+S A$_sms_manager$1065 Def031D
+S A$_sms_manager$1056 Def0311
+S A$_sms_manager$1047 Def030A
+S A$_sms_manager$1038 Def02FE
+S A$_sms_manager$1029 Def02F6
+S XG$devkit_SMS_initSprites$0$0 Def034C
+S C$_sms_manager.c$80$1$107 Def0095
+S C$_sms_manager.c$67$1$102 Def0067
+S A$_sms_manager$1084 Def0332
+S A$_sms_manager$1066 Def031E
+S A$_sms_manager$1057 Def0312
+S A$_sms_manager$1048 Def030B
+S A$_sms_manager$1039 Def02FF
+S XG$devkit_PORT_A_KEY_UP$0$0 Def036E
+S C$_sms_manager.c$93$1$113 Def00C8
+S C$_sms_manager.c$81$1$107 Def00B9
+S C$_sms_manager.c$68$1$102 Def006A
+S _devkit_PORT_A_KEY_1 Def037B
+S A$_sms_manager$1229 Def035E
+S A$_sms_manager$1094 Def033B
+S A$_sms_manager$1085 Def0333
+S A$_sms_manager$1067 Def0321
+S A$_sms_manager$1058 Def0315
+S A$_sms_manager$1049 Def030C
+S G$devkit_PORT_A_KEY_RIGHT$0$0 Def0377
+S XG$devkit_SMS_getKeysStatus$0$0 Def0368
+S XG$devkit_SMS_addSprite$0$0 Def016C
+S C$_sms_manager.c$94$1$113 Def00E2
+S G$devkit_SMS_loadBGPalette$0$0 Def00BA
+S _devkit_PORT_A_KEY_2 Def037F
+S A$_sms_manager$1392 Def0385
+S A$_sms_manager$1374 Def0382
+S A$_sms_manager$1356 Def037E
+S A$_sms_manager$1338 Def037A
+S A$_sms_manager$1284 Def036E
+S A$_sms_manager$1266 Def0368
+S A$_sms_manager$1095 Def033C
+S A$_sms_manager$1086 Def0334
+S A$_sms_manager$1077 Def032A
+S A$_sms_manager$1068 Def0322
+S A$_sms_manager$1059 Def0317
+S C$_sms_manager.c$95$1$113 Def00EF
+S C$_sms_manager.c$83$1$107 Def00BA
+S C$_sms_manager.c$76$1$105 Def006F
+S A$_sms_manager$1249 Def0367
+S A$_sms_manager$1195 Def0358
+S A$_sms_manager$1096 Def033E
+S A$_sms_manager$1087 Def0337
+S A$_sms_manager$1078 Def032B
+S A$_sms_manager$1069 Def0323
+S C$_sms_manager.c$89$1$111 Def00C1
+S C$_sms_manager.c$77$1$105 Def008C
+S A$_sms_manager$1178 Def0355
+S A$_sms_manager$1097 Def033F
+S A$_sms_manager$1088 Def0338
+S A$_sms_manager$1079 Def032D
+S C$_sms_manager.c$97$1$113 Def00F0
+S C$_sms_manager.c$78$1$105 Def008D
+S A$_sms_manager$1098 Def0340
+S A$_sms_manager$1089 Def0339
+S G$devkit_SMS_finalizeSprites$0$0 Def034F
+S G$devkit_SMS_VDPturnOnFeature$0$0 Def0003
+S _devkit_SMS_copySpritestoSAT Def0355
+S A$_sms_manager$1387 Def0383
+S A$_sms_manager$1369 Def037F
+S A$_sms_manager$1297 Def036F
+S A$_sms_manager$1279 Def036B
+S A$_sms_manager$1099 Def0341
+S A$_sms_manager$210 Def0017
+S XG$devkit_PORT_A_KEY_LEFT$0$0 Def0376
+S XG$devkit_SMS_addSprite_bulk8$0$0 Def0248
+S C$_sms_manager.c$85$1$109 Def00BA
+S A$_sms_manager$310 Def0048
+S XG$devkit_SMS_queryPauseRequested$0$0 Def035B
+S XG$devkit_SMS_loadSpritePalette$0$0 Def00C5
+S C$_sms_manager.c$86$1$109 Def00BE
+S _devkit_PORT_A_KEY_DOWN Def036F
+S A$_sms_manager$410 Def0073
+S A$_sms_manager$320 Def0052
+S A$_sms_manager$311 Def0049
+S A$_sms_manager$230 Def0021
+S C$_sms_manager.c$99$1$115 Def00F8
+S G$devkit_SMS_setNextTileatXY$0$0 Def00F0
+S C$_sms_manager.c$87$1$109 Def00C1
+S _devkit_SMS_displayOn Def0011
+S A$_sms_manager$600 Def010D
+S A$_sms_manager$510 Def00C1
+S A$_sms_manager$420 Def007E
+S A$_sms_manager$411 Def0074
+S A$_sms_manager$312 Def004A
+S A$_sms_manager$231 Def0022
+S A$_sms_manager$150 Def0003
+S XG$devkit_SMS_mapROMBank$0$0 Def0025
 S _devkit_SMS_init Def0000
-S A$_sms_manager$700 Def017C
-S A$_sms_manager$610 Def0119
-S A$_sms_manager$520 Def00D2
-S A$_sms_manager$511 Def00C5
-S A$_sms_manager$430 Def0094
-S A$_sms_manager$412 Def0085
-S A$_sms_manager$403 Def007E
-S G$devkit_SMS_loadPSGaidencompressedTiles$0$0 Def0068
-S G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0 Def005C
-S _devkit_SMS_loadSTMcompressedTileMap Def0086
-S A$_sms_manager$800 Def0202
-S A$_sms_manager$710 Def018B
-S A$_sms_manager$701 Def017F
-S A$_sms_manager$620 Def012C
-S A$_sms_manager$611 Def011B
-S A$_sms_manager$521 Def00D3
-S A$_sms_manager$512 Def00C6
-S A$_sms_manager$440 Def00A4
-S A$_sms_manager$431 Def0097
-S A$_sms_manager$422 Def0086
-S A$_sms_manager$404 Def007F
-S A$_sms_manager$233 Def002D
-S A$_sms_manager$206 Def0018
-S A$_sms_manager$900 Def0276
-S A$_sms_manager$810 Def020E
-S A$_sms_manager$801 Def0205
-S A$_sms_manager$720 Def019A
-S A$_sms_manager$711 Def018D
-S A$_sms_manager$702 Def0180
-S A$_sms_manager$630 Def0139
-S A$_sms_manager$621 Def012D
-S A$_sms_manager$612 Def011F
-S A$_sms_manager$531 Def00DB
-S A$_sms_manager$522 Def00D4
-S A$_sms_manager$513 Def00C7
-S A$_sms_manager$441 Def00A5
-S A$_sms_manager$432 Def0099
-S A$_sms_manager$423 Def0088
-S A$_sms_manager$405 Def0080
-S A$_sms_manager$270 Def003D
-S A$_sms_manager$252 Def0035
-S A$_sms_manager$207 Def001C
-S G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0 Def037F
-S XG$devkit_PORT_A_KEY_1$0$0 Def0377
-S C$_sms_manager.c$20$1$83 Def0009
-S A$_sms_manager$910 Def0283
-S A$_sms_manager$901 Def0277
-S A$_sms_manager$820 Def021E
-S A$_sms_manager$811 Def0211
-S A$_sms_manager$802 Def0206
-S A$_sms_manager$730 Def01A5
-S A$_sms_manager$721 Def019B
-S A$_sms_manager$712 Def018E
-S A$_sms_manager$631 Def013B
-S A$_sms_manager$622 Def012E
-S A$_sms_manager$532 Def00DC
-S A$_sms_manager$523 Def00D5
-S A$_sms_manager$514 Def00C8
-S A$_sms_manager$442 Def00A6
-S A$_sms_manager$433 Def009A
-S A$_sms_manager$424 Def008C
-S A$_sms_manager$406 Def0083
-S A$_sms_manager$352 Def005E
-S A$_sms_manager$334 Def0059
-S A$_sms_manager$316 Def0054
-S A$_sms_manager$271 Def003F
-S A$_sms_manager$226 Def0024
-S A$_sms_manager$208 Def001E
-S A$_sms_manager$172 Def000C
-S A$_sms_manager$154 Def0006
-S A$_sms_manager$136 Def0000
-S XG$devkit_PORT_A_KEY_2$0$0 Def037B
-S C$_sms_manager.c$40$1$91 Def0030
-S _devkit_PORT_A_KEY_RIGHT Def0370
-S _devkit_SMS_loadBGPalette Def00B3
-S A$_sms_manager$920 Def028E
-S A$_sms_manager$911 Def0286
-S A$_sms_manager$902 Def0278
-S A$_sms_manager$821 Def021F
-S A$_sms_manager$812 Def0213
-S A$_sms_manager$803 Def0207
-S A$_sms_manager$740 Def01B4
-S A$_sms_manager$731 Def01A8
-S A$_sms_manager$722 Def019C
-S A$_sms_manager$713 Def018F
-S A$_sms_manager$632 Def013C
-S A$_sms_manager$623 Def012F
-S A$_sms_manager$560 Def00F1
-S A$_sms_manager$533 Def00DD
-S A$_sms_manager$524 Def00D6
-S A$_sms_manager$515 Def00CB
+S A$_sms_manager$700 Def016C
+S A$_sms_manager$601 Def010F
+S A$_sms_manager$511 Def00C2
+S A$_sms_manager$421 Def007F
+S A$_sms_manager$412 Def0075
+S A$_sms_manager$313 Def004B
+S A$_sms_manager$250 Def002A
+S A$_sms_manager$151 Def0004
+S G$devkit_SMS_loadPSGaidencompressedTiles$0$0 Def006F
+S G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0 Def006A
+S _devkit_SMS_loadSTMcompressedTileMap Def008D
+S A$_sms_manager$800 Def01EC
+S A$_sms_manager$710 Def016D
+S A$_sms_manager$512 Def00C3
+S A$_sms_manager$422 Def0082
+S A$_sms_manager$413 Def0076
+S A$_sms_manager$314 Def004D
+S A$_sms_manager$251 Def002C
+S A$_sms_manager$215 Def001A
+S A$_sms_manager$152 Def0005
+S A$_sms_manager$801 Def01ED
+S A$_sms_manager$720 Def017F
+S A$_sms_manager$711 Def016F
+S A$_sms_manager$540 Def00D5
+S A$_sms_manager$531 Def00C8
+S A$_sms_manager$513 Def00C4
+S A$_sms_manager$450 Def0095
+S A$_sms_manager$423 Def0083
+S A$_sms_manager$414 Def0077
+S A$_sms_manager$333 Def0053
+S A$_sms_manager$315 Def004F
+S A$_sms_manager$270 Def0036
+S A$_sms_manager$171 Def000A
+S A$_sms_manager$153 Def0006
+S G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0 Def0386
+S XG$devkit_PORT_A_KEY_1$0$0 Def037E
+S A$_sms_manager$910 Def0270
+S A$_sms_manager$820 Def0207
+S A$_sms_manager$802 Def01F0
+S A$_sms_manager$730 Def018E
+S A$_sms_manager$721 Def0182
+S A$_sms_manager$712 Def0173
+S A$_sms_manager$640 Def012E
+S A$_sms_manager$622 Def011D
+S A$_sms_manager$541 Def00D8
+S A$_sms_manager$532 Def00CB
+S A$_sms_manager$460 Def00A8
+S A$_sms_manager$451 Def0098
+S A$_sms_manager$424 Def0084
+S A$_sms_manager$415 Def0078
+S A$_sms_manager$352 Def0059
+S A$_sms_manager$334 Def0056
+S A$_sms_manager$271 Def0038
+S A$_sms_manager$172 Def000B
+S XG$devkit_PORT_A_KEY_2$0$0 Def0382
+S _devkit_PORT_A_KEY_RIGHT Def0377
+S _devkit_SMS_loadBGPalette Def00BA
+S A$_sms_manager$911 Def0273
+S A$_sms_manager$902 Def0265
+S A$_sms_manager$830 Def0212
+S A$_sms_manager$821 Def0208
+S A$_sms_manager$812 Def01F9
+S A$_sms_manager$803 Def01F1
+S A$_sms_manager$740 Def019D
+S A$_sms_manager$731 Def018F
+S A$_sms_manager$722 Def0183
+S A$_sms_manager$650 Def013E
+S A$_sms_manager$641 Def0131
+S A$_sms_manager$632 Def0120
+S A$_sms_manager$614 Def0112
+S A$_sms_manager$560 Def00EB
+S A$_sms_manager$542 Def00D9
+S A$_sms_manager$533 Def00CC
 S A$_sms_manager$470 Def00B6
-S A$_sms_manager$443 Def00A8
-S A$_sms_manager$434 Def009B
-S A$_sms_manager$407 Def0084
-S A$_sms_manager$290 Def0045
-S A$_sms_manager$272 Def0041
-S A$_sms_manager$227 Def0028
-S C$_sms_manager.c$41$1$91 Def0035
-S C$_sms_manager.c$14$1$82 Def0000
-S A$_sms_manager$930 Def029B
-S A$_sms_manager$921 Def028F
-S A$_sms_manager$912 Def0287
-S A$_sms_manager$903 Def0279
-S A$_sms_manager$840 Def0239
-S A$_sms_manager$822 Def0222
-S A$_sms_manager$813 Def0214
-S A$_sms_manager$750 Def01BF
-S A$_sms_manager$741 Def01B5
-S A$_sms_manager$732 Def01AA
-S A$_sms_manager$714 Def0190
-S A$_sms_manager$660 Def0151
-S A$_sms_manager$633 Def013F
-S A$_sms_manager$624 Def0130
-S A$_sms_manager$570 Def0101
-S A$_sms_manager$561 Def00F4
-S A$_sms_manager$534 Def00E0
-S A$_sms_manager$525 Def00D7
-S A$_sms_manager$516 Def00CC
-S A$_sms_manager$444 Def00A9
-S A$_sms_manager$435 Def009C
-S A$_sms_manager$390 Def006E
-S A$_sms_manager$309 Def004B
-S A$_sms_manager$291 Def0048
-S A$_sms_manager$246 Def0030
-S A$_sms_manager$228 Def002A
-S C$_sms_manager.c$42$1$91 Def0036
-S C$_sms_manager.c$22$1$84 Def0009
-S C$_sms_manager.c$15$1$82 Def0000
-S A$_sms_manager$940 Def02A9
-S A$_sms_manager$931 Def029C
-S A$_sms_manager$922 Def0290
-S A$_sms_manager$913 Def028A
-S A$_sms_manager$904 Def027C
-S A$_sms_manager$841 Def023A
-S A$_sms_manager$832 Def022B
-S A$_sms_manager$823 Def0223
-S A$_sms_manager$814 Def0217
-S A$_sms_manager$760 Def01CD
-S A$_sms_manager$751 Def01C2
-S A$_sms_manager$742 Def01B8
-S A$_sms_manager$733 Def01AB
-S A$_sms_manager$715 Def0193
-S A$_sms_manager$706 Def0181
-S A$_sms_manager$670 Def015F
-S A$_sms_manager$661 Def0152
-S A$_sms_manager$643 Def014A
-S A$_sms_manager$634 Def0142
-S A$_sms_manager$625 Def0131
-S A$_sms_manager$616 Def0121
-S A$_sms_manager$571 Def0102
-S A$_sms_manager$562 Def00F6
-S A$_sms_manager$544 Def00E8
-S A$_sms_manager$535 Def00E1
-S A$_sms_manager$526 Def00D9
-S A$_sms_manager$517 Def00CD
-S A$_sms_manager$490 Def00BC
-S A$_sms_manager$454 Def00B2
-S A$_sms_manager$445 Def00AA
-S A$_sms_manager$436 Def009D
-S A$_sms_manager$391 Def006F
-S A$_sms_manager$373 Def0065
-S A$_sms_manager$265 Def0036
-S A$_sms_manager$247 Def0033
-S A$_sms_manager$193 Def0017
-S G$devkit_SMS_disableSRAM$0$0 Def0045
-S C$_sms_manager.c$35$1$90 Def0024
-S C$_sms_manager.c$23$1$84 Def000C
-S C$_sms_manager.c$16$1$82 Def0003
-S A$_sms_manager$950 Def02B1
-S A$_sms_manager$932 Def029D
-S A$_sms_manager$923 Def0291
-S A$_sms_manager$914 Def028B
-S A$_sms_manager$905 Def027E
-S A$_sms_manager$860 Def0244
-S A$_sms_manager$842 Def023D
-S A$_sms_manager$833 Def022E
-S A$_sms_manager$824 Def0224
-S A$_sms_manager$815 Def0219
-S A$_sms_manager$770 Def01DA
-S A$_sms_manager$761 Def01CE
-S A$_sms_manager$752 Def01C3
-S A$_sms_manager$743 Def01B9
-S A$_sms_manager$734 Def01AC
-S A$_sms_manager$716 Def0194
-S A$_sms_manager$707 Def0184
-S A$_sms_manager$671 Def0160
-S A$_sms_manager$662 Def0155
-S A$_sms_manager$635 Def0143
-S A$_sms_manager$626 Def0134
-S A$_sms_manager$617 Def0124
-S A$_sms_manager$572 Def0103
-S A$_sms_manager$563 Def00F7
-S A$_sms_manager$554 Def00E9
-S A$_sms_manager$536 Def00E2
-S A$_sms_manager$527 Def00DA
-S A$_sms_manager$518 Def00CE
-S A$_sms_manager$509 Def00C1
-S A$_sms_manager$491 Def00BD
-S A$_sms_manager$446 Def00AB
-S A$_sms_manager$437 Def009E
-S A$_sms_manager$428 Def008E
-S A$_sms_manager$392 Def0070
-S A$_sms_manager$365 Def0061
-S A$_sms_manager$347 Def005C
-S A$_sms_manager$329 Def0057
-S A$_sms_manager$266 Def0039
-S A$_sms_manager$185 Def000F
-S A$_sms_manager$167 Def0009
-S A$_sms_manager$149 Def0003
-S XG$devkit_SMS_copySpritestoSAT$0$0 Def034E
-S G$devkit_SMS_setSpriteMode$0$0 Def004B
-S C$_sms_manager.c$36$1$90 Def002D
-S C$_sms_manager.c$24$1$84 Def000F
+S A$_sms_manager$461 Def00AA
+S A$_sms_manager$452 Def009B
+S A$_sms_manager$434 Def008C
+S A$_sms_manager$425 Def0085
+S A$_sms_manager$416 Def0079
+S A$_sms_manager$353 Def005D
+S A$_sms_manager$308 Def0044
+S A$_sms_manager$290 Def0041
+S A$_sms_manager$236 Def0025
+S A$_sms_manager$173 Def000C
+S A$_sms_manager$137 Def0000
+S C$_sms_manager.c$20$1$85 Def000A
+S A$_sms_manager$930 Def0288
+S A$_sms_manager$912 Def0274
+S A$_sms_manager$903 Def0266
+S A$_sms_manager$840 Def0223
+S A$_sms_manager$831 Def0214
+S A$_sms_manager$822 Def0209
+S A$_sms_manager$813 Def01FC
+S A$_sms_manager$804 Def01F2
+S A$_sms_manager$750 Def01AA
+S A$_sms_manager$741 Def019E
+S A$_sms_manager$732 Def0192
+S A$_sms_manager$723 Def0186
+S A$_sms_manager$660 Def014F
+S A$_sms_manager$651 Def013F
+S A$_sms_manager$642 Def0133
+S A$_sms_manager$633 Def0122
+S A$_sms_manager$615 Def0116
+S A$_sms_manager$561 Def00EE
+S A$_sms_manager$543 Def00DA
+S A$_sms_manager$534 Def00CD
+S A$_sms_manager$471 Def00B7
+S A$_sms_manager$462 Def00AB
+S A$_sms_manager$453 Def009E
+S A$_sms_manager$444 Def008D
+S A$_sms_manager$426 Def0086
+S A$_sms_manager$417 Def007A
+S A$_sms_manager$408 Def006F
+S A$_sms_manager$390 Def006A
+S A$_sms_manager$372 Def0065
+S A$_sms_manager$354 Def005F
+S A$_sms_manager$309 Def0047
+S A$_sms_manager$228 Def001D
+S A$_sms_manager$192 Def0011
+S A$_sms_manager$174 Def000D
+S C$_sms_manager.c$40$1$93 Def002F
+S C$_sms_manager.c$14$1$83 Def0000
+S A$_sms_manager$931 Def0289
+S A$_sms_manager$922 Def027D
+S A$_sms_manager$913 Def0275
+S A$_sms_manager$904 Def0267
+S A$_sms_manager$850 Def0231
+S A$_sms_manager$841 Def0224
+S A$_sms_manager$832 Def0215
+S A$_sms_manager$823 Def020C
+S A$_sms_manager$814 Def01FE
+S A$_sms_manager$805 Def01F5
+S A$_sms_manager$760 Def01B7
+S A$_sms_manager$751 Def01AB
+S A$_sms_manager$742 Def01A1
+S A$_sms_manager$733 Def0194
+S A$_sms_manager$724 Def0187
+S A$_sms_manager$652 Def0140
+S A$_sms_manager$643 Def0134
+S A$_sms_manager$634 Def0126
+S A$_sms_manager$616 Def0118
+S A$_sms_manager$553 Def00E2
+S A$_sms_manager$544 Def00DB
+S A$_sms_manager$535 Def00CE
+S A$_sms_manager$490 Def00BB
+S A$_sms_manager$463 Def00AC
+S A$_sms_manager$454 Def00A0
+S A$_sms_manager$445 Def008F
+S A$_sms_manager$427 Def0087
+S A$_sms_manager$418 Def007B
+S A$_sms_manager$409 Def0072
+S A$_sms_manager$256 Def002F
+S A$_sms_manager$229 Def0020
+S G$devkit_SMS_disableSRAM$0$0 Def0053
+S C$_sms_manager.c$41$1$93 Def0032
+S C$_sms_manager.c$34$1$91 Def001D
+S C$_sms_manager.c$15$1$83 Def0000
+S A$_sms_manager$950 Def02A0
+S A$_sms_manager$932 Def028A
+S A$_sms_manager$923 Def027E
+S A$_sms_manager$914 Def0276
+S A$_sms_manager$905 Def026A
+S A$_sms_manager$860 Def023E
+S A$_sms_manager$842 Def0225
+S A$_sms_manager$833 Def0218
+S A$_sms_manager$824 Def020D
+S A$_sms_manager$815 Def01FF
+S A$_sms_manager$806 Def01F6
+S A$_sms_manager$761 Def01BA
+S A$_sms_manager$752 Def01AC
+S A$_sms_manager$743 Def01A2
+S A$_sms_manager$734 Def0195
+S A$_sms_manager$716 Def0175
+S A$_sms_manager$680 Def0156
+S A$_sms_manager$653 Def0142
+S A$_sms_manager$644 Def0135
+S A$_sms_manager$617 Def011B
+S A$_sms_manager$590 Def0105
+S A$_sms_manager$554 Def00E3
+S A$_sms_manager$545 Def00DC
+S A$_sms_manager$536 Def00CF
+S A$_sms_manager$518 Def00C5
+S A$_sms_manager$491 Def00BC
+S A$_sms_manager$464 Def00AD
+S A$_sms_manager$455 Def00A1
+S A$_sms_manager$446 Def0093
+S A$_sms_manager$428 Def008A
+S A$_sms_manager$419 Def007C
+S A$_sms_manager$158 Def0007
+S XG$devkit_SMS_copySpritestoSAT$0$0 Def0355
+S G$devkit_SMS_setSpriteMode$0$0 Def0059
+S C$_sms_manager.c$35$1$91 Def0025
+S C$_sms_manager.c$16$1$83 Def0003
 S C$_sms_manager.c$12$0$0 Def0000
-S _devkit_SMS_finalizeSprites Def0348
-S _devkit_SMS_VDPturnOnFeature Def0061
-S A$_sms_manager$960 Def02BA
-S A$_sms_manager$951 Def02B2
-S A$_sms_manager$933 Def029E
-S A$_sms_manager$924 Def0292
-S A$_sms_manager$915 Def028C
-S A$_sms_manager$906 Def027F
-S A$_sms_manager$870 Def0253
-S A$_sms_manager$861 Def0248
-S A$_sms_manager$843 Def023E
-S A$_sms_manager$834 Def0230
-S A$_sms_manager$825 Def0227
-S A$_sms_manager$816 Def021A
-S A$_sms_manager$807 Def0208
-S A$_sms_manager$780 Def01E9
-S A$_sms_manager$771 Def01DB
-S A$_sms_manager$753 Def01C4
-S A$_sms_manager$744 Def01BA
-S A$_sms_manager$735 Def01AD
-S A$_sms_manager$726 Def019D
-S A$_sms_manager$717 Def0195
-S A$_sms_manager$708 Def0187
-S A$_sms_manager$690 Def016C
-S A$_sms_manager$672 Def0163
-S A$_sms_manager$663 Def0156
-S A$_sms_manager$636 Def0144
-S A$_sms_manager$627 Def0136
-S A$_sms_manager$618 Def0127
-S A$_sms_manager$573 Def0105
-S A$_sms_manager$564 Def00F8
-S A$_sms_manager$555 Def00EB
-S A$_sms_manager$537 Def00E3
-S A$_sms_manager$519 Def00D1
-S A$_sms_manager$447 Def00AE
-S A$_sms_manager$438 Def00A1
-S A$_sms_manager$429 Def0091
-S A$_sms_manager$393 Def0071
-S A$_sms_manager$366 Def0062
-S A$_sms_manager$267 Def003A
-S A$_sms_manager$186 Def0012
-S A$_sms_manager$970 Def02C7
-S A$_sms_manager$961 Def02BB
-S A$_sms_manager$952 Def02B3
-S A$_sms_manager$934 Def02A1
-S A$_sms_manager$925 Def0295
-S A$_sms_manager$916 Def028D
-S A$_sms_manager$907 Def0280
-S A$_sms_manager$880 Def025E
-S A$_sms_manager$871 Def0256
-S A$_sms_manager$844 Def023F
-S A$_sms_manager$835 Def0231
-S A$_sms_manager$826 Def0228
-S A$_sms_manager$817 Def021B
-S A$_sms_manager$808 Def020B
-S A$_sms_manager$790 Def01F2
-S A$_sms_manager$781 Def01EA
-S A$_sms_manager$772 Def01DE
-S A$_sms_manager$754 Def01C5
-S A$_sms_manager$745 Def01BB
-S A$_sms_manager$736 Def01AE
-S A$_sms_manager$727 Def01A0
-S A$_sms_manager$718 Def0196
-S A$_sms_manager$709 Def0188
-S A$_sms_manager$673 Def0164
-S A$_sms_manager$664 Def0157
-S A$_sms_manager$637 Def0145
-S A$_sms_manager$628 Def0137
-S A$_sms_manager$619 Def012A
-S A$_sms_manager$592 Def010B
-S A$_sms_manager$565 Def00F9
-S A$_sms_manager$556 Def00EF
-S A$_sms_manager$538 Def00E4
-S A$_sms_manager$475 Def00B7
-S A$_sms_manager$448 Def00AF
-S A$_sms_manager$439 Def00A3
-S A$_sms_manager$394 Def0072
-S A$_sms_manager$367 Def0063
-S A$_sms_manager$277 Def0044
-S A$_sms_manager$268 Def003B
-S A$_sms_manager$187 Def0013
-S XG$devkit_PORT_A_KEY_DOWN$0$0 Def036B
-S G$devkit_SMS_resetPauseRequest$0$0 Def0357
-S C$_sms_manager.c$52$1$94 Def004B
-S C$_sms_manager.c$44$1$93 Def0036
-S C$_sms_manager.c$38$1$90 Def0030
-S C$_sms_manager.c$31$1$88 Def0018
-S C$_sms_manager.c$18$1$83 Def0003
-S A$_sms_manager$980 Def02D1
-S A$_sms_manager$971 Def02C8
-S A$_sms_manager$962 Def02BD
-S A$_sms_manager$953 Def02B6
-S A$_sms_manager$944 Def02AA
-S A$_sms_manager$935 Def02A2
-S A$_sms_manager$926 Def0297
-S A$_sms_manager$908 Def0281
-S A$_sms_manager$890 Def026D
-S A$_sms_manager$881 Def025F
-S A$_sms_manager$872 Def0257
-S A$_sms_manager$836 Def0234
-S A$_sms_manager$827 Def0229
-S A$_sms_manager$818 Def021C
-S A$_sms_manager$809 Def020D
-S A$_sms_manager$791 Def01F5
-S A$_sms_manager$782 Def01EB
-S A$_sms_manager$773 Def01E0
-S A$_sms_manager$755 Def01C6
-S A$_sms_manager$737 Def01AF
-S A$_sms_manager$728 Def01A3
-S A$_sms_manager$719 Def0197
-S A$_sms_manager$665 Def0158
-S A$_sms_manager$656 Def014B
-S A$_sms_manager$638 Def0148
-S A$_sms_manager$629 Def0138
-S A$_sms_manager$593 Def010F
-S A$_sms_manager$566 Def00FA
-S A$_sms_manager$539 Def00E7
-S A$_sms_manager$467 Def00B3
-S A$_sms_manager$449 Def00B0
-S A$_sms_manager$395 Def0073
-S A$_sms_manager$386 Def0068
-S A$_sms_manager$368 Def0064
-S A$_sms_manager$296 Def004A
-S A$_sms_manager$269 Def003C
-S A$_sms_manager$188 Def0014
-S C$_sms_manager.c$45$1$93 Def0044
-S C$_sms_manager.c$32$1$88 Def0021
-S XG$devkit_SMS_displayOn$0$0 Def0006
-S C$_sms_manager.c$19$1$83 Def0006
-S _devkit_SMS_setNextTileatXY Def00E9
-S A$_sms_manager$990 Def02DE
-S A$_sms_manager$981 Def02D3
-S A$_sms_manager$972 Def02C9
-S A$_sms_manager$963 Def02BE
-S A$_sms_manager$954 Def02B7
-S A$_sms_manager$945 Def02AB
-S A$_sms_manager$936 Def02A3
-S A$_sms_manager$927 Def0298
-S A$_sms_manager$909 Def0282
-S A$_sms_manager$891 Def026E
-S A$_sms_manager$882 Def0260
-S A$_sms_manager$873 Def0258
-S A$_sms_manager$837 Def0236
-S A$_sms_manager$828 Def022A
-S A$_sms_manager$819 Def021D
-S A$_sms_manager$792 Def01F7
-S A$_sms_manager$783 Def01EE
-S A$_sms_manager$774 Def01E1
-S A$_sms_manager$765 Def01CF
-S A$_sms_manager$756 Def01C7
-S A$_sms_manager$738 Def01B0
-S A$_sms_manager$729 Def01A4
-S A$_sms_manager$666 Def0159
-S A$_sms_manager$657 Def014E
-S A$_sms_manager$594 Def0111
-S A$_sms_manager$567 Def00FB
-S A$_sms_manager$468 Def00B4
-S A$_sms_manager$396 Def0074
-S A$_sms_manager$387 Def006B
-S G$devkit_SMS_loadTileMap$0$0 Def0119
-S C$_sms_manager.c$60$1$97 Def005C
-S G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0 Def0057
-S C$_sms_manager.c$46$1$93 Def0045
-S C$_sms_manager.c$33$1$88 Def0024
-S C$_sms_manager.c$26$1$86 Def000F
+S _devkit_SMS_finalizeSprites Def034F
+S _devkit_SMS_VDPturnOnFeature Def0003
+S A$_sms_manager$960 Def02AE
+S A$_sms_manager$951 Def02A1
+S A$_sms_manager$942 Def0295
+S A$_sms_manager$933 Def028D
+S A$_sms_manager$924 Def027F
+S A$_sms_manager$915 Def0277
+S A$_sms_manager$906 Def026C
+S A$_sms_manager$861 Def023F
+S A$_sms_manager$843 Def0226
+S A$_sms_manager$834 Def021A
+S A$_sms_manager$825 Def020E
+S A$_sms_manager$816 Def0202
+S A$_sms_manager$807 Def01F7
+S A$_sms_manager$780 Def01D0
+S A$_sms_manager$771 Def01C3
+S A$_sms_manager$762 Def01BB
+S A$_sms_manager$753 Def01AF
+S A$_sms_manager$744 Def01A3
+S A$_sms_manager$735 Def0196
+S A$_sms_manager$717 Def0178
+S A$_sms_manager$690 Def0164
+S A$_sms_manager$681 Def0157
+S A$_sms_manager$654 Def0143
+S A$_sms_manager$645 Def0136
+S A$_sms_manager$591 Def0107
+S A$_sms_manager$582 Def00F8
+S A$_sms_manager$555 Def00E4
+S A$_sms_manager$546 Def00DD
+S A$_sms_manager$537 Def00D2
+S A$_sms_manager$492 Def00BD
+S A$_sms_manager$465 Def00AF
+S A$_sms_manager$456 Def00A2
+S A$_sms_manager$429 Def008B
+S A$_sms_manager$339 Def0058
+S A$_sms_manager$276 Def003B
+S A$_sms_manager$249 Def0026
+S C$_sms_manager.c$22$1$87 Def000A
+S A$_sms_manager$970 Def02B6
+S A$_sms_manager$961 Def02AF
+S A$_sms_manager$952 Def02A2
+S A$_sms_manager$943 Def0296
+S A$_sms_manager$934 Def028E
+S A$_sms_manager$925 Def0280
+S A$_sms_manager$916 Def027A
+S A$_sms_manager$907 Def026D
+S A$_sms_manager$871 Def0248
+S A$_sms_manager$862 Def0240
+S A$_sms_manager$844 Def0229
+S A$_sms_manager$835 Def021B
+S A$_sms_manager$817 Def0204
+S A$_sms_manager$808 Def01F8
+S A$_sms_manager$790 Def01DC
+S A$_sms_manager$781 Def01D3
+S A$_sms_manager$772 Def01C6
+S A$_sms_manager$763 Def01BC
+S A$_sms_manager$754 Def01B1
+S A$_sms_manager$736 Def0197
+S A$_sms_manager$718 Def017B
+S A$_sms_manager$691 Def0165
+S A$_sms_manager$682 Def0158
+S A$_sms_manager$655 Def0146
+S A$_sms_manager$646 Def0137
+S A$_sms_manager$592 Def0108
+S A$_sms_manager$583 Def00FB
+S A$_sms_manager$556 Def00E7
+S A$_sms_manager$547 Def00DE
+S A$_sms_manager$538 Def00D3
+S A$_sms_manager$466 Def00B0
+S A$_sms_manager$457 Def00A3
+S A$_sms_manager$295 Def0043
+S XG$devkit_PORT_A_KEY_DOWN$0$0 Def0372
+S G$devkit_SMS_resetPauseRequest$0$0 Def035E
+S C$_sms_manager.c$50$1$96 Def0044
+S C$_sms_manager.c$37$1$91 Def0026
+S C$_sms_manager.c$30$1$89 Def0017
+S C$_sms_manager.c$23$1$87 Def000E
+S A$_sms_manager$971 Def02B7
+S A$_sms_manager$962 Def02B0
+S A$_sms_manager$953 Def02A3
+S A$_sms_manager$944 Def0297
+S A$_sms_manager$935 Def0291
+S A$_sms_manager$926 Def0283
+S A$_sms_manager$917 Def027B
+S A$_sms_manager$908 Def026E
+S A$_sms_manager$890 Def0256
+S A$_sms_manager$881 Def0249
+S A$_sms_manager$863 Def0241
+S A$_sms_manager$854 Def0232
+S A$_sms_manager$845 Def022A
+S A$_sms_manager$836 Def021E
+S A$_sms_manager$818 Def0205
+S A$_sms_manager$791 Def01DF
+S A$_sms_manager$782 Def01D4
+S A$_sms_manager$773 Def01C9
+S A$_sms_manager$764 Def01BF
+S A$_sms_manager$755 Def01B2
+S A$_sms_manager$737 Def019A
+S A$_sms_manager$728 Def0188
+S A$_sms_manager$719 Def017C
+S A$_sms_manager$692 Def0166
+S A$_sms_manager$683 Def0159
+S A$_sms_manager$665 Def0151
+S A$_sms_manager$656 Def0149
+S A$_sms_manager$647 Def0138
+S A$_sms_manager$638 Def0128
+S A$_sms_manager$593 Def0109
+S A$_sms_manager$584 Def00FD
+S A$_sms_manager$566 Def00EF
+S A$_sms_manager$557 Def00E8
+S A$_sms_manager$548 Def00E0
+S A$_sms_manager$539 Def00D4
+S A$_sms_manager$476 Def00B9
+S A$_sms_manager$467 Def00B1
+S A$_sms_manager$458 Def00A4
+S A$_sms_manager$395 Def006C
+S A$_sms_manager$377 Def0067
+S A$_sms_manager$359 Def0062
+S A$_sms_manager$269 Def0032
+S A$_sms_manager$197 Def0014
+S A$_sms_manager$179 Def000E
+S C$_sms_manager.c$43$1$95 Def0032
+S C$_sms_manager.c$31$1$89 Def001A
+S XG$devkit_SMS_displayOn$0$0 Def0014
+S C$_sms_manager.c$24$1$87 Def0011
+S _devkit_SMS_setNextTileatXY Def00F0
+S A$_sms_manager$990 Def02CA
+S A$_sms_manager$972 Def02B8
+S A$_sms_manager$954 Def02A4
+S A$_sms_manager$945 Def0298
+S A$_sms_manager$936 Def0292
+S A$_sms_manager$927 Def0285
+S A$_sms_manager$918 Def027C
+S A$_sms_manager$909 Def026F
+S A$_sms_manager$891 Def0259
+S A$_sms_manager$882 Def024B
+S A$_sms_manager$864 Def0244
+S A$_sms_manager$855 Def0235
+S A$_sms_manager$846 Def022B
+S A$_sms_manager$837 Def0220
+S A$_sms_manager$819 Def0206
+S A$_sms_manager$792 Def01E1
+S A$_sms_manager$783 Def01D5
+S A$_sms_manager$774 Def01CA
+S A$_sms_manager$765 Def01C0
+S A$_sms_manager$756 Def01B3
+S A$_sms_manager$738 Def019B
+S A$_sms_manager$729 Def018B
+S A$_sms_manager$693 Def0167
+S A$_sms_manager$684 Def015C
+S A$_sms_manager$657 Def014A
+S A$_sms_manager$648 Def013B
+S A$_sms_manager$639 Def012B
+S A$_sms_manager$594 Def010A
+S A$_sms_manager$585 Def00FE
+S A$_sms_manager$576 Def00F0
+S A$_sms_manager$558 Def00E9
+S A$_sms_manager$549 Def00E1
+S A$_sms_manager$468 Def00B2
+S A$_sms_manager$459 Def00A5
+S G$devkit_SMS_loadTileMap$0$0 Def0120
+S G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0 Def0065
+S C$_sms_manager.c$44$1$95 Def003B
+S C$_sms_manager.c$32$1$89 Def001D
+S C$_sms_manager.c$18$1$85 Def0003
 S XG$devkit_SMS_init$0$0 Def0000
-S A$_sms_manager$991 Def02DF
-S A$_sms_manager$982 Def02D4
-S A$_sms_manager$964 Def02BF
-S A$_sms_manager$955 Def02B8
-S A$_sms_manager$946 Def02AD
-S A$_sms_manager$937 Def02A6
-S A$_sms_manager$928 Def0299
-S A$_sms_manager$892 Def026F
-S A$_sms_manager$883 Def0263
-S A$_sms_manager$874 Def025B
-S A$_sms_manager$865 Def024A
-S A$_sms_manager$838 Def0237
-S A$_sms_manager$793 Def01F8
-S A$_sms_manager$784 Def01EF
-S A$_sms_manager$775 Def01E2
-S A$_sms_manager$766 Def01D2
-S A$_sms_manager$757 Def01C8
-S A$_sms_manager$739 Def01B3
-S A$_sms_manager$694 Def016E
-S A$_sms_manager$667 Def015C
-S A$_sms_manager$658 Def014F
-S A$_sms_manager$595 Def0114
-S A$_sms_manager$568 Def00FE
-S A$_sms_manager$496 Def00BE
+S A$_sms_manager$991 Def02CD
+S A$_sms_manager$982 Def02C1
+S A$_sms_manager$973 Def02B9
+S A$_sms_manager$955 Def02A5
+S A$_sms_manager$946 Def0299
+S A$_sms_manager$937 Def0293
+S A$_sms_manager$928 Def0286
+S A$_sms_manager$892 Def025A
+S A$_sms_manager$883 Def024F
+S A$_sms_manager$865 Def0245
+S A$_sms_manager$856 Def0237
+S A$_sms_manager$847 Def022E
+S A$_sms_manager$838 Def0221
+S A$_sms_manager$829 Def020F
+S A$_sms_manager$793 Def01E2
+S A$_sms_manager$775 Def01CB
+S A$_sms_manager$766 Def01C1
+S A$_sms_manager$757 Def01B4
+S A$_sms_manager$748 Def01A4
+S A$_sms_manager$739 Def019C
+S A$_sms_manager$694 Def016A
+S A$_sms_manager$685 Def015D
+S A$_sms_manager$658 Def014B
+S A$_sms_manager$649 Def013D
+S A$_sms_manager$595 Def010C
+S A$_sms_manager$586 Def00FF
+S A$_sms_manager$577 Def00F2
+S A$_sms_manager$559 Def00EA
 S A$_sms_manager$469 Def00B5
-S A$_sms_manager$397 Def0075
-S A$_sms_manager$388 Def006C
-S XG$devkit_SMS_loadSTMcompressedTileMap$0$0 Def00B2
-S C$_sms_manager.c$27$1$86 Def0017
-S _devkit_SMS_loadPSGaidencompressedTiles Def0068
-S _devkit_SMS_useFirstHalfTilesforSprites_True Def005C
-S A$_sms_manager$992 Def02E2
-S A$_sms_manager$983 Def02D5
-S A$_sms_manager$965 Def02C0
-S A$_sms_manager$956 Def02B9
-S A$_sms_manager$947 Def02AE
-S A$_sms_manager$938 Def02A7
-S A$_sms_manager$929 Def029A
-S A$_sms_manager$893 Def0270
-S A$_sms_manager$884 Def0265
-S A$_sms_manager$875 Def025C
-S A$_sms_manager$866 Def024D
-S A$_sms_manager$839 Def0238
-S A$_sms_manager$794 Def01FB
-S A$_sms_manager$785 Def01F0
-S A$_sms_manager$776 Def01E3
-S A$_sms_manager$767 Def01D4
-S A$_sms_manager$758 Def01C9
-S A$_sms_manager$749 Def01BC
-S A$_sms_manager$695 Def0171
-S A$_sms_manager$668 Def015D
-S A$_sms_manager$659 Def0150
-S A$_sms_manager$578 Def0106
-S A$_sms_manager$569 Def0100
-S A$_sms_manager$488 Def00BA
-S A$_sms_manager$398 Def0077
-S A$_sms_manager$389 Def006D
-S C$_sms_manager.c$54$1$96 Def004B
-S A$_sms_manager$993 Def02E3
-S A$_sms_manager$984 Def02D6
-S A$_sms_manager$966 Def02C1
-S A$_sms_manager$948 Def02AF
-S A$_sms_manager$939 Def02A8
-S A$_sms_manager$894 Def0273
-S A$_sms_manager$885 Def0266
-S A$_sms_manager$876 Def025D
-S A$_sms_manager$867 Def024E
-S A$_sms_manager$849 Def0241
-S A$_sms_manager$795 Def01FD
-S A$_sms_manager$786 Def01F1
-S A$_sms_manager$777 Def01E4
-S A$_sms_manager$768 Def01D5
-S A$_sms_manager$759 Def01CC
-S A$_sms_manager$696 Def0174
-S A$_sms_manager$678 Def0165
-S A$_sms_manager$669 Def015E
-S A$_sms_manager$579 Def0108
-S A$_sms_manager$489 Def00BB
-S A$_sms_manager$399 Def0078
-S C$_sms_manager.c$62$1$98 Def005C
-S C$_sms_manager.c$55$1$96 Def0054
-S C$_sms_manager.c$48$1$94 Def0045
-S C$_sms_manager.c$29$1$86 Def0018
-S _devkit_VDPFEATURE_HIDEFIRSTCOL Def037F
-S A$_sms_manager$994 Def02E4
-S A$_sms_manager$985 Def02D7
-S A$_sms_manager$976 Def02CA
-S A$_sms_manager$967 Def02C2
-S A$_sms_manager$949 Def02B0
-S A$_sms_manager$895 Def0274
-S A$_sms_manager$886 Def0267
-S A$_sms_manager$868 Def024F
-S A$_sms_manager$859 Def0242
-S A$_sms_manager$796 Def01FE
-S A$_sms_manager$778 Def01E5
-S A$_sms_manager$769 Def01D8
-S A$_sms_manager$697 Def0175
-S A$_sms_manager$688 Def0166
-S XG$devkit_PORT_A_KEY_RIGHT$0$0 Def0373
-S G$devkit_SMS_addSprite_bulk12$0$0 Def0242
-S XG$devkit_SMS_loadBGPalette$0$0 Def00B7
-S C$_sms_manager.c$63$1$98 Def005E
-S C$_sms_manager.c$56$1$96 Def0057
-S C$_sms_manager.c$49$1$94 Def004A
-S A$_sms_manager$995 Def02E5
-S A$_sms_manager$986 Def02D8
-S A$_sms_manager$977 Def02CB
-S A$_sms_manager$968 Def02C3
-S A$_sms_manager$896 Def0275
-S A$_sms_manager$887 Def0268
-S A$_sms_manager$869 Def0252
-S A$_sms_manager$797 Def01FF
-S A$_sms_manager$779 Def01E6
-S A$_sms_manager$698 Def0178
-S A$_sms_manager$689 Def0168
-S G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0 Def0351
-S G$devkit_SMS_setSpritePaletteColor$0$0 Def00C1
-S C$_sms_manager.c$64$1$98 Def0061
-S G$devkit_SMS_displayOff$0$0 Def0009
-S A$_sms_manager$987 Def02D9
-S A$_sms_manager$978 Def02CD
-S A$_sms_manager$969 Def02C6
-S A$_sms_manager$888 Def0269
-S A$_sms_manager$798 Def0200
-S A$_sms_manager$699 Def017B
-S G$devkit_SPRITEMODE_NORMAL$0$0 Def037C
-S A$_sms_manager$988 Def02DA
-S A$_sms_manager$979 Def02CE
-S A$_sms_manager$889 Def026C
-S A$_sms_manager$799 Def0201
-S C$_sms_manager.c$58$1$97 Def0057
-S _devkit_SMS_disableSRAM Def0045
-S A$_sms_manager$989 Def02DD
-S XG$devkit_SMS_finalizeSprites$0$0 Def0348
-S XG$devkit_SMS_VDPturnOnFeature$0$0 Def0065
-S C$_sms_manager.c$59$1$97 Def0059
-S _devkit_SMS_setSpriteMode Def004B
-S A$_sms_manager$999 Def02E6
-S G$devkit_SMS_enableSRAMBank$0$0 Def0036
-S _devkit_SMS_resetPauseRequest Def0357
-S XG$devkit_SMS_setNextTileatXY$0$0 Def0106
-S G$devkit_isCollisionDetected$0$0 Def035A
-S _devkit_SMS_loadTileMap Def0119
-S _devkit_SMS_useFirstHalfTilesforSprites_False Def0057
-S F_sms_manager$__str_0$0$0 Def0383
-S XG$devkit_SMS_loadPSGaidencompressedTiles$0$0 Def0085
-S XG$devkit_SMS_useFirstHalfTilesforSprites_True$0$0 Def005E
-S F_sms_manager$__str_1$0$0 Def0391
-S G$devkit_SMS_waitForVBlank$0$0 Def034B
-S G$devkit_SMS_setTile$0$0 Def010B
-S G$devkit_SMS_enableSRAM$0$0 Def0030
-S F_sms_manager$__str_2$0$0 Def039E
-S XG$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0 Def0382
-S C$_sms_manager.c$120$1$120 Def0208
-S C$_sms_manager.c$111$1$120 Def016E
-S G$devkit_SMS_setBGScrollX$0$0 Def0018
-S _devkit_SMS_addSprite_bulk12 Def0242
-S C$_sms_manager.c$121$1$120 Def022B
-S C$_sms_manager.c$112$1$120 Def0181
-S C$_sms_manager.c$100$1$114 Def0119
-S G$devkit_SMS_setBGScrollY$0$0 Def0024
-S _devkit_UNSAFE_SMS_copySpritestoSAT Def0351
-S _devkit_SMS_setSpritePaletteColor Def00C1
-S _devkit_SMS_displayOff Def0009
-S G$devkit_SMS_initSprites$0$0 Def0345
-S C$_sms_manager.c$122$1$120 Def0241
-S _devkit_SPRITEMODE_NORMAL Def037C
-S G$devkit_PORT_A_KEY_UP$0$0 Def0364
-S C$_sms_manager.c$130$1$122 Def02AA
-S C$_sms_manager.c$123$1$120 Def0242
-S C$_sms_manager.c$114$1$120 Def019D
-S XG$devkit_SMS_disableSRAM$0$0 Def004A
-S G$devkit_SMS_getKeysStatus$0$0 Def0361
-S C$_sms_manager.c$140$1$122 Def0344
-S C$_sms_manager.c$131$1$122 Def02BA
-S C$_sms_manager.c$115$1$120 Def01BC
-S G$devkit_SMS_addSprite$0$0 Def014B
-S XG$devkit_SMS_setSpriteMode$0$0 Def0054
-S C$_sms_manager.c$102$1$116 Def0121
-S C$_sms_manager.c$200$1$136 Def0374
-S XG$devkit_SMS_resetPauseRequest$0$0 Def0357
-S C$_sms_manager.c$142$1$122 Def0345
-S C$_sms_manager.c$133$1$122 Def02CA
-S C$_sms_manager.c$117$1$120 Def01CF
-S C$_sms_manager.c$103$1$116 Def014A
-S _devkit_SMS_enableSRAMBank Def0036
-S C$_sms_manager.c$201$1$136 Def0377
-S C$_sms_manager.c$150$1$124 Def034B
-S C$_sms_manager.c$134$1$122 Def02E6
-S C$_sms_manager.c$125$1$122 Def024A
-S C$_sms_manager.c$118$1$120 Def01F2
-S C$_sms_manager.c$202$1$136 Def0378
-S C$_sms_manager.c$180$1$131 Def0361
-S C$_sms_manager.c$135$1$122 Def02F7
-S C$_sms_manager.c$126$1$122 Def025E
-S C$_sms_manager.c$105$1$116 Def014B
-S XG$devkit_SMS_loadTileMap$0$0 Def014A
-S XG$devkit_SMS_useFirstHalfTilesforSprites_False$0$0 Def0059
-S _devkit_isCollisionDetected Def035A
-S C$_sms_manager.c$210$1$138 Def037C
-S G$devkit_PORT_A_KEY_LEFT$0$0 Def036C
-S C$_sms_manager.c$181$1$131 Def0361
-S C$_sms_manager.c$144$1$123 Def0345
-S C$_sms_manager.c$127$1$122 Def0276
-S G$devkit_SMS_addSprite_bulk8$0$0 Def0166
-S C$_sms_manager.c$211$1$138 Def037E
-S C$_sms_manager.c$182$1$131 Def0364
-S C$_sms_manager.c$174$1$130 Def035A
-S G$devkit_SMS_queryPauseRequested$0$0 Def0354
-S C$_sms_manager.c$152$1$125 Def034B
-S C$_sms_manager.c$145$1$123 Def0345
-S C$_sms_manager.c$137$1$122 Def0307
-S G$devkit_SMS_loadSpritePalette$0$0 Def00BA
-S _devkit_SMS_waitForVBlank Def034B
-S _devkit_SMS_setTile Def010B
-S _devkit_SMS_enableSRAM Def0030
-S C$_sms_manager.c$212$1$138 Def037F
-S C$_sms_manager.c$204$1$137 Def0378
-S C$_sms_manager.c$190$1$133 Def036C
-S C$_sms_manager.c$175$1$130 Def0360
-S C$_sms_manager.c$160$1$127 Def0351
-S C$_sms_manager.c$153$1$125 Def034B
-S C$_sms_manager.c$146$1$123 Def0348
-S C$_sms_manager.c$138$1$122 Def0323
-S C$_sms_manager.c$129$1$122 Def028E
-S C$_sms_manager.c$205$1$137 Def037B
-S C$_sms_manager.c$161$1$127 Def0351
-S C$_sms_manager.c$154$1$125 Def034E
-S XG$devkit_SMS_addSprite_bulk12$0$0 Def0344
-S C$_sms_manager.c$139$1$122 Def0334
-S C$_sms_manager.c$107$1$118 Def014B
-S G$devkit_SMS_mapROMBank$0$0 Def000F
-S _devkit_SMS_setBGScrollX Def0018
-S C$_sms_manager.c$184$1$132 Def0364
-S XG$devkit_UNSAFE_SMS_copySpritestoSAT$0$0 Def0351
-S C$_sms_manager.c$108$1$118 Def0165
-S XG$devkit_SMS_setSpritePaletteColor$0$0 Def00E8
-S XG$devkit_SMS_displayOff$0$0 Def000C
-S _devkit_SMS_setBGScrollY Def0024
-S C$_sms_manager.c$214$1$139 Def037F
-S XG$devkit_SPRITEMODE_NORMAL$0$0 Def037E
-S C$_sms_manager.c$192$1$134 Def036C
-S C$_sms_manager.c$185$1$132 Def0367
-S C$_sms_manager.c$178$1$130 Def0361
-S C$_sms_manager.c$170$1$129 Def0357
-S C$_sms_manager.c$163$1$127 Def0354
-S C$_sms_manager.c$148$1$124 Def0348
-S C$_sms_manager.c$109$1$118 Def0166
-S _devkit_SMS_initSprites Def0345
-S A$_sms_manager$1000 Def02E7
-S C$_sms_manager.c$215$1$139 Def0382
-S C$_sms_manager.c$208$1$137 Def037C
-S G$devkit_PORT_A_KEY_1$0$0 Def0374
-S C$_sms_manager.c$193$1$134 Def036F
-S C$_sms_manager.c$186$1$132 Def0368
-S C$_sms_manager.c$156$1$126 Def034E
-S C$_sms_manager.c$149$1$124 Def0348
-S _devkit_PORT_A_KEY_UP Def0364
-S A$_sms_manager$1010 Def02F4
-S A$_sms_manager$1001 Def02E9
-S G$devkit_PORT_A_KEY_2$0$0 Def0378
-S C$_sms_manager.c$194$1$134 Def0370
-S C$_sms_manager.c$172$1$129 Def035A
-S C$_sms_manager.c$157$1$126 Def034E
-S _devkit_SMS_getKeysStatus Def0361
-S _devkit_SMS_addSprite Def014B
-S A$_sms_manager$1020 Def02FC
-S A$_sms_manager$1011 Def02F5
-S A$_sms_manager$1002 Def02EA
-S C$_sms_manager.c$165$1$128 Def0354
-S C$_sms_manager.c$158$1$126 Def0351
-S A$_sms_manager$1021 Def02FD
-S A$_sms_manager$1012 Def02F6
-S A$_sms_manager$1003 Def02EB
-S C$_sms_manager.c$188$1$133 Def0368
-S C$_sms_manager.c$166$1$128 Def0354
-S XG$devkit_SMS_enableSRAMBank$0$0 Def0044
-S A$_sms_manager$1220 Def035A
-S A$_sms_manager$1040 Def0313
-S A$_sms_manager$1022 Def02FE
-S A$_sms_manager$1004 Def02EC
-S C$_sms_manager.c$196$1$135 Def0370
-S C$_sms_manager.c$189$1$133 Def036B
-S C$_sms_manager.c$167$1$128 Def0357
-S A$_sms_manager$1311 Def0370
-S A$_sms_manager$1221 Def035D
-S A$_sms_manager$1122 Def0348
-S A$_sms_manager$1050 Def0321
-S A$_sms_manager$1041 Def0314
-S A$_sms_manager$1032 Def0307
-S A$_sms_manager$1023 Def02FF
-S A$_sms_manager$1005 Def02ED
-S C$_sms_manager.c$197$1$135 Def0373
-S XG$devkit_isCollisionDetected$0$0 Def0360
-S G$devkit_SMS_copySpritestoSAT$0$0 Def034E
-S A$_sms_manager$1222 Def035F
-S A$_sms_manager$1105 Def0345
-S A$_sms_manager$1060 Def0329
-S A$_sms_manager$1051 Def0322
-S A$_sms_manager$1042 Def0315
-S A$_sms_manager$1033 Def0308
-S A$_sms_manager$1024 Def0300
-S A$_sms_manager$1006 Def02EE
-S C$_sms_manager.c$198$1$135 Def0374
-S C$_sms_manager.c$90$1$110 Def00E8
-S C$_sms_manager.c$71$1$102 Def0068
-S _devkit_PORT_A_KEY_LEFT Def036C
-S _devkit_SMS_addSprite_bulk8 Def0166
-S A$_sms_manager$1061 Def032A
-S A$_sms_manager$1043 Def0316
-S A$_sms_manager$1034 Def030A
-S A$_sms_manager$1025 Def0303
-S A$_sms_manager$1016 Def02F7
-S A$_sms_manager$1007 Def02EF
-S G$devkit_PORT_A_KEY_DOWN$0$0 Def0368
-S C$_sms_manager.c$169$1$129 Def0357
-S XG$devkit_SMS_waitForVBlank$0$0 Def034B
-S XG$devkit_SMS_setTile$0$0 Def0116
-S C$_sms_manager.c$72$1$102 Def0085
-S XG$devkit_SMS_enableSRAM$0$0 Def0035
-S _devkit_SMS_queryPauseRequested Def0354
-S _devkit_SMS_loadSpritePalette Def00BA
-S A$_sms_manager$1080 Def033D
-S A$_sms_manager$1062 Def032B
-S A$_sms_manager$1044 Def0317
-S A$_sms_manager$1035 Def030B
-S A$_sms_manager$1026 Def0304
-S A$_sms_manager$1017 Def02F8
-S A$_sms_manager$1008 Def02F0
-S C$_sms_manager.c$92$1$110 Def00E9
-S C$_sms_manager.c$73$1$102 Def0086
-S C$_sms_manager.c$66$1$100 Def0061
-S G$devkit_SMS_displayOn$0$0 Def0003
-S A$_sms_manager$1207 Def0357
-S A$_sms_manager$1081 Def0340
-S A$_sms_manager$1072 Def0334
-S A$_sms_manager$1063 Def032C
-S A$_sms_manager$1045 Def031A
-S A$_sms_manager$1036 Def030E
-S A$_sms_manager$1027 Def0305
-S A$_sms_manager$1018 Def02FA
-S A$_sms_manager$1009 Def02F3
-S C$_sms_manager.c$67$1$100 Def0065
-S XG$devkit_SMS_setBGScrollX$0$0 Def0021
+S A$_sms_manager$289 Def003E
+S XG$devkit_SMS_loadSTMcompressedTileMap$0$0 Def00B9
+S C$_sms_manager.c$19$1$85 Def0007
+S _devkit_SMS_loadPSGaidencompressedTiles Def006F
+S _devkit_SMS_useFirstHalfTilesforSprites_True Def006A
+S A$_sms_manager$992 Def02CE
+S A$_sms_manager$983 Def02C2
+S A$_sms_manager$974 Def02BA
+S A$_sms_manager$956 Def02A8
+S A$_sms_manager$947 Def029C
+S A$_sms_manager$938 Def0294
+S A$_sms_manager$929 Def0287
+S A$_sms_manager$893 Def025D
+S A$_sms_manager$866 Def0246
+S A$_sms_manager$857 Def0238
+S A$_sms_manager$848 Def022F
+S A$_sms_manager$839 Def0222
+S A$_sms_manager$794 Def01E5
+S A$_sms_manager$776 Def01CC
+S A$_sms_manager$767 Def01C2
+S A$_sms_manager$758 Def01B5
+S A$_sms_manager$749 Def01A7
+S A$_sms_manager$695 Def016B
+S A$_sms_manager$686 Def015E
+S A$_sms_manager$659 Def014C
+S A$_sms_manager$587 Def0100
+S A$_sms_manager$578 Def00F6
+S A$_sms_manager$497 Def00BE
+S C$_sms_manager.c$60$1$99 Def0059
+S C$_sms_manager.c$52$1$98 Def0044
+S C$_sms_manager.c$46$1$95 Def003E
+S C$_sms_manager.c$39$1$93 Def0026
+S C$_sms_manager.c$26$1$88 Def0011
+S A$_sms_manager$993 Def02CF
+S A$_sms_manager$984 Def02C4
+S A$_sms_manager$975 Def02BD
+S A$_sms_manager$966 Def02B1
+S A$_sms_manager$957 Def02A9
+S A$_sms_manager$948 Def029E
+S A$_sms_manager$894 Def025E
+S A$_sms_manager$858 Def023B
+S A$_sms_manager$849 Def0230
+S A$_sms_manager$795 Def01E7
+S A$_sms_manager$777 Def01CD
+S A$_sms_manager$759 Def01B6
+S A$_sms_manager$687 Def015F
+S A$_sms_manager$678 Def0152
+S A$_sms_manager$588 Def0101
+S A$_sms_manager$489 Def00BA
+S C$_sms_manager.c$53$1$98 Def0052
+S C$_sms_manager.c$27$1$88 Def0014
+S _devkit_VDPFEATURE_HIDEFIRSTCOL Def0386
+S A$_sms_manager$994 Def02D0
+S A$_sms_manager$985 Def02C5
+S A$_sms_manager$976 Def02BE
+S A$_sms_manager$967 Def02B2
+S A$_sms_manager$958 Def02AA
+S A$_sms_manager$949 Def029F
+S A$_sms_manager$895 Def025F
+S A$_sms_manager$859 Def023D
+S A$_sms_manager$796 Def01E8
+S A$_sms_manager$787 Def01D6
+S A$_sms_manager$778 Def01CE
+S A$_sms_manager$688 Def0160
+S A$_sms_manager$679 Def0155
+S A$_sms_manager$589 Def0102
+S XG$devkit_PORT_A_KEY_RIGHT$0$0 Def037A
+S G$devkit_SMS_addSprite_bulk12$0$0 Def0249
+S XG$devkit_SMS_loadBGPalette$0$0 Def00BE
+S C$_sms_manager.c$54$1$98 Def0053
+S C$_sms_manager.c$28$1$88 Def0017
+S A$_sms_manager$986 Def02C6
+S A$_sms_manager$977 Def02BF
+S A$_sms_manager$968 Def02B4
+S A$_sms_manager$959 Def02AD
+S A$_sms_manager$896 Def0262
+S A$_sms_manager$887 Def0251
+S A$_sms_manager$797 Def01E9
+S A$_sms_manager$788 Def01D9
+S A$_sms_manager$779 Def01CF
+S A$_sms_manager$689 Def0163
+S G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0 Def0358
+S G$devkit_SMS_setSpritePaletteColor$0$0 Def00C8
+S C$_sms_manager.c$48$1$96 Def003E
+S G$devkit_SMS_displayOff$0$0 Def0017
+S A$_sms_manager$987 Def02C7
+S A$_sms_manager$978 Def02C0
+S A$_sms_manager$969 Def02B5
+S A$_sms_manager$897 Def0263
+S A$_sms_manager$888 Def0254
+S A$_sms_manager$798 Def01EA
+S A$_sms_manager$789 Def01DB
+S G$devkit_SPRITEMODE_NORMAL$0$0 Def0383
+S C$_sms_manager.c$49$1$96 Def0043
+S A$_sms_manager$988 Def02C8
+S A$_sms_manager$898 Def0264
+S A$_sms_manager$889 Def0255
+S A$_sms_manager$799 Def01EB
+S C$_sms_manager.c$56$1$99 Def0053
+S _devkit_SMS_disableSRAM Def0053
+S A$_sms_manager$998 Def02D1
+S A$_sms_manager$989 Def02C9
+S XG$devkit_SMS_finalizeSprites$0$0 Def034F
+S C$_sms_manager.c$57$1$99 Def0058
+S XG$devkit_SMS_VDPturnOnFeature$0$0 Def0007
+S _devkit_SMS_setSpriteMode Def0059
+S A$_sms_manager$999 Def02D2
+S G$devkit_SMS_enableSRAMBank$0$0 Def0044
+S _devkit_SMS_resetPauseRequest Def035E
+S XG$devkit_SMS_setNextTileatXY$0$0 Def010D
+S G$devkit_isCollisionDetected$0$0 Def0361
+S _devkit_SMS_loadTileMap Def0120
+S _devkit_SMS_useFirstHalfTilesforSprites_False Def0065
+S F_sms_manager$__str_0$0$0 Def038A
+S XG$devkit_SMS_loadPSGaidencompressedTiles$0$0 Def008C
+S XG$devkit_SMS_useFirstHalfTilesforSprites_True$0$0 Def006C
+S F_sms_manager$__str_1$0$0 Def0398
+S G$devkit_SMS_waitForVBlank$0$0 Def0352
+S G$devkit_SMS_setTile$0$0 Def0112
+S G$devkit_SMS_enableSRAM$0$0 Def003E
+S G$devkit_SMS_VDPturnOffFeature$0$0 Def000A
+S F_sms_manager$__str_2$0$0 Def03A5
+S XG$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0 Def0389
+S G$devkit_SMS_setBGScrollX$0$0 Def0026
+S _devkit_SMS_addSprite_bulk12 Def0249
+S G$devkit_SMS_setBGScrollY$0$0 Def0032
+S _devkit_UNSAFE_SMS_copySpritestoSAT Def0358
+S _devkit_SMS_setSpritePaletteColor Def00C8
+S _devkit_SMS_displayOff Def0017
+S C$_sms_manager.c$210$1$140 Def0382
+S G$devkit_SMS_initSprites$0$0 Def034C
+S C$_sms_manager.c$112$1$121 Def0152
+S C$_sms_manager.c$100$1$115 Def010D
+S _devkit_SPRITEMODE_NORMAL Def0383
+S G$devkit_PORT_A_KEY_UP$0$0 Def036B
+S C$_sms_manager.c$120$1$123 Def01C3
+S C$_sms_manager.c$113$1$121 Def016C
+S C$_sms_manager.c$101$1$115 Def0112
+S XG$devkit_SMS_disableSRAM$0$0 Def0058
+S G$devkit_SMS_getKeysStatus$0$0 Def0368
+S C$_sms_manager.c$114$1$121 Def016D
+S G$devkit_SMS_addSprite$0$0 Def0152
+S XG$devkit_SMS_setSpriteMode$0$0 Def0062
+S C$_sms_manager.c$220$1$142 Def0389
+S C$_sms_manager.c$213$1$140 Def0383
+S C$_sms_manager.c$122$1$123 Def01D6
+S XG$devkit_SMS_resetPauseRequest$0$0 Def035E
+S C$_sms_manager.c$130$1$125 Def0251
+S C$_sms_manager.c$123$1$123 Def01F9
+S _devkit_SMS_enableSRAMBank Def0044
+S C$_sms_manager.c$170$1$131 Def035B
+S C$_sms_manager.c$140$1$125 Def02FE
+S C$_sms_manager.c$131$1$125 Def0265
+S C$_sms_manager.c$110$1$119 Def0152
+S C$_sms_manager.c$103$1$117 Def0112
+S C$_sms_manager.c$215$1$141 Def0383
+S C$_sms_manager.c$171$1$131 Def035B
+S C$_sms_manager.c$132$1$125 Def027D
+S C$_sms_manager.c$125$1$123 Def020F
+S C$_sms_manager.c$116$1$123 Def0175
+S XG$devkit_SMS_loadTileMap$0$0 Def0151
+S C$_sms_manager.c$104$1$117 Def011D
+S XG$devkit_SMS_useFirstHalfTilesforSprites_False$0$0 Def0067
+S _devkit_isCollisionDetected Def0361
+S C$_sms_manager.c$216$1$141 Def0385
+S C$_sms_manager.c$201$1$138 Def0377
+S G$devkit_PORT_A_KEY_LEFT$0$0 Def0373
+S C$_sms_manager.c$172$1$131 Def035E
+S C$_sms_manager.c$150$1$126 Def034C
+S C$_sms_manager.c$142$1$125 Def030E
+S C$_sms_manager.c$126$1$123 Def0232
+S C$_sms_manager.c$117$1$123 Def0188
+S G$devkit_SMS_addSprite_bulk8$0$0 Def016D
+S C$_sms_manager.c$105$1$117 Def0120
+S C$_sms_manager.c$217$1$141 Def0386
+S C$_sms_manager.c$209$1$140 Def037F
+S C$_sms_manager.c$202$1$138 Def037A
+S C$_sms_manager.c$180$1$133 Def0367
+S G$devkit_SMS_queryPauseRequested$0$0 Def035B
+S C$_sms_manager.c$165$1$130 Def0358
+S C$_sms_manager.c$151$1$126 Def034F
+S C$_sms_manager.c$143$1$125 Def032A
+S C$_sms_manager.c$134$1$125 Def0295
+S C$_sms_manager.c$127$1$123 Def0248
+S G$devkit_SMS_loadSpritePalette$0$0 Def00C1
+S _devkit_SMS_waitForVBlank Def0352
+S _devkit_SMS_setTile Def0112
+S _devkit_SMS_enableSRAM Def003E
+S _devkit_SMS_VDPturnOffFeature Def000A
+S C$_sms_manager.c$203$1$138 Def037B
+S C$_sms_manager.c$166$1$130 Def0358
+S C$_sms_manager.c$144$1$125 Def033B
+S C$_sms_manager.c$135$1$125 Def02B1
+S C$_sms_manager.c$128$1$123 Def0249
+S C$_sms_manager.c$119$1$123 Def01A4
+S C$_sms_manager.c$174$1$132 Def035E
+S XG$devkit_SMS_addSprite_bulk12$0$0 Def034B
+S C$_sms_manager.c$145$1$125 Def034B
+S C$_sms_manager.c$136$1$125 Def02C1
+S G$devkit_SMS_mapROMBank$0$0 Def001D
+S _devkit_SMS_setBGScrollX Def0026
+S C$_sms_manager.c$219$1$142 Def0386
+S C$_sms_manager.c$190$1$135 Def036E
+S C$_sms_manager.c$183$1$133 Def0368
+S C$_sms_manager.c$175$1$132 Def035E
+S C$_sms_manager.c$168$1$130 Def035B
+S XG$devkit_UNSAFE_SMS_copySpritestoSAT$0$0 Def0358
+S C$_sms_manager.c$153$1$127 Def034F
+S C$_sms_manager.c$107$1$119 Def0128
+S XG$devkit_SMS_setSpritePaletteColor$0$0 Def00EF
+S XG$devkit_SMS_displayOff$0$0 Def001A
+S _devkit_SMS_setBGScrollY Def0032
+S XG$devkit_SPRITEMODE_NORMAL$0$0 Def0385
+S C$_sms_manager.c$205$1$139 Def037B
+S C$_sms_manager.c$191$1$135 Def036F
+S C$_sms_manager.c$161$1$129 Def0355
+S C$_sms_manager.c$154$1$127 Def034F
+S C$_sms_manager.c$147$1$125 Def034C
+S C$_sms_manager.c$138$1$125 Def02D1
+S C$_sms_manager.c$108$1$119 Def0151
+S _devkit_SMS_initSprites Def034C
+S A$_sms_manager$1000 Def02D4
+S C$_sms_manager.c$206$1$139 Def037E
+S G$devkit_PORT_A_KEY_1$0$0 Def037B
+S C$_sms_manager.c$177$1$132 Def0361
+S C$_sms_manager.c$162$1$129 Def0355
+S C$_sms_manager.c$155$1$127 Def0352
+S C$_sms_manager.c$139$1$125 Def02ED
+S _devkit_PORT_A_KEY_UP Def036B
+S A$_sms_manager$1100 Def0342
+S A$_sms_manager$1010 Def02E1
+S A$_sms_manager$1001 Def02D5
+S C$_sms_manager.c$207$1$139 Def037F
+S G$devkit_PORT_A_KEY_2$0$0 Def037F
+S C$_sms_manager.c$185$1$134 Def0368
+S C$_sms_manager.c$163$1$129 Def0358
+S _devkit_SMS_getKeysStatus Def0368
+S _devkit_SMS_addSprite Def0152
+S A$_sms_manager$1110 Def034B
+S A$_sms_manager$1101 Def0343
+S A$_sms_manager$1011 Def02E4
+S A$_sms_manager$1002 Def02D8
+S C$_sms_manager.c$193$1$136 Def036F
+S C$_sms_manager.c$186$1$134 Def0368
+S C$_sms_manager.c$149$1$126 Def034C
+S A$_sms_manager$1102 Def0344
+S A$_sms_manager$1030 Def02F7
+S A$_sms_manager$1021 Def02ED
+S A$_sms_manager$1012 Def02E5
+S A$_sms_manager$1003 Def02DA
+S C$_sms_manager.c$194$1$136 Def0372
+S C$_sms_manager.c$187$1$134 Def036B
+S C$_sms_manager.c$179$1$133 Def0361
+S C$_sms_manager.c$157$1$128 Def0352
+S XG$devkit_SMS_enableSRAMBank$0$0 Def0052
+S A$_sms_manager$1103 Def0347
+S A$_sms_manager$1040 Def0301
+S A$_sms_manager$1031 Def02FA
+S A$_sms_manager$1022 Def02EE
+S A$_sms_manager$1013 Def02E6
+S A$_sms_manager$1004 Def02DB
+S C$_sms_manager.c$195$1$136 Def0373
+S C$_sms_manager.c$158$1$128 Def0352
+S A$_sms_manager$1410 Def0389
+S A$_sms_manager$1320 Def0376
+S A$_sms_manager$1302 Def0372
+S A$_sms_manager$1212 Def035B
+S A$_sms_manager$1104 Def0348
+S A$_sms_manager$1050 Def030D
+S A$_sms_manager$1041 Def0302
+S A$_sms_manager$1032 Def02FB
+S A$_sms_manager$1023 Def02F0
+S A$_sms_manager$1014 Def02E9
+S A$_sms_manager$1005 Def02DC
+S XG$devkit_isCollisionDetected$0$0 Def0367
+S C$_sms_manager.c$159$1$128 Def0355
+S G$devkit_SMS_copySpritestoSAT$0$0 Def0355
+S C$_sms_manager.c$62$1$101 Def0059
+S A$_sms_manager$1105 Def0349
+S A$_sms_manager$1060 Def0318
+S A$_sms_manager$1042 Def0303
+S A$_sms_manager$1033 Def02FC
+S A$_sms_manager$1024 Def02F1
+S A$_sms_manager$1015 Def02EA
+S A$_sms_manager$1006 Def02DD
+S C$_sms_manager.c$189$1$135 Def036B
+S C$_sms_manager.c$70$1$103 Def006A
+S C$_sms_manager.c$63$1$101 Def0062
+S _devkit_PORT_A_KEY_LEFT Def0373
+S _devkit_SMS_addSprite_bulk8 Def016D
+S A$_sms_manager$1070 Def0326
+S A$_sms_manager$1061 Def0319
+S A$_sms_manager$1043 Def0304
+S A$_sms_manager$1034 Def02FD
+S A$_sms_manager$1025 Def02F2
+S A$_sms_manager$1016 Def02EB
+S A$_sms_manager$1007 Def02DE
+S C$_sms_manager.c$197$1$137 Def0373
+S G$devkit_PORT_A_KEY_DOWN$0$0 Def036F
+S XG$devkit_SMS_waitForVBlank$0$0 Def0352
+S XG$devkit_SMS_setTile$0$0 Def011D
+S C$_sms_manager.c$90$1$111 Def00C5
+S C$_sms_manager.c$71$1$103 Def006C
+S C$_sms_manager.c$64$1$101 Def0065
+S XG$devkit_SMS_enableSRAM$0$0 Def0043
+S XG$devkit_SMS_VDPturnOffFeature$0$0 Def000E
+S _devkit_SMS_queryPauseRequested Def035B
+S _devkit_SMS_loadSpritePalette Def00C1
+S A$_sms_manager$1242 Def0361
+S A$_sms_manager$1161 Def0352
+S A$_sms_manager$1080 Def032E
+S A$_sms_manager$1071 Def0327
+S A$_sms_manager$1062 Def031A
+S A$_sms_manager$1044 Def0305
+S A$_sms_manager$1026 Def02F3
+S A$_sms_manager$1017 Def02EC
+S A$_sms_manager$1008 Def02DF
+S C$_sms_manager.c$198$1$137 Def0376
+S C$_sms_manager.c$91$1$111 Def00C8
+S G$devkit_SMS_displayOn$0$0 Def0011
+S A$_sms_manager$1405 Def0386
+S A$_sms_manager$1351 Def037B
+S A$_sms_manager$1333 Def0377
+S A$_sms_manager$1315 Def0373
+S A$_sms_manager$1243 Def0364
+S A$_sms_manager$1144 Def034F
+S A$_sms_manager$1090 Def033A
+S A$_sms_manager$1081 Def032F
+S A$_sms_manager$1072 Def0328
+S A$_sms_manager$1063 Def031B
+S A$_sms_manager$1054 Def030E
+S A$_sms_manager$1045 Def0306
+S A$_sms_manager$1027 Def02F4
+S A$_sms_manager$1009 Def02E0
+S C$_sms_manager.c$199$1$137 Def0377
+S XG$devkit_SMS_setBGScrollX$0$0 Def002F
 S G$devkit_SMS_init$0$0 Def0000
-S _devkit_SMS_mapROMBank Def000F
+S _devkit_SMS_mapROMBank Def001D
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -888,253 +899,249 @@ T 00 00 C3 00 00
 R 00 00 00 00 02 03 14 00
 T 03 00
 R 00 00 00 00
-T 03 00 21 40 01 C3 00 00
-R 00 00 00 00 02 06 18 00
-T 09 00
-R 00 00 00 00
-T 09 00 21 40 01 C3 00 00
-R 00 00 00 00 02 06 05 00
-T 0F 00
-R 00 00 00 00
-T 0F 00 21 02 00 39 7E 32 FF FF C9
-R 00 00 00 00
-T 18 00
-R 00 00 00 00
-T 18 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
-R 00 00 00 00 02 0C 07 00
-T 24 00
-R 00 00 00 00
-T 24 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
-R 00 00 00 00 02 0C 09 00
-T 30 00
-R 00 00 00 00
-T 30 00 21 FC FF 36 08 C9
-R 00 00 00 00
-T 36 00
-R 00 00 00 00
-T 36 00 21 02 00 39 7E 87 87 CB DF E6 0C 32 FC FF
-R 00 00 00 00
-T 44 00 C9
-R 00 00 00 00
-T 45 00
-R 00 00 00 00
-T 45 00 21 FC FF 36 00 C9
-R 00 00 00 00
-T 4B 00
-R 00 00 00 00
-T 4B 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
-R 00 00 00 00 02 0C 1D 00
-T 57 00
-R 00 00 00 00
-T 57 00 2E 00 C3 00 00
-R 00 00 00 00 02 05 1B 00
-T 5C 00
-R 00 00 00 00
-T 5C 00 2E 01 C3 00 00
-R 00 00 00 00 02 05 1B 00
-T 61 00
-R 00 00 00 00
-T 61 00 C1 E1 E5 C5 C3 00 00
+T 03 00 C1 E1 E5 C5 C3 00 00
 R 00 00 00 00 02 07 18 00
-T 68 00
+T 0A 00
 R 00 00 00 00
-T 68 00 21 04 00 39 7E 23 66 6F 29 29 29 29 29 CB
+T 0A 00 C1 E1 E5 C5 C3 00 00
+R 00 00 00 00 02 07 05 00
+T 11 00
 R 00 00 00 00
-T 76 00 F4 E5 21 04 00 39 4E 23 46 C5 CD 00 00 F1
+T 11 00 21 40 01 C3 00 00
+R 00 00 00 00 02 06 18 00
+T 17 00
+R 00 00 00 00
+T 17 00 21 40 01 C3 00 00
+R 00 00 00 00 02 06 05 00
+T 1D 00
+R 00 00 00 00
+T 1D 00 21 02 00 39 7E 32 FF FF C9
+R 00 00 00 00
+T 26 00
+R 00 00 00 00
+T 26 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
+R 00 00 00 00 02 0C 07 00
+T 32 00
+R 00 00 00 00
+T 32 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
+R 00 00 00 00 02 0C 09 00
+T 3E 00
+R 00 00 00 00
+T 3E 00 21 FC FF 36 08 C9
+R 00 00 00 00
+T 44 00
+R 00 00 00 00
+T 44 00 21 02 00 39 7E 87 87 CB DF E6 0C 32 FC FF
+R 00 00 00 00
+T 52 00 C9
+R 00 00 00 00
+T 53 00
+R 00 00 00 00
+T 53 00 21 FC FF 36 00 C9
+R 00 00 00 00
+T 59 00
+R 00 00 00 00
+T 59 00 FD 21 02 00 FD 39 FD 6E 00 C3 00 00
+R 00 00 00 00 02 0C 1D 00
+T 65 00
+R 00 00 00 00
+T 65 00 2E 00 C3 00 00
+R 00 00 00 00 02 05 1B 00
+T 6A 00
+R 00 00 00 00
+T 6A 00 2E 01 C3 00 00
+R 00 00 00 00 02 05 1B 00
+T 6F 00
+R 00 00 00 00
+T 6F 00 21 04 00 39 7E 23 66 6F 29 29 29 29 29 CB
+R 00 00 00 00
+T 7D 00 F4 E5 21 04 00 39 4E 23 46 C5 CD 00 00 F1
 R 00 00 00 00 02 0D 00 00
-T 84 00 F1 C9
+T 8B 00 F1 C9
 R 00 00 00 00
-T 86 00
+T 8D 00
 R 00 00 00 00
-T 86 00 DD E5 DD 21 00 00 DD 39 DD 4E 06 DD 46 07
+T 8D 00 DD E5 DD 21 00 00 DD 39 DD 4E 06 DD 46 07
 R 00 00 00 00
-T 94 00 DD 6E 05 26 00 29 29 29 29 29 DD 5E 04 16
+T 9B 00 DD 6E 05 26 00 29 29 29 29 29 DD 5E 04 16
 R 00 00 00 00
-T A2 00 00 19 29 7C F6 78 67 C5 E5 CD 00 00 F1 F1
+T A9 00 00 19 29 7C F6 78 67 C5 E5 CD 00 00 F1 F1
 R 00 00 00 00 02 0C 1C 00
-T B0 00 DD E1 C9
+T B7 00 DD E1 C9
 R 00 00 00 00
-T B3 00
-R 00 00 00 00
-T B3 00 C1 E1 E5 C5 C3 00 00
-R 00 00 00 00 02 07 15 00
 T BA 00
 R 00 00 00 00
 T BA 00 C1 E1 E5 C5 C3 00 00
-R 00 00 00 00 02 07 0E 00
+R 00 00 00 00 02 07 15 00
 T C1 00
 R 00 00 00 00
-T C1 00 21 04 00 39 7E 87 87 21 03 00 39 B6 4F 21
+T C1 00 C1 E1 E5 C5 C3 00 00
+R 00 00 00 00 02 07 0E 00
+T C8 00
 R 00 00 00 00
-T CF 00 05 00 39 7E 07 07 07 07 E6 F0 B1 47 C5 33
+T C8 00 21 04 00 39 7E 87 87 21 03 00 39 B6 4F 21
 R 00 00 00 00
-T DD 00 21 03 00 39 7E F5 33 CD 00 00 F1 C9
+T D6 00 05 00 39 7E 07 07 07 07 E6 F0 B1 47 C5 33
+R 00 00 00 00
+T E4 00 21 03 00 39 7E F5 33 CD 00 00 F1 C9
 R 00 00 00 00 02 0A 01 00
-T E9 00
+T F0 00
 R 00 00 00 00
-T E9 00 DD E5 DD 21 00 00 DD 39 DD 6E 05 26 00 29
+T F0 00 DD E5 DD 21 00 00 DD 39 DD 6E 05 26 00 29
 R 00 00 00 00
-T F7 00 29 29 29 29 DD 4E 04 06 00 09 29 7C F6 78
+T FE 00 29 29 29 29 DD 4E 04 06 00 09 29 7C F6 78
 R 00 00 00 00
-T 05 01 67 DD E1 C3 00 00
+T 0C 01 67 DD E1 C3 00 00
 R 00 00 00 00 02 06 16 00
-T 0B 01
+T 12 01
 R 00 00 00 00
-T 0B 01 FD 21 02 00 FD 39 FD 6E 00 26 00 C3 00 00
+T 12 01 FD 21 02 00 FD 39 FD 6E 00 26 00 C3 00 00
 R 00 00 00 00 02 0E 17 00
-T 19 01
+T 20 01
 R 00 00 00 00
-T 19 01 DD E5 DD 21 00 00 DD 39 DD 4E 06 DD 46 07
+T 20 01 DD E5 DD 21 00 00 DD 39 DD 4E 06 DD 46 07
 R 00 00 00 00
-T 27 01 DD 6E 05 26 00 29 29 29 29 29 DD 5E 04 16
+T 2E 01 DD 6E 05 26 00 29 29 29 29 29 DD 5E 04 16
 R 00 00 00 00
-T 35 01 00 19 29 7C F6 78 67 DD 5E 08 DD 56 09 D5
+T 3C 01 00 19 29 7C F6 78 67 DD 5E 08 DD 56 09 D5
 R 00 00 00 00
-T 43 01 C5 E5 CD 00 00 DD E1 C9
+T 4A 01 C5 E5 CD 00 00 DD E1 C9
 R 00 00 00 00 02 05 1A 00
-T 4B 01
+T 52 01
 R 00 00 00 00
-T 4B 01 21 04 00 39 46 C5 33 21 04 00 39 7E F5 33
+T 52 01 21 04 00 39 46 C5 33 21 04 00 39 7E F5 33
 R 00 00 00 00
-T 59 01 21 04 00 39 7E F5 33 CD 00 00 F1 33 C9
+T 60 01 21 04 00 39 7E F5 33 CD 00 00 F1 33 C9
 R 00 00 00 00 02 0A 0B 00
-T 66 01
+T 6D 01
 R 00 00 00 00
-T 66 01 DD E5 DD 21 00 00 DD 39 DD 6E 06 DD 66 07
+T 6D 01 DD E5 DD 21 00 00 DD 39 DD 6E 06 DD 66 07
 R 00 00 00 00
-T 74 01 E5 DD 66 05 DD 6E 04 E5 CD 4B 01 F1 F1 DD
+T 7B 01 E5 DD 66 05 DD 6E 04 E5 CD 52 01 F1 F1 DD
 R 00 00 00 00 00 0B 00 00
-T 82 01 4E 06 DD 46 07 03 DD 7E 04 C6 08 57 D5 C5
+T 89 01 4E 06 DD 46 07 03 DD 7E 04 C6 08 57 D5 C5
 R 00 00 00 00
-T 90 01 DD 7E 05 F5 33 D5 33 CD 4B 01 F1 F1 D1 DD
+T 97 01 DD 7E 05 F5 33 D5 33 CD 52 01 F1 F1 D1 DD
 R 00 00 00 00 00 0A 00 00
-T 9E 01 4E 06 DD 46 07 03 03 DD 7E 05 C6 08 67 E5
+T A5 01 4E 06 DD 46 07 03 03 DD 7E 05 C6 08 67 E5
 R 00 00 00 00
-T AC 01 D5 C5 E5 33 DD 7E 04 F5 33 CD 4B 01 F1 F1
+T B3 01 D5 C5 E5 33 DD 7E 04 F5 33 CD 52 01 F1 F1
 R 00 00 00 00 00 0C 00 00
-T BA 01 D1 E1 DD 4E 06 DD 46 07 03 03 03 D5 C5 6A
+T C1 01 D1 E1 DD 4E 06 DD 46 07 03 03 03 D5 C5 6A
 R 00 00 00 00
-T C8 01 E5 CD 4B 01 F1 F1 D1 DD 7E 06 C6 04 4F DD
+T CF 01 E5 CD 52 01 F1 F1 D1 DD 7E 06 C6 04 4F DD
 R 00 00 00 00 00 04 00 00
-T D6 01 7E 07 CE 00 47 DD 7E 05 C6 10 67 E5 D5 C5
+T DD 01 7E 07 CE 00 47 DD 7E 05 C6 10 67 E5 D5 C5
 R 00 00 00 00
-T E4 01 E5 33 DD 7E 04 F5 33 CD 4B 01 F1 F1 D1 E1
+T EB 01 E5 33 DD 7E 04 F5 33 CD 52 01 F1 F1 D1 E1
 R 00 00 00 00 00 0A 00 00
-T F2 01 DD 7E 06 C6 05 4F DD 7E 07 CE 00 47 D5 C5
+T F9 01 DD 7E 06 C6 05 4F DD 7E 07 CE 00 47 D5 C5
 R 00 00 00 00
-T 00 02 6A E5 CD 4B 01 F1 F1 D1 DD 7E 06 C6 06 4F
+T 07 02 6A E5 CD 52 01 F1 F1 D1 DD 7E 06 C6 06 4F
 R 00 00 00 00 00 05 00 00
-T 0E 02 DD 7E 07 CE 00 47 DD 7E 05 C6 18 67 E5 D5
+T 15 02 DD 7E 07 CE 00 47 DD 7E 05 C6 18 67 E5 D5
 R 00 00 00 00
-T 1C 02 C5 E5 33 DD 7E 04 F5 33 CD 4B 01 F1 F1 D1
+T 23 02 C5 E5 33 DD 7E 04 F5 33 CD 52 01 F1 F1 D1
 R 00 00 00 00 00 0B 00 00
-T 2A 02 E1 DD 7E 06 C6 07 4F DD 7E 07 CE 00 47 C5
+T 31 02 E1 DD 7E 06 C6 07 4F DD 7E 07 CE 00 47 C5
 R 00 00 00 00
-T 38 02 6A E5 CD 4B 01 F1 F1 DD E1 C9
+T 3F 02 6A E5 CD 52 01 F1 F1 DD E1 C9
 R 00 00 00 00 00 05 00 00
-T 42 02
+T 49 02
 R 00 00 00 00
-T 42 02 DD E5 DD 21 00 00 DD 39 DD 5E 06 D5 53 DD
+T 49 02 DD E5 DD 21 00 00 DD 39 DD 5E 06 D5 53 DD
 R 00 00 00 00
-T 50 02 5E 05 D5 DD 7E 04 F5 33 CD 00 00 F1 33 D1
+T 57 02 5E 05 D5 DD 7E 04 F5 33 CD 00 00 F1 33 D1
 R 00 00 00 00 02 0B 0B 00
-T 5E 02 43 04 DD 7E 04 C6 08 57 D5 C5 33 DD 7E 05
+T 65 02 43 04 DD 7E 04 C6 08 57 D5 C5 33 DD 7E 05
 R 00 00 00 00
-T 6C 02 F5 33 D5 33 CD 00 00 F1 33 D1 43 04 04 DD
+T 73 02 F5 33 D5 33 CD 00 00 F1 33 D1 43 04 04 DD
 R 00 00 00 00 02 07 0B 00
-T 7A 02 7E 04 C6 10 4F C5 D5 C5 33 DD 46 05 C5 CD
+T 81 02 7E 04 C6 10 4F C5 D5 C5 33 DD 46 05 C5 CD
 R 00 00 00 00
-T 88 02 00 00 F1 33 D1 C1 63 24 24 24 DD 7E 05 C6
+T 8F 02 00 00 F1 33 D1 C1 63 24 24 24 DD 7E 05 C6
 R 00 00 00 00 02 02 0B 00
-T 96 02 08 47 C5 D5 E5 33 C5 33 DD 7E 04 F5 33 CD
+T 9D 02 08 47 C5 D5 E5 33 C5 33 DD 7E 04 F5 33 CD
 R 00 00 00 00
-T A4 02 00 00 F1 33 D1 C1 7B C6 04 C5 D5 F5 33 4A
+T AB 02 00 00 F1 33 D1 C1 7B C6 04 C5 D5 F5 33 4A
 R 00 00 00 00 02 02 0B 00
-T B2 02 C5 CD 00 00 F1 33 D1 C1 7B C6 05 67 C5 D5
+T B9 02 C5 CD 00 00 F1 33 D1 C1 7B C6 05 67 C5 D5
 R 00 00 00 00 02 04 0B 00
-T C0 02 E5 33 C5 CD 00 00 F1 33 D1 C1 7B C6 06 67
+T C7 02 E5 33 C5 CD 00 00 F1 33 D1 C1 7B C6 06 67
 R 00 00 00 00 02 06 0B 00
-T CE 02 DD 7E 05 C6 10 47 C5 D5 E5 33 C5 33 DD 7E
+T D5 02 DD 7E 05 C6 10 47 C5 D5 E5 33 C5 33 DD 7E
 R 00 00 00 00
-T DC 02 04 F5 33 CD 00 00 F1 33 D1 C1 7B C6 07 67
+T E3 02 04 F5 33 CD 00 00 F1 33 D1 C1 7B C6 07 67
 R 00 00 00 00 02 06 0B 00
-T EA 02 C5 D5 E5 33 4A C5 CD 00 00 F1 33 D1 C1 7B
+T F1 02 C5 D5 E5 33 4A C5 CD 00 00 F1 33 D1 C1 7B
 R 00 00 00 00 02 09 0B 00
-T F8 02 C6 08 67 C5 D5 E5 33 C5 CD 00 00 F1 33 D1
+T FF 02 C6 08 67 C5 D5 E5 33 C5 CD 00 00 F1 33 D1
 R 00 00 00 00 02 0B 0B 00
-T 06 03 C1 7B C6 09 67 DD 7E 05 C6 18 47 C5 D5 E5
+T 0D 03 C1 7B C6 09 67 DD 7E 05 C6 18 47 C5 D5 E5
 R 00 00 00 00
-T 14 03 33 C5 33 DD 7E 04 F5 33 CD 00 00 F1 33 D1
+T 1B 03 33 C5 33 DD 7E 04 F5 33 CD 00 00 F1 33 D1
 R 00 00 00 00 02 0B 0B 00
-T 22 03 C1 7B C6 0A 67 C5 D5 E5 33 4A C5 CD 00 00
+T 29 03 C1 7B C6 0A 67 C5 D5 E5 33 4A C5 CD 00 00
 R 00 00 00 00 02 0E 0B 00
-T 30 03 F1 33 D1 C1 7B C6 0B 57 58 D5 79 F5 33 CD
+T 37 03 F1 33 D1 C1 7B C6 0B 57 58 D5 79 F5 33 CD
 R 00 00 00 00
-T 3E 03 00 00 F1 33 DD E1 C9
+T 45 03 00 00 F1 33 DD E1 C9
 R 00 00 00 00 02 02 0B 00
-T 45 03
+T 4C 03
 R 00 00 00 00
-T 45 03 C3 00 00
+T 4C 03 C3 00 00
 R 00 00 00 00 02 03 0A 00
-T 48 03
+T 4F 03
 R 00 00 00 00
-T 48 03 C3 00 00
+T 4F 03 C3 00 00
 R 00 00 00 00 02 03 19 00
-T 4B 03
+T 52 03
 R 00 00 00 00
-T 4B 03 C3 00 00
+T 52 03 C3 00 00
 R 00 00 00 00 02 03 06 00
-T 4E 03
+T 55 03
 R 00 00 00 00
-T 4E 03 C3 00 00
+T 55 03 C3 00 00
 R 00 00 00 00 02 03 02 00
-T 51 03
+T 58 03
 R 00 00 00 00
-T 51 03 C3 00 00
+T 58 03 C3 00 00
 R 00 00 00 00 02 03 02 00
-T 54 03
+T 5B 03
 R 00 00 00 00
-T 54 03 C3 00 00
+T 5B 03 C3 00 00
 R 00 00 00 00 02 03 0F 00
-T 57 03
+T 5E 03
 R 00 00 00 00
-T 57 03 C3 00 00
+T 5E 03 C3 00 00
 R 00 00 00 00 02 03 1E 00
-T 5A 03
-R 00 00 00 00
-T 5A 03 3A 00 00 E6 20 6F C9
-R 00 00 00 00 02 03 03 00
 T 61 03
 R 00 00 00 00
-T 61 03 C3 00 00
-R 00 00 00 00 02 03 0C 00
-T 64 03
-R 00 00 00 00
-T 64 03 21 01 00 C9
-R 00 00 00 00
+T 61 03 3A 00 00 E6 20 6F C9
+R 00 00 00 00 02 03 03 00
 T 68 03
 R 00 00 00 00
-T 68 03 21 02 00 C9
+T 68 03 C3 00 00
+R 00 00 00 00 02 03 0C 00
+T 6B 03
 R 00 00 00 00
-T 6C 03
+T 6B 03 21 01 00 C9
 R 00 00 00 00
-T 6C 03 21 04 00 C9
+T 6F 03
 R 00 00 00 00
-T 70 03
+T 6F 03 21 02 00 C9
 R 00 00 00 00
-T 70 03 21 08 00 C9
+T 73 03
 R 00 00 00 00
-T 74 03
+T 73 03 21 04 00 C9
 R 00 00 00 00
-T 74 03 21 10 00 C9
+T 77 03
 R 00 00 00 00
-T 78 03
+T 77 03 21 08 00 C9
 R 00 00 00 00
-T 78 03 21 20 00 C9
+T 7B 03
 R 00 00 00 00
-T 7C 03
-R 00 00 00 00
-T 7C 03 2E 00 C9
+T 7B 03 21 10 00 C9
 R 00 00 00 00
 T 7F 03
 R 00 00 00 00
@@ -1142,21 +1149,29 @@ T 7F 03 21 20 00 C9
 R 00 00 00 00
 T 83 03
 R 00 00 00 00
-T 83 03 53 74 65 76 65 6E 20 42 6F 6C 61 6E 64 00
+T 83 03 2E 00 C9
 R 00 00 00 00
-T 91 03
+T 86 03
 R 00 00 00 00
-T 91 03 53 70 72 69 74 65 20 54 69 6C 65 73 00
+T 86 03 21 20 00 C9
 R 00 00 00 00
-T 9E 03
+T 8A 03
 R 00 00 00 00
-T 9E 03 53 69 6D 70 6C 65 20 53 65 67 61 20 4D 61
+T 8A 03 53 74 65 76 65 6E 20 42 6F 6C 61 6E 64 00
 R 00 00 00 00
-T AC 03 73 74 65 72 20 53 79 73 74 65 6D 20 64 65
+T 98 03
 R 00 00 00 00
-T BA 03 6D 6F 20 74 6F 20 72 75 6E 20 6F 6E 20 72
+T 98 03 53 70 72 69 74 65 20 54 69 6C 65 73 00
 R 00 00 00 00
-T C8 03 65 61 6C 20 68 61 72 64 77 61 72 65 21 00
+T A5 03
+R 00 00 00 00
+T A5 03 53 69 6D 70 6C 65 20 53 65 67 61 20 4D 61
+R 00 00 00 00
+T B3 03 73 74 65 72 20 53 79 73 74 65 6D 20 64 65
+R 00 00 00 00
+T C1 03 6D 6F 20 74 6F 20 72 75 6E 20 6F 6E 20 72
+R 00 00 00 00
+T CF 03 65 61 6C 20 68 61 72 64 77 61 72 65 21 00
 R 00 00 00 00
 T F0 7F
 R 00 00 09 00

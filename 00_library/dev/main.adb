@@ -21,6 +21,8 @@ S:G$wctomb$0$0({2}DF,SI:S),C,0,0
 S:G$mbstowcs$0$0({2}DF,SI:U),C,0,0
 S:G$wcstombs$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_VDPturnOnFeature$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_VDPturnOffFeature$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_mapROMBank$0$0({2}DF,SV:S),C,0,0
@@ -32,7 +34,6 @@ S:G$devkit_SMS_disableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpriteMode$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SMS_VDPturnOnFeature$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSTMcompressedTileMap$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
