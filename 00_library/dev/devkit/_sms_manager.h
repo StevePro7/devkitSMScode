@@ -23,15 +23,22 @@ void devkit_SMS_setBGScrollY( unsigned char scrollY );
 void devkit_SMS_setBackdropColor( unsigned char entry );
 void devkit_SMS_useFirstHalfTilesforSprites( unsigned char usefirsthalf );
 void devkit_SMS_setSpriteMode( unsigned char mode );
-/* modes for SMS_setSpriteMode */
 
+/* modes for SMS_setSpriteMode */
+unsigned char devkit_SPRITEMODE_NORMAL();
+
+/* macro for ROM bankswitching */
 void devkit_SMS_mapROMBank( unsigned char n );
 
-
-
+/* macro for SRAM access */
 void devkit_SMS_enableSRAM();
 void devkit_SMS_enableSRAMBank( unsigned char n );
 void devkit_SMS_disableSRAM();
+/* SRAM access is as easy as accessing an array of char */
+unsigned char* devkit_SMS_SRAM();
+
+/* wait until next VBlank starts */
+void devkit_SMS_waitForVBlank();
 
 
 void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom );
@@ -51,7 +58,7 @@ void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile );
 
 void devkit_SMS_initSprites();
 void devkit_SMS_finalizeSprites();
-void devkit_SMS_waitForVBlank();
+
 void devkit_SMS_copySpritestoSAT();
 void devkit_UNSAFE_SMS_copySpritestoSAT();
 
@@ -69,9 +76,6 @@ unsigned int devkit_PORT_A_KEY_LEFT();
 unsigned int devkit_PORT_A_KEY_RIGHT();
 unsigned int devkit_PORT_A_KEY_1();
 unsigned int devkit_PORT_A_KEY_2();
-
-// #defines
-unsigned char devkit_SPRITEMODE_NORMAL();
 
 
 #endif//_SMS_MANAGER_H_

@@ -68,16 +68,19 @@ void devkit_SMS_setSpriteMode( unsigned char mode )
 	SMS_setSpriteMode( mode );
 }
 
+/* modes for SMS_setSpriteMode */
+unsigned char devkit_SPRITEMODE_NORMAL()
+{
+	return SPRITEMODE_NORMAL;
+}
 
-
-
+/* macro for ROM bankswitching */
 void devkit_SMS_mapROMBank( unsigned char n )
 {
 	SMS_mapROMBank( n );
 }
 
-
-
+/* macro for SRAM access */
 void devkit_SMS_enableSRAM()
 {
 	SMS_enableSRAM();
@@ -90,9 +93,17 @@ void devkit_SMS_disableSRAM()
 {
 	SMS_disableSRAM();
 }
+/* SRAM access is as easy as accessing an array of char */
+unsigned char* devkit_SMS_SRAM()
+{
+	return SMS_SRAM;
+}
 
-
-
+/* wait until next VBlank starts */
+void devkit_SMS_waitForVBlank()
+{
+	SMS_waitForVBlank();
+}
 
 
 
@@ -177,10 +188,7 @@ void devkit_SMS_finalizeSprites()
 {
 	SMS_finalizeSprites();
 }
-void devkit_SMS_waitForVBlank()
-{
-	SMS_waitForVBlank();
-}
+
 void devkit_SMS_copySpritestoSAT()
 {
 	UNSAFE_SMS_copySpritestoSAT();
@@ -234,11 +242,7 @@ unsigned int devkit_PORT_A_KEY_2()
 	return PORT_A_KEY_2;
 }
 
-// #defines
-unsigned char devkit_SPRITEMODE_NORMAL()
-{
-	return SPRITEMODE_NORMAL;
-}
+
 
 // Sega header.
 #ifdef _CONSOLE

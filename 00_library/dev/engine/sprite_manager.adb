@@ -15,6 +15,7 @@ S:G$devkit_SMS_setBGScrollY$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setBackdropColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpriteMode$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SMS_mapROMBank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableSRAMBank$0$0({2}DF,SV:S),C,0,0
@@ -45,4 +46,3 @@ S:G$devkit_PORT_A_KEY_LEFT$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_RIGHT$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_1$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_2$0$0({2}DF,SI:U),C,0,0
-S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
