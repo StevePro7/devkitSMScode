@@ -1,6 +1,15 @@
 #ifndef _PSG_MANAGER_H_
 #define _PSG_MANAGER_H_
 
+// #defines
+unsigned char devkit_PSG_STOPPED();
+unsigned char devkit_PSG_PLAYING();
+
+unsigned char devkit_SFX_CHANNEL2();
+unsigned char devkit_SFX_CHANNEL3();
+unsigned char devkit_SFX_CHANNELS2AND3();
+
+// Functions.
 void devkit_PSGPlay( void *song );
 void devkit_PSGCancelLoop( void );
 void devkit_PSGPlayNoRepeat( void *song );
@@ -20,10 +29,5 @@ void devkit_PSGRestoreVolumes( void );
 
 void devkit_PSGFrame( void );
 void devkit_PSGSFXFrame( void );
-
-// #defines
-unsigned char devkit_SFX_CHANNEL2();
-unsigned char devkit_SFX_CHANNEL3();
-unsigned char devkit_SFX_CHANNELS2AND3();
 
 #endif//_PSG_MANAGER_H_

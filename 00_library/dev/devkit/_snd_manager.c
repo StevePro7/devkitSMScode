@@ -6,6 +6,30 @@
 #include "../../lib/PSGlib.h"
 #endif
 
+// #defines
+unsigned char devkit_PSG_STOPPED()
+{
+	return PSG_STOPPED;
+}
+unsigned char devkit_PSG_PLAYING()
+{
+	return PSG_PLAYING;
+}
+
+unsigned char devkit_SFX_CHANNEL2()
+{
+	return SFX_CHANNEL2;
+}
+unsigned char devkit_SFX_CHANNEL3()
+{
+	return SFX_CHANNEL3;
+}
+unsigned char devkit_SFX_CHANNELS2AND3()
+{
+	return SFX_CHANNELS2AND3;
+}
+
+// Functions.
 void devkit_PSGPlay( void *song )
 {
 	PSGPlay( song );
@@ -72,18 +96,4 @@ void devkit_PSGFrame( void )
 void devkit_PSGSFXFrame( void )
 {
 	PSGSFXFrame();
-}
-
-// #defines
-unsigned char devkit_SFX_CHANNEL2()
-{
-	return SFX_CHANNEL2;
-}
-unsigned char devkit_SFX_CHANNEL3()
-{
-	return SFX_CHANNEL3;
-}
-unsigned char devkit_SFX_CHANNELS2AND3()
-{
-	return SFX_CHANNELS2AND3;
 }
