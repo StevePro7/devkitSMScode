@@ -66,6 +66,9 @@
     <ClCompile Include="engine\input_manager.c">
       <Filter>Source Files\engine</Filter>
     </ClCompile>
+    <ClCompile Include="devkit\_snd_manager.c">
+      <Filter>Source Files\devkit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -105,6 +108,9 @@
     </ClInclude>
     <ClInclude Include="engine\input_manager.h">
       <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="devkit\_snd_manager.h">
+      <Filter>Header Files\devkit</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
