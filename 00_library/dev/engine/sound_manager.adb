@@ -5,6 +5,11 @@ S:Lsound_manager.engine_music_manager_play$song$1$40({2}DG,SV:S),R,0,0,[c,b]
 F:G$engine_sound_manager_play$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lsound_manager.engine_sound_manager_play$index$1$41({1}SC:U),B,1,4
 S:Lsound_manager.engine_sound_manager_play$sfx$1$42({2}DG,SV:S),R,0,0,[c,b]
+S:G$devkit_PSG_STOPPED$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_PSG_PLAYING$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNEL2$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNEL3$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNELS2AND3$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_PSGPlay$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGCancelLoop$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGPlayNoRepeat$0$0({2}DF,SV:S),C,0,0
@@ -21,9 +26,6 @@ S:G$devkit_PSGSilenceChannels$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGRestoreVolumes$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGFrame$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGSFXFrame$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SFX_CHANNEL2$0$0({2}DF,SC:U),C,0,0
-S:G$devkit_SFX_CHANNEL3$0$0({2}DF,SC:U),C,0,0
-S:G$devkit_SFX_CHANNELS2AND3$0$0({2}DF,SC:U),C,0,0
 S:G$atof$0$0({2}DF,SF:S),C,0,0
 S:G$atoi$0$0({2}DF,SI:S),C,0,0
 S:G$atol$0$0({2}DF,SL:S),C,0,0

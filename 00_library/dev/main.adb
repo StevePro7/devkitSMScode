@@ -61,6 +61,11 @@ S:G$devkit_PORT_A_KEY_1$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_PORT_A_KEY_2$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
+S:G$devkit_PSG_STOPPED$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_PSG_PLAYING$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNEL2$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNEL3$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_SFX_CHANNELS2AND3$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_PSGPlay$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGCancelLoop$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGPlayNoRepeat$0$0({2}DF,SV:S),C,0,0
@@ -77,9 +82,6 @@ S:G$devkit_PSGSilenceChannels$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGRestoreVolumes$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGFrame$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_PSGSFXFrame$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_SFX_CHANNEL2$0$0({2}DF,SC:U),C,0,0
-S:G$devkit_SFX_CHANNEL3$0$0({2}DF,SC:U),C,0,0
-S:G$devkit_SFX_CHANNELS2AND3$0$0({2}DF,SC:U),C,0,0
 S:G$engine_asm_manager_clear_VRAM$0$0({2}DF,SV:S),C,0,0
 S:G$engine_content_manager_load_tiles$0$0({2}DF,SV:S),C,0,0
 S:G$engine_content_manager_load_sprites$0$0({2}DF,SV:S),C,0,0

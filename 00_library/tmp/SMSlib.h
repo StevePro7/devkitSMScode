@@ -1,15 +1,16 @@
 /* **************************************************
    SMSlib - C programming library for the SMS/GG
-   ( part of devkitSMS - github.com/sverx/devkitSMS )
    ************************************************** */
-
 #define _Bool unsigned char
 
 // #define TARGET_GG
-/* uncomment previous line to compile for the GameGear */
+/* to recompile the library for the GameGear */
+
+// #define GG_SECOND_PAD_SUPPORT
+/* to recompile with support for the external second pad on GameGear */
 
 // #define MD_PAD_SUPPORT
-/* uncomment previous line to add support for the Genesis/MegaDrive pad (SMS only) */
+/* to recompile with support for the Genesis/MegaDrive pad (SMS only) */
 
 /* library initialization. you don't need to call this if you use devkitSMS crt0.rel */
 void SMS_init (void) {}
@@ -86,6 +87,10 @@ void SMS_crt0_RST18(unsigned int tile) {} //__z88dk_fastcall __preserves_regs(b,
 #define SMS_setNextTileatAddr(a)  SMS_setAddr(a)
 #define SMS_setTileatXY(x,y,tile) {SMS_setAddr(XYtoADDR((x),(y)));SMS_setTile(tile);}
 
+#define SMS_VDPVRAMWrite          0x4000
+/* macro for turning tile numbers into VRAM addr for writing */
+#define TILEtoADDR(tile)          (SMS_VDPVRAMWrite|((tile)*32))
+
 /* handy defines for tilemaps entry */
 #define TILE_FLIPPED_X            0x0200
 #define TILE_FLIPPED_Y            0x0400
@@ -94,7 +99,18 @@ void SMS_crt0_RST18(unsigned int tile) {} //__z88dk_fastcall __preserves_regs(b,
 
 /* functions to load tiles into VRAM */
 void SMS_loadTiles (void *src, unsigned int tilefrom, unsigned int size) {}
-void SMS_loadPSGaidencompressedTiles (const void *src, unsigned int tilefrom) {}
+void SMS_load1bppTiles( const void *src, unsigned int tilefrom, unsigned int size, unsigned char color0, unsigned char color1 ) {}
+
+/* functions to load compressed tiles into VRAM */
+void SMS_loadPSGaidencompressedTilesatAddr( const void *src, unsigned int dst ) {}
+#define SMS_loadPSGaidencompressedTiles(src,tilefrom) SMS_loadPSGaidencompressedTilesatAddr((src),TILEtoADDR(tilefrom))
+
+/* UNSAFE functions to load compressed tiles into VRAM */
+void UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst ) {}
+#define UNSAFE_SMS_loadZX7compressedTiles(src,tilefrom) UNSAFE_SMS_loadZX7compressedTilesatAddr((src),TILEtoADDR(tilefrom))
+void UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst ) {}
+#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))
+
 
 /* functions for the tilemap */
 // turning SMS_loadTileMap into a define
