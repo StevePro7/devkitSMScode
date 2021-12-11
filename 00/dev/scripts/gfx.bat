@@ -1,3 +1,7 @@
+::gfx		Commonly used gfx	not banked
+@echo off
+
+cd ..
 cd ..
 cd gfx
 
@@ -10,3 +14,14 @@ bmp2tile.exe raw\sprites.bmp -savetiles "sprites (tiles).psgcompr" -noremovedupe
 
 cd ..
 cd dev
+cd content
+folder2c ..\gfx gfx
+
+sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 gfx.c
+
+del *.asm > nul
+del *.lst > nul
+del *.sym > nul
+
+cd ..
+cd scripts
