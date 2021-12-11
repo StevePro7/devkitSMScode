@@ -19,6 +19,7 @@ sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 font_manager.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 input_manager.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 screen_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 sound_manager.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 sprite_manager.c
 cd ..
 
@@ -39,13 +40,18 @@ echo.
 sdcc --debug -o output.ihx --Werror --opt-code-speed -mz80 --no-std-crt0 --data-loc 0xC000 ^
 ../crt0/crt0_sms.rel main.rel ^
 ../lib/SMSlib.lib ^
+../lib/PSGlib.rel ^
 devkit/_sms_manager.rel ^
+devkit/_snd_manager.rel ^
 engine/asm_manager.rel ^
 engine/content_manager.rel ^
 engine/font_manager.rel ^
+engine/input_manager.rel ^
 engine/screen_manager.rel ^
+engine/sound_manager.rel ^
 engine/sprite_manager.rel ^
-content/gfx.rel
+content/gfx.rel ^
+content/psg.rel
 
 :: Execute
 ihx2sms output.ihx output.sms

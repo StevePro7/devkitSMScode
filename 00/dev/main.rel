@@ -1,17 +1,20 @@
 ;!FILE main.asm
 XL2
-H 9 areas 3E global symbols
+H 9 areas 47 global symbols
 M main
 O -mz80
+S _engine_input_manager_update Ref0000
 S _engine_screen_manager_init Ref0000
 S _devkit_SMS_copySpritestoSAT Ref0000
 S _devkit_SMS_displayOn Ref0000
 S _devkit_SMS_init Ref0000
+S _devkit_PSGSFXFrame Ref0000
 S _engine_screen_manager_update Ref0000
 S _engine_content_manager_load_sprites Ref0000
 S _devkit_SMS_VDPturnOnFeature Ref0000
 S _devkit_SMS_finalizeSprites Ref0000
 S _devkit_VDPFEATURE_HIDEFIRSTCOL Ref0000
+S _devkit_PSGFrame Ref0000
 S .__.ABS. Def0000
 S _devkit_SMS_setSpriteMode Ref0000
 S _devkit_SMS_useFirstHalfTilesforSprites_False Ref0000
@@ -21,51 +24,57 @@ S _devkit_SPRITEMODE_NORMAL Ref0000
 S _engine_asm_manager_clear_VRAM Ref0000
 S _devkit_SMS_waitForVBlank Ref0000
 S _devkit_SMS_initSprites Ref0000
-A _CODE size 3B flags 0 addr 0
-S A$main$121 Def002A
-S A$main$112 Def0024
-S C$main.c$10$1$43 Def0013
-S A$main$104 Def001E
-S C$main.c$11$1$43 Def0016
+A _CODE size 44 flags 0 addr 0
+S A$main$101 Def0019
+S A$main$111 Def0021
+S A$main$102 Def001A
+S A$main$103 Def001D
+S A$main$140 Def0036
+S A$main$132 Def0030
 S _main Def0000
-S A$main$142 Def0039
-S A$main$133 Def0033
-S C$main.c$13$1$43 Def001E
-S A$main$125 Def002D
-S A$main$116 Def0027
-S C$main.c$14$1$43 Def0021
-S A$main$108 Def0021
-S C$main.c$20$3$45 Def002A
-S C$main.c$15$1$43 Def0024
-S C$main.c$21$3$45 Def002D
-S A$main$137 Def0036
-S C$main.c$17$1$43 Def0027
-S A$main$129 Def0030
-S C$main.c$23$3$45 Def0030
-S C$main.c$24$3$45 Def0033
-S C$main.c$27$2$44 Def0039
-S C$main.c$25$3$45 Def0036
-S XG$main$0$0 Def0039
-S A$main$80 Def0006
-S C$main.c$5$1$43 Def0000
-S A$main$72 Def0000
-S C$main.c$6$1$43 Def0003
-S C$main.c$7$1$43 Def0006
-S A$main$93 Def0013
-S A$main$84 Def0009
-S C$main.c$9$1$43 Def0009
-S A$main$85 Def000C
-S A$main$76 Def0003
-S A$main$86 Def000D
+S A$main$124 Def002A
+S A$main$115 Def0024
+S C$main.c$31$2$60 Def0042
+S C$main.c$20$3$61 Def002A
+S A$main$152 Def003F
+S A$main$107 Def001E
+S C$main.c$21$3$61 Def002D
+S A$main$144 Def0039
+S C$main.c$22$3$61 Def0030
+S A$main$136 Def0033
+S A$main$128 Def002D
+S A$main$119 Def0027
+S C$main.c$24$3$61 Def0033
+S C$main.c$10$1$59 Def0013
+S C$main.c$25$3$61 Def0036
+S C$main.c$11$1$59 Def0016
+S A$main$157 Def0042
+S A$main$148 Def003C
+S C$main.c$26$3$61 Def0039
+S C$main.c$13$1$59 Def001E
+S C$main.c$28$3$61 Def003C
+S C$main.c$14$1$59 Def0021
+S C$main.c$29$3$61 Def003F
+S C$main.c$15$1$59 Def0024
+S XG$main$0$0 Def0042
+S C$main.c$17$1$59 Def0027
+S A$main$90 Def000E
+S A$main$91 Def000F
+S A$main$92 Def0012
+S A$main$83 Def0006
+S A$main$75 Def0000
 S C$main.c$3$0$0 Def0000
-S A$main$87 Def000E
-S A$main$97 Def0016
-S A$main$88 Def000F
-S A$main$98 Def0019
-S A$main$89 Def0012
-S A$main$99 Def001A
+S A$main$96 Def0013
+S A$main$87 Def0009
+S C$main.c$5$1$59 Def0000
+S A$main$88 Def000C
+S A$main$79 Def0003
+S C$main.c$6$1$59 Def0003
+S A$main$89 Def000D
+S C$main.c$7$1$59 Def0006
+S C$main.c$9$1$59 Def0009
 S G$main$0$0 Def0000
-S A$main$100 Def001D
+S A$main$100 Def0016
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -77,16 +86,18 @@ A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
 T 00 00 CD 00 00 CD 00 00 CD 00 00 CD
-R 00 00 00 00 02 03 03 00 02 06 0C 00 02 09 0F 00
+R 00 00 00 00 02 03 04 00 02 06 0F 00 02 09 12 00
 T 0A 00 00 00 45 C5 33 CD 00 00 33 CD 00 00 CD
-R 00 00 00 00 02 02 0E 00 02 08 0A 00 02 0C 0B 00
+R 00 00 00 00 02 02 11 00 02 08 0D 00 02 0C 0E 00
 T 17 00 00 00 E5 CD 00 00 F1 CD 00 00 CD
-R 00 00 00 00 02 02 08 00 02 06 06 00 02 0A 0D 00
+R 00 00 00 00 02 02 0A 00 02 06 08 00 02 0A 10 00
 T 22 00 00 00 CD 00 00 CD 00 00
-R 00 00 00 00 02 02 05 00 02 05 00 00 02 08 02 00
+R 00 00 00 00 02 02 07 00 02 05 01 00 02 08 03 00
 T 2A 00
 R 00 00 00 00
 T 2A 00 CD 00 00 CD 00 00 CD 00 00 CD
-R 00 00 00 00 02 03 11 00 02 06 04 00 02 09 07 00
-T 34 00 00 00 CD 00 00 18 EF
-R 00 00 00 00 02 02 10 00 02 05 01 00
+R 00 00 00 00 02 03 14 00 02 06 00 00 02 09 06 00
+T 34 00 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 02 09 00 02 05 13 00 02 08 02 00
+T 3D 00 00 00 CD 00 00 18 E6
+R 00 00 00 00 02 02 0B 00 02 05 05 00

@@ -1,12 +1,12 @@
 #include "screen_manager.h"
 #include "font_manager.h"
 #include "input_manager.h"
+#include "sound_manager.h"
 #include "sprite_manager.h"
-#include "../devkit/_snd_manager.h"
 
 void engine_screen_manager_init()
 {
-	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM...!", 3, 5 );
+	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM!", 3, 5 );
 }
 
 void engine_screen_manager_update()
@@ -15,7 +15,9 @@ void engine_screen_manager_update()
 	input = engine_input_manager_hold_fire1();
 	if( input )
 	{
-		devkit_PSGStop();
+		engine_font_manager_draw_text( "WORLD SYSTEM!", 3, 7 );
+		engine_music_manager_play();
+		
 		return;
 	}
 
