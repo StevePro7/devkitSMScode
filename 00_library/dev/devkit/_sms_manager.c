@@ -157,27 +157,27 @@ void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilef
 //#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))
 
 /* functions for the tilemap */
-//void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size )
-//{
-//	SMS_loadTileMap( x, y, src, size );
-//}
-//void devkit_SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, unsigned char width, unsigned char height )
-//{
-//	SMS_loadTileMapArea( x, y, src, width, height );
-//}
-//
-//void devkit_SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *src )
-//{
-//	SMS_loadSTMcompressedTileMapatAddr( dst, src );
-//}
-//void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src )
-//{
-//	SMS_loadSTMcompressedTileMap( x, y, src );
-//}
-//void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src, unsigned char w )
-//{
-//	SMS_loadSTMcompressedTileMapArea( x, y, src, w );
-//}
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size )
+{
+	SMS_loadTileMap( x, y, src, size );
+}
+void devkit_SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, unsigned char width, unsigned char height )
+{
+	SMS_loadTileMapArea( x, y, src, width, height );
+}
+
+void devkit_SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *src )
+{
+	SMS_loadSTMcompressedTileMapatAddr( dst, src );
+}
+void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src )
+{
+	SMS_loadSTMcompressedTileMap( x, y, src );
+}
+void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src /*, unsigned char w*/ )
+{
+	SMS_loadSTMcompressedTileMapArea( x, y, src, 0 /*, w*/ );
+}
 
 
 void devkit_SMS_loadBGPalette( void *palette )

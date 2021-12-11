@@ -1,8 +1,8 @@
 M:sprite_manager
 F:G$engine_sprite_manager_draw$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lsprite_manager.engine_sprite_manager_draw$x$1$29({1}SC:U),B,1,4
-S:Lsprite_manager.engine_sprite_manager_draw$y$1$29({1}SC:U),B,1,5
-S:Lsprite_manager.engine_sprite_manager_draw$tile$1$29({2}SI:U),B,1,6
+S:Lsprite_manager.engine_sprite_manager_draw$x$1$32({1}SC:U),B,1,4
+S:Lsprite_manager.engine_sprite_manager_draw$y$1$32({1}SC:U),B,1,5
+S:Lsprite_manager.engine_sprite_manager_draw$tile$1$32({2}SI:U),B,1,6
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_VDPturnOnFeature$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_VDPturnOffFeature$0$0({2}DF,SV:S),C,0,0
@@ -31,7 +31,10 @@ S:G$devkit_SMS_load1bppTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTilesatAddr$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadTileMap$0$0({2}DF,SV:S),C,0,0
-S:G$SMS_loadTileMapArea$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadTileMapArea$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSTMcompressedTileMapatAddr$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSTMcompressedTileMap$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSTMcompressedTileMapArea$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadBGPalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSpritePalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpritePaletteColor$0$0({2}DF,SV:S),C,0,0

@@ -1,6 +1,11 @@
 # devkitSMS Code
 Test repository for devkitSMS code samples!
 
+Check
+#define SMS_loadSTMcompressedTileMap(x,y,src)       SMS_loadSTMcompressedTileMapatAddr(XYtoADDR((x),(y)),(src))
+#define SMS_loadSTMcompressedTileMapArea(x,y,src,w) SMS_loadSTMcompressedTileMapatAddr(XYtoADDR((x),(y)),(src))
+
+
 
 TODO wrap functions
 /* group 0 */
