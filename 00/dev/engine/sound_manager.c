@@ -10,9 +10,10 @@
 #define SOUND3_PSG			sound3_psg
 #define SOUNDS_MAX			3
 
-void engine_music_manager_play()
+void engine_music_manager_play( unsigned char index )
 {
-	devkit_PSGPlayNoRepeat( ( unsigned char* ) PHONE_PSG );
+	void *song = 0 == index ? ( unsigned char* ) MUSIC_PSG : ( unsigned char* ) PHONE_PSG;
+	devkit_PSGPlayNoRepeat( song );
 }
 
 void engine_sound_manager_play( unsigned char index )

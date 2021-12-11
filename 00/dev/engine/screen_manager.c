@@ -15,9 +15,8 @@ void engine_screen_manager_update()
 	input = engine_input_manager_hold_fire1();
 	if( input )
 	{
-		engine_font_manager_draw_text( "WORLD SYSTEM!", 3, 7 );
-		engine_music_manager_play();
-		
+		//engine_music_manager_play( 0 );
+		engine_sound_manager_play( 2 );
 		return;
 	}
 
