@@ -179,7 +179,37 @@ void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, 
 	SMS_loadSTMcompressedTileMapArea( x, y, src, 0 /*, w*/ );
 }
 
+/* functions for sprites handling */
+void devkit_SMS_initSprites()
+{
+	SMS_initSprites();
+}
+void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile )
+{
+	SMS_addSprite( x, y, tile );
+}
+void devkit_SMS_finalizeSprites()
+{
+	SMS_finalizeSprites();
+}
+void devkit_SMS_copySpritestoSAT()
+{
+	SMS_copySpritestoSAT();
+}
 
+/* SMS functions to set a color / load a palette */
+static const unsigned char GetColor( const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	return RGB( r, g, b );
+}
+void devkit_SMS_setBGPaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	SMS_setBGPaletteColor( entry, GetColor( r, g, b ) );
+}
+void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	SMS_setSpritePaletteColor( entry, GetColor( r, g, b ) );
+}
 void devkit_SMS_loadBGPalette( void *palette )
 {
 	SMS_loadBGPalette( palette );
@@ -188,68 +218,20 @@ void devkit_SMS_loadSpritePalette( void *palette )
 {
 	SMS_loadSpritePalette( palette );
 }
-void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
-{
-	const unsigned char color = RGB( r, g, b );
-	SMS_setSpritePaletteColor( entry, color );
-}
 
 
 
-void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile )
-{
-	SMS_addSprite( x, y, tile );
-}
-void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile )
-{
-	devkit_SMS_addSprite( x + 0, y + 0, tile + 0 );
-	devkit_SMS_addSprite( x + 8, y + 0, tile + 1 );
 
-	devkit_SMS_addSprite( x + 0, y + 8, tile + 2 );
-	devkit_SMS_addSprite( x + 8, y + 8, tile + 3 );
 
-	devkit_SMS_addSprite( x + 0, y + 16, tile + 4 );
-	devkit_SMS_addSprite( x + 8, y + 16, tile + 5 );
 
-	devkit_SMS_addSprite( x + 0, y + 24, tile + 6 );
-	devkit_SMS_addSprite( x + 8, y + 24, tile + 7 );
-}
-void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile )
-{
-	SMS_addSprite( x + 0, y + 0, tile + 0 );
-	SMS_addSprite( x + 8, y + 0, tile + 1 );
-	SMS_addSprite( x + 16, y + 0, tile + 2 );
-
-	SMS_addSprite( x + 0, y + 8, tile + 3 );
-	SMS_addSprite( x + 8, y + 8, tile + 4 );
-	SMS_addSprite( x + 16, y + 8, tile + 5 );
-
-	SMS_addSprite( x + 0, y + 16, tile + 6 );
-	SMS_addSprite( x + 8, y + 16, tile + 7 );
-	SMS_addSprite( x + 16, y + 16, tile + 8 );
-
-	SMS_addSprite( x + 0, y + 24, tile + 9 );
-	SMS_addSprite( x + 8, y + 24, tile + 10 );
-	SMS_addSprite( x + 16, y + 24, tile + 11 );
-}
-
-void devkit_SMS_initSprites()
-{
-	SMS_initSprites();
-}
-void devkit_SMS_finalizeSprites()
-{
-	SMS_finalizeSprites();
-}
-
-void devkit_SMS_copySpritestoSAT()
-{
-	UNSAFE_SMS_copySpritestoSAT();
-}
 void devkit_UNSAFE_SMS_copySpritestoSAT()
 {
 	UNSAFE_SMS_copySpritestoSAT();
 }
+
+
+
+
 
 unsigned char devkit_SMS_queryPauseRequested()
 {
@@ -293,6 +275,40 @@ unsigned int devkit_PORT_A_KEY_1()
 unsigned int devkit_PORT_A_KEY_2()
 {
 	return PORT_A_KEY_2;
+}
+
+// Helper functions.
+void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile )
+{
+	devkit_SMS_addSprite( x + 0, y + 0, tile + 0 );
+	devkit_SMS_addSprite( x + 8, y + 0, tile + 1 );
+
+	devkit_SMS_addSprite( x + 0, y + 8, tile + 2 );
+	devkit_SMS_addSprite( x + 8, y + 8, tile + 3 );
+
+	devkit_SMS_addSprite( x + 0, y + 16, tile + 4 );
+	devkit_SMS_addSprite( x + 8, y + 16, tile + 5 );
+
+	devkit_SMS_addSprite( x + 0, y + 24, tile + 6 );
+	devkit_SMS_addSprite( x + 8, y + 24, tile + 7 );
+}
+void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile )
+{
+	SMS_addSprite( x + 0, y + 0, tile + 0 );
+	SMS_addSprite( x + 8, y + 0, tile + 1 );
+	SMS_addSprite( x + 16, y + 0, tile + 2 );
+
+	SMS_addSprite( x + 0, y + 8, tile + 3 );
+	SMS_addSprite( x + 8, y + 8, tile + 4 );
+	SMS_addSprite( x + 16, y + 8, tile + 5 );
+
+	SMS_addSprite( x + 0, y + 16, tile + 6 );
+	SMS_addSprite( x + 8, y + 16, tile + 7 );
+	SMS_addSprite( x + 16, y + 16, tile + 8 );
+
+	SMS_addSprite( x + 0, y + 24, tile + 9 );
+	SMS_addSprite( x + 8, y + 24, tile + 10 );
+	SMS_addSprite( x + 16, y + 24, tile + 11 );
 }
 
 

@@ -72,23 +72,39 @@ void devkit_SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *sr
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
 void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src /*, unsigned char w*/ );
 
+/* functions for sprites handling */
+void devkit_SMS_initSprites();
+void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile );
+//void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) __naked __preserves_regs( iyh, iyl );     /* doesn't return anything */
+//void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) __naked __preserves_regs( iyh, iyl );   /* doesn't return anything */
+//signed char SMS_reserveSprite( void );
+//void SMS_updateSpritePosition( signed char sprite, unsigned char x, unsigned char y );
+//void SMS_updateSpriteImage( signed char sprite, unsigned char tile );
+//void SMS_hideSprite( signed char sprite );
+//void SMS_setClippingWindow( unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1 );
+//signed char SMS_addSpriteClipping( int x, int y, unsigned char tile );   /* returns -1 if no more sprites are available or sprite clipped */
+void devkit_SMS_finalizeSprites();
+void devkit_SMS_copySpritestoSAT();
 
+/* SMS functions to set a color / load a palette */
+void devkit_SMS_setBGPaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
+void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
 void devkit_SMS_loadBGPalette( void *palette );
 void devkit_SMS_loadSpritePalette( void *palette );
-void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
+
 
 void devkit_SMS_setTile( const unsigned char tile );
 
 
-void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile );
-void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
-void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile );
 
-void devkit_SMS_initSprites();
-void devkit_SMS_finalizeSprites();
 
-void devkit_SMS_copySpritestoSAT();
 void devkit_UNSAFE_SMS_copySpritestoSAT();
+
+
+
+
+
+
 
 unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
@@ -105,5 +121,8 @@ unsigned int devkit_PORT_A_KEY_RIGHT();
 unsigned int devkit_PORT_A_KEY_1();
 unsigned int devkit_PORT_A_KEY_2();
 
+// Helper functions.
+void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
+void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile );
 
 #endif//_SMS_MANAGER_H_
