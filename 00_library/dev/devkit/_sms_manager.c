@@ -130,6 +130,16 @@ void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
 	SMS_setNextTileatXY( x, y );
 }
 
+/* handy defines for tilemaps entry */
+unsigned int devkit_TILE_USE_SPRITE_PALETTE()
+{
+	return TILE_USE_SPRITE_PALETTE;
+}
+unsigned int devkit_TILE_PRIORITY()
+{
+	return TILE_PRIORITY;
+}
+
 /* functions to load tiles into VRAM */
 void devkit_SMS_loadTiles( void *src, unsigned int tilefrom, unsigned int size )
 {
@@ -294,17 +304,8 @@ unsigned int devkit_PORT_A_KEY_START()
 	return PORT_A_KEY_START;
 }
 
-
-
-void devkit_UNSAFE_SMS_copySpritestoSAT()
-{
-	UNSAFE_SMS_copySpritestoSAT();
-}
-
-
-
-
-
+/* paddle controller handling (SMS only) */
+/* pause handling (SMS only) */
 unsigned char devkit_SMS_queryPauseRequested()
 {
 	return SMS_queryPauseRequested();
@@ -319,7 +320,16 @@ unsigned char devkit_isCollisionDetected()
 	return ( SMS_VDPFlags & VDPFLAG_SPRITECOLLISION );
 }
 
-// Input.
+
+void devkit_UNSAFE_SMS_copySpritestoSAT()
+{
+	UNSAFE_SMS_copySpritestoSAT();
+}
+
+
+
+
+
 
 
 // Helper functions.

@@ -50,6 +50,12 @@ void devkit_SMS_setAddr( const unsigned char addr );
 /* PNT define (has address and VDP flags) */
 void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
 
+/* handy defines for tilemaps entry */
+//#define TILE_FLIPPED_X            0x0200
+//#define TILE_FLIPPED_Y            0x0400
+unsigned int devkit_TILE_USE_SPRITE_PALETTE();
+unsigned int devkit_TILE_PRIORITY();
+
 /* functions to load tiles into VRAM */
 void devkit_SMS_loadTiles( void *src, unsigned int tilefrom, unsigned int size );
 void devkit_SMS_load1bppTiles( const void *src, unsigned int tilefrom, unsigned int size, unsigned char color0, unsigned char color1 );
@@ -124,21 +130,21 @@ unsigned int devkit_PORT_A_KEY_1();
 unsigned int devkit_PORT_A_KEY_2();
 unsigned int devkit_PORT_A_KEY_START();
 
+/* paddle controller handling (SMS only) */
+//_Bool SMS_detectPaddle( unsigned char port ) __z88dk_fastcall __naked;
+//unsigned char SMS_readPaddle( unsigned char port ) __z88dk_fastcall __naked;
+
+/* pause handling (SMS only) */
+unsigned char devkit_SMS_queryPauseRequested();
+void devkit_SMS_resetPauseRequest();
+
+unsigned char devkit_isCollisionDetected();
 
 
 void devkit_UNSAFE_SMS_copySpritestoSAT();
 
 
 
-
-
-
-
-unsigned char devkit_SMS_queryPauseRequested();
-void devkit_SMS_resetPauseRequest();
-
-// collision
-unsigned char devkit_isCollisionDetected();
 
 
 // Helper functions.

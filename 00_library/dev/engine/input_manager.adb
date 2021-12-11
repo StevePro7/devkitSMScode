@@ -42,6 +42,8 @@ S:G$devkit_SMS_crt0_RST18$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setTile$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setAddr$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setNextTileatXY$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_TILE_USE_SPRITE_PALETTE$0$0({2}DF,SI:U),C,0,0
+S:G$devkit_TILE_PRIORITY$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SMS_loadTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_load1bppTiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadPSGaidencompressedTilesatAddr$0$0({2}DF,SV:S),C,0,0
