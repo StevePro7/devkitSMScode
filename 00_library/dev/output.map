@@ -1987,10 +1987,10 @@ _CODE                               00000200    00003050 =       12368. bytes (R
      00000EF3  C$screen_manager.c$10$1$8          screen_manager
      00000EF3  XG$engine_screen_manager_init$0$   screen_manager
      00000EF4  Fscreen_manager$__str_0$0$0        screen_manager
-     00000F11  A$screen_manager$88                screen_manager
-     00000F11  C$screen_manager.c$12$1$8          screen_manager
-     00000F11  C$screen_manager.c$15$1$9          screen_manager
-     00000F11  G$engine_screen_manager_update$0   screen_manager
+     00000F10  A$screen_manager$88                screen_manager
+     00000F10  C$screen_manager.c$12$1$8          screen_manager
+     00000F10  C$screen_manager.c$15$1$9          screen_manager
+     00000F10  G$engine_screen_manager_update$0   screen_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
 Hexadecimal  [32-Bits]
 
@@ -2000,13 +2000,13 @@ _CODE                               00000200    00003050 =       12368. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000F11  _engine_screen_manager_update      screen_manager
-     00000F14  A$screen_manager$92                screen_manager
-     00000F14  C$screen_manager.c$16$1$9          screen_manager
-     00000F15  A$screen_manager$93                screen_manager
-     00000F16  A$screen_manager$94                screen_manager
-     00000F18  A$screen_manager$98                screen_manager
-     00000F18  C$screen_manager.c$18$2$10         screen_manager
+     00000F10  _engine_screen_manager_update      screen_manager
+     00000F13  A$screen_manager$92                screen_manager
+     00000F13  C$screen_manager.c$16$1$9          screen_manager
+     00000F14  A$screen_manager$93                screen_manager
+     00000F15  A$screen_manager$94                screen_manager
+     00000F17  A$screen_manager$98                screen_manager
+     00000F17  C$screen_manager.c$19$2$10         screen_manager
      00000F19  A$screen_manager$99                screen_manager
      00000F1A  A$screen_manager$100               screen_manager
      00000F1B  A$screen_manager$101               screen_manager
