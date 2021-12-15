@@ -26,15 +26,55 @@ void devkit_SMS_VDPturnOffFeature( unsigned int feature )
 }
 
 /* group 0 */
-unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL()
+unsigned int devkit_VDPFEATURE_EXTRAHEIGHT()
 {
-	return VDPFEATURE_HIDEFIRSTCOL;
+	return VDPFEATURE_EXTRAHEIGHT; 
+}
+unsigned int devkit_VDPFEATURE_SHIFTSPRITES()
+{
+	return VDPFEATURE_SHIFTSPRITES; 
+}
+unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL() 
+{
+	return VDPFEATURE_HIDEFIRSTCOL; 
+}
+unsigned int devkit_VDPFEATURE_LEFTCOLBLANK()
+{
+	return VDPFEATURE_LEFTCOLBLANK; 
+}
+unsigned int devkit_VDPFEATURE_LOCKHSCROLL()
+{
+	return VDPFEATURE_LOCKHSCROLL; 
+}
+unsigned int devkit_VDPFEATURE_LOCKVSCROLL() 
+{
+	return VDPFEATURE_LOCKVSCROLL; 
 }
 
 /* group 1 */
+unsigned int devkit_VDPFEATURE_ZOOMSPRITES()
+{
+	return VDPFEATURE_ZOOMSPRITES; 
+}
+unsigned int devkit_VDPFEATURE_USETALLSPRITES()
+{
+	return VDPFEATURE_USETALLSPRITES; 
+}
+unsigned int devkit_VDPFEATURE_240LINES()
+{
+	return VDPFEATURE_240LINES; 
+}
+unsigned int devkit_VDPFEATURE_224LINES()
+{
+	return VDPFEATURE_224LINES; 
+}
+unsigned int devkit_VDPFEATURE_FRAMEIRQ()
+{
+	return VDPFEATURE_FRAMEIRQ;
+}
 unsigned int devkit_VDPFEATURE_SHOWDISPLAY()
 {
-	return VDPFEATURE_SHOWDISPLAY;
+	return VDPFEATURE_SHOWDISPLAY; 
 }
 
 /* handy macros :) */

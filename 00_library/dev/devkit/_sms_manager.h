@@ -9,9 +9,19 @@ void devkit_SMS_VDPturnOnFeature( unsigned int feature );
 void devkit_SMS_VDPturnOffFeature( unsigned int feature );
 
 /* group 0 */
+unsigned int devkit_VDPFEATURE_EXTRAHEIGHT();
+unsigned int devkit_VDPFEATURE_SHIFTSPRITES();
 unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL();
+unsigned int devkit_VDPFEATURE_LEFTCOLBLANK();
+unsigned int devkit_VDPFEATURE_LOCKHSCROLL();
+unsigned int devkit_VDPFEATURE_LOCKVSCROLL();
 
 /* group 1 */
+unsigned int devkit_VDPFEATURE_ZOOMSPRITES();
+unsigned int devkit_VDPFEATURE_USETALLSPRITES();
+unsigned int devkit_VDPFEATURE_240LINES();
+unsigned int devkit_VDPFEATURE_224LINES();
+unsigned int devkit_VDPFEATURE_FRAMEIRQ();
 unsigned int devkit_VDPFEATURE_SHOWDISPLAY();
 
 /* handy macros :) */
