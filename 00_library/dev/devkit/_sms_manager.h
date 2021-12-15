@@ -139,12 +139,15 @@ unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
 
 // SMS_VDPType
-//unsigned char devkit_SMS_VDPType( void );
+unsigned char devkit_SMS_VDPType( void );
+///* WARNING: these constants may change value later, please use defines */
+unsigned char devkit_VDP_PAL();
+unsigned char devkit_VDP_NTSC();
 
 // SMS_VDPFlags
-unsigned char devkit_isCollisionDetected();
-
-
+unsigned char devkit_SMS_VDPFlags( void );
+unsigned char devkit_VDPFLAG_SPRITEOVERFLOW();
+unsigned char devkit_VDPFLAG_SPRITECOLLISION();
 
 /* line interrupt */
 void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ); // __z88dk_fastcall;
@@ -183,5 +186,6 @@ void dekvit_SMS_nmi_isr( void ); // __naked;
 // Helper functions.
 void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
 void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile );
+unsigned char devkit_isCollisionDetected();
 
 #endif//_SMS_MANAGER_H_

@@ -316,17 +316,33 @@ void devkit_SMS_resetPauseRequest()
 }
 
 // SMS_VDPType
-//unsigned char devkit_SMS_VDPType( void )
-//{
-//	return SMS_VDPType();
-//}
-
-// SMS_VDPFlags
-unsigned char devkit_isCollisionDetected()
+unsigned char devkit_SMS_VDPType( void )
 {
-	return ( SMS_VDPFlags & VDPFLAG_SPRITECOLLISION );
+	return SMS_VDPType();
+}
+///* WARNING: these constants may change value later, please use defines */
+unsigned char devkit_VDP_PAL()
+{
+	return VDP_PAL;
+}
+unsigned char devkit_VDP_NTSC()
+{
+	return VDP_NTSC;
 }
 
+// SMS_VDPFlags
+unsigned char devkit_SMS_VDPFlags( void )
+{
+	return SMS_VDPFlags;
+}
+unsigned char devkit_VDPFLAG_SPRITEOVERFLOW()
+{
+	return VDPFLAG_SPRITEOVERFLOW;
+}
+unsigned char devkit_VDPFLAG_SPRITECOLLISION()
+{
+	return VDPFLAG_SPRITECOLLISION;
+}
 
 /* line interrupt */
 void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) )
@@ -454,6 +470,10 @@ void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile )
 	SMS_addSprite( x + 16, y + 24, tile + 11 );
 }
 
+unsigned char devkit_isCollisionDetected()
+{
+	return ( SMS_VDPFlags & VDPFLAG_SPRITECOLLISION );
+}
 
 
 // Sega header.
