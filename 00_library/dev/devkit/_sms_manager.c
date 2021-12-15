@@ -295,6 +295,38 @@ void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile )
 {
 	SMS_addSprite( x, y, tile );
 }
+void devkit_SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile )
+{
+	SMS_addTwoAdjoiningSprites( x, y, tile );
+}
+void devkit_SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile )
+{
+	SMS_addThreeAdjoiningSprites( x, y, tile );
+}
+signed char devkit_SMS_reserveSprite( void )
+{
+	return SMS_reserveSprite();
+}
+void devkit_SMS_updateSpritePosition( signed char sprite, unsigned char x, unsigned char y )
+{
+	SMS_updateSpritePosition( sprite, x, y );
+}
+void devkit_SMS_updateSpriteImage( signed char sprite, unsigned char tile )
+{
+	SMS_updateSpriteImage( sprite, tile );
+}
+void devkit_SMS_hideSprite( signed char sprite )
+{
+	SMS_hideSprite( sprite );
+}
+void devkit_SMS_setClippingWindow( unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1 )
+{
+	SMS_setClippingWindow( x0, y0, x1, y1 );
+}
+signed char devkit_SMS_addSpriteClipping( int x, int y, unsigned char tile )
+{
+	return SMS_addSpriteClipping( x, y, tile );
+}
 void devkit_SMS_finalizeSprites()
 {
 	SMS_finalizeSprites();

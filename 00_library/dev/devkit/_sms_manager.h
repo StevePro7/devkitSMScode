@@ -101,18 +101,19 @@ void devkit_SMS_loadTileMapArea( unsigned char x, unsigned char y, void *src, un
 void devkit_SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *src );
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
 void devkit_SMS_loadSTMcompressedTileMapArea( unsigned char x, unsigned char y, unsigned char *src /*, unsigned char w*/ );
+// SMS_loadSTMcompressedTileMapArea *DEPRECATED* - will be dropped at some point in 201818
 
 /* functions for sprites handling */
 void devkit_SMS_initSprites();
 void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile );
-//void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) __naked __preserves_regs( iyh, iyl );     /* doesn't return anything */
-//void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) __naked __preserves_regs( iyh, iyl );   /* doesn't return anything */
-//signed char SMS_reserveSprite( void );
-//void SMS_updateSpritePosition( signed char sprite, unsigned char x, unsigned char y );
-//void SMS_updateSpriteImage( signed char sprite, unsigned char tile );
-//void SMS_hideSprite( signed char sprite );
-//void SMS_setClippingWindow( unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1 );
-//signed char SMS_addSpriteClipping( int x, int y, unsigned char tile );   /* returns -1 if no more sprites are available or sprite clipped */
+void devkit_SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ); /*__naked __preserves_regs( iyh, iyl )*/     /* doesn't return anything */
+void devkit_SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile );  /*__naked __preserves_regs( iyh, iyl )*/   /* doesn't return anything */
+signed char devkit_SMS_reserveSprite( void );
+void devkit_SMS_updateSpritePosition( signed char sprite, unsigned char x, unsigned char y );
+void devkit_SMS_updateSpriteImage( signed char sprite, unsigned char tile );
+void devkit_SMS_hideSprite( signed char sprite );
+void devkit_SMS_setClippingWindow( unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1 );
+signed char devkit_SMS_addSpriteClipping( int x, int y, unsigned char tile );   /* returns -1 if no more sprites are available or sprite clipped */
 void devkit_SMS_finalizeSprites();
 void devkit_SMS_copySpritestoSAT();
 
