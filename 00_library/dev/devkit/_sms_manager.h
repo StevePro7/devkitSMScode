@@ -117,14 +117,21 @@ signed char devkit_SMS_addSpriteClipping( int x, int y, unsigned char tile );   
 void devkit_SMS_finalizeSprites();
 void devkit_SMS_copySpritestoSAT();
 
+/* ***************************************************************** */
+/* Colors / palettes handling                                        */
+/* ***************************************************************** */
+
+/* SMS_CRAMAddress define (has address and VDP flags) */
+//#define SMS_CRAMAddress                    0xC000
+
 /* SMS functions to set a color / load a palette */
 void devkit_SMS_setBGPaletteColor( unsigned char entry, unsigned char color );
 void devkit_SMS_setSpritePaletteColor( unsigned char entry, unsigned char color );
 void devkit_SMS_loadBGPalette( void *palette );
 void devkit_SMS_loadSpritePalette( void *palette );
-//#define SMS_setNextBGColoratIndex(i)       SMS_setAddr(SMS_CRAMAddress|(i))
-//#define SMS_setNextSpriteColoratIndex(i)   SMS_setAddr(SMS_CRAMAddress|0x10|(i))
-//void SMS_setColor (unsigned char color) __z88dk_fastcall __preserves_regs(b,c,d,e,h,l,iyh,iyl);
+void devkit_SMS_setNextBGColoratIndex( const unsigned char i );
+void devkit_SMS_setNextSpriteColoratIndex( const unsigned char i );
+void devkit_SMS_setColor( unsigned char color ); /*__z88dk_fastcall __preserves_regs( b, c, d, e, h, l, iyh, iyl )*/
 
 /* SMS macros for colors */
 unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b );

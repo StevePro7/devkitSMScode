@@ -336,6 +336,13 @@ void devkit_SMS_copySpritestoSAT()
 	SMS_copySpritestoSAT();
 }
 
+/* ***************************************************************** */
+/* Colors / palettes handling                                        */
+/* ***************************************************************** */
+
+/* SMS_CRAMAddress define (has address and VDP flags) */
+//#define SMS_CRAMAddress                    0xC000
+
 /* SMS functions to set a color / load a palette */
 void devkit_SMS_setBGPaletteColor( unsigned char entry, unsigned char color )
 {
@@ -352,6 +359,18 @@ void devkit_SMS_loadBGPalette( void *palette )
 void devkit_SMS_loadSpritePalette( void *palette )
 {
 	SMS_loadSpritePalette( palette );
+}
+void devkit_SMS_setNextBGColoratIndex( const unsigned char i )
+{
+	SMS_setNextBGColoratIndex( i );
+}
+void devkit_SMS_setNextSpriteColoratIndex( const unsigned char i )
+{
+	SMS_setNextSpriteColoratIndex( i );
+}
+void devkit_SMS_setColor( unsigned char color )
+{
+	SMS_setColor( color );
 }
 
 /* SMS macros for colors */
