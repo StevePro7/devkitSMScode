@@ -327,11 +327,8 @@ unsigned char devkit_isCollisionDetected()
 	return ( SMS_VDPFlags & VDPFLAG_SPRITECOLLISION );
 }
 
-//void SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ) __z88dk_fastcall;
-//void SMS_setLineCounter( unsigned char count ) __z88dk_fastcall;
-//#define SMS_enableLineInterrupt()   SMS_VDPturnOnFeature(0x0010)   /* turns on line IRQ */
-//#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
 
+/* line interrupt */
 void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) )
 {
 	SMS_setLineInterruptHandler( theHandlerFunction );
@@ -349,6 +346,16 @@ void devkit_SMS_disableLineInterrupt()
 	SMS_disableLineInterrupt();
 }
 
+/* Vcount */
+unsigned char devkit_SMS_getVCount( void )
+{
+	return SMS_getVCount();
+}
+/* Hcount */
+unsigned char devkit_SMS_getHCount( void )
+{
+	return SMS_getHCount();
+}
 
 
 /* VRAM unsafe functions. Fast, but dangerous! */

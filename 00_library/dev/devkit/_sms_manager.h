@@ -147,12 +147,15 @@ unsigned char devkit_isCollisionDetected();
 
 
 /* line interrupt */
-__z88dk_fastcall;
 void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ); // __z88dk_fastcall;
 void devkit_SMS_setLineCounter( unsigned char count );
 void devkit_SMS_enableLineInterrupt(); /* turns on line IRQ */
 void devkit_SMS_disableLineInterrupt(); /* turns off line IRQ */
 
+/* Vcount */
+unsigned char devkit_SMS_getVCount( void );
+/* Hcount */
+unsigned char devkit_SMS_getHCount( void );
 
 
 /* VRAM unsafe functions. Fast, but dangerous! */
