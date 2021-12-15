@@ -1,6 +1,10 @@
 # devkitSMS Code
 Test repository for devkitSMS code samples!
 
+TODO
+test scroll example with devkit_SMS from here 
+E:\GitHub\StevePro7\SegaMasterSystemLinux\Examples\01-ScrollWorld
+
 Check
 #define SMS_loadSTMcompressedTileMap(x,y,src)       SMS_loadSTMcompressedTileMapatAddr(XYtoADDR((x),(y)),(src))
 #define SMS_loadSTMcompressedTileMapArea(x,y,src,w) SMS_loadSTMcompressedTileMapatAddr(XYtoADDR((x),(y)),(src))
@@ -87,4 +91,4 @@ Input
 #define PORT_B_TH               0x8000          /* for light gun */
 
 
-SMS_VDPType
+//SMS_VDPType
