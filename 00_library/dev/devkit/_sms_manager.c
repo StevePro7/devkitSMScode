@@ -109,12 +109,25 @@ void devkit_SMS_setSpriteMode( unsigned char mode )
 }
 
 /* modes for SMS_setSpriteMode */
-unsigned char devkit_SPRITEMODE_NORMAL()
+unsigned char devkit_SPRITEMODE_NORMAL() 
 {
-	return SPRITEMODE_NORMAL;
+	return SPRITEMODE_NORMAL; 
+}
+unsigned char devkit_SPRITEMODE_TALL()
+{
+	return SPRITEMODE_TALL; 
+}
+unsigned char devkit_SPRITEMODE_ZOOMED()
+{ 
+	return SPRITEMODE_ZOOMED; 
+}
+unsigned char devkit_SPRITEMODE_TALL_ZOOMED()
+{
+	return SPRITEMODE_TALL_ZOOMED; 
 }
 
 /* macro for ROM bankswitching */
+///*volatile __at (0xffff)*/ unsigned char ROM_bank_to_be_mapped_on_slot2;
 void devkit_SMS_mapROMBank( unsigned char n )
 {
 	SMS_mapROMBank( n );
@@ -165,9 +178,26 @@ void devkit_SMS_setAddr( const unsigned char addr )
 }
 
 /* PNT define (has address and VDP flags) */
+//#define SMS_PNTAddress            0x7800
+void devkit_XYtoADDR( unsigned int x, unsigned char y )
+{
+	XYtoADDR( x, y );
+}
 void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
 {
 	SMS_setNextTileatXY( x, y );
+}
+void devkit_SMS_setNextTileatLoc( unsigned int loc )
+{
+	SMS_setNextTileatLoc( loc );
+}
+void devkit_SMS_setNextTileatAddr( const unsigned char a )
+{
+	SMS_setNextTileatAddr( a );
+}
+void devkit_SMS_setTileatXY( unsigned int x, unsigned char y, unsigned int tile )
+{
+	SMS_setTileatXY( x, y, tile );
 }
 
 /* handy defines for tilemaps entry */
