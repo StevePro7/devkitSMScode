@@ -332,6 +332,24 @@ unsigned char devkit_isCollisionDetected()
 //#define SMS_enableLineInterrupt()   SMS_VDPturnOnFeature(0x0010)   /* turns on line IRQ */
 //#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
 
+void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) )
+{
+	SMS_setLineInterruptHandler( theHandlerFunction );
+}
+void devkit_SMS_setLineCounter( unsigned char count )
+{
+	SMS_setLineCounter( count );
+}
+void devkit_SMS_enableLineInterrupt()
+{
+	SMS_enableLineInterrupt();
+}
+void devkit_SMS_disableLineInterrupt()
+{
+	SMS_disableLineInterrupt();
+}
+
+
 
 /* VRAM unsafe functions. Fast, but dangerous! */
 void devkit_UNSAFE_SMS_copySpritestoSAT( void )

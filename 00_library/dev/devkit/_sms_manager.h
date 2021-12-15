@@ -144,10 +144,15 @@ void devkit_SMS_resetPauseRequest();
 // SMS_VDPFlags
 unsigned char devkit_isCollisionDetected();
 
-//void SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ) __z88dk_fastcall;
-//void SMS_setLineCounter( unsigned char count ) __z88dk_fastcall;
-//#define SMS_enableLineInterrupt()   SMS_VDPturnOnFeature(0x0010)   /* turns on line IRQ */
-//#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
+
+
+/* line interrupt */
+__z88dk_fastcall;
+void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) ); // __z88dk_fastcall;
+void devkit_SMS_setLineCounter( unsigned char count );
+void devkit_SMS_enableLineInterrupt(); /* turns on line IRQ */
+void devkit_SMS_disableLineInterrupt(); /* turns off line IRQ */
+
 
 
 /* VRAM unsafe functions. Fast, but dangerous! */
