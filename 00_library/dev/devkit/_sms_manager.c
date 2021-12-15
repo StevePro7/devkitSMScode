@@ -250,11 +250,20 @@ void devkit_SMS_zeroSpritePalette( void )
 }
 
 /* text renderer */
-//void SMS_configureTextRenderer( signed int ascii_to_tile_offset );
-//void SMS_autoSetUpTextRenderer( void );
+void SMS_configureTextRenderer( signed int ascii_to_tile_offset )
+{
+	SMS_configureTextRenderer( ascii_to_tile_offset );
+}
+void SMS_autoSetUpTextRenderer( void )
+{
+	SMS_autoSetUpTextRenderer();
+}
 
 /* decompress ZX7-compressed data to RAM */
-//void SMS_decompressZX7( const void *src, void *dst );
+void devkit_SMS_decompressZX7( const void *src, void *dst )
+{
+	SMS_decompressZX7( src, dst );
+}
 
 /* functions to read joypad(s) */
 unsigned int devkit_SMS_getKeysStatus()
