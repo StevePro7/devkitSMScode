@@ -250,11 +250,11 @@ void devkit_SMS_zeroSpritePalette( void )
 }
 
 /* text renderer */
-void SMS_configureTextRenderer( signed int ascii_to_tile_offset )
+void devkit_SMS_configureTextRenderer( signed int ascii_to_tile_offset )
 {
 	SMS_configureTextRenderer( ascii_to_tile_offset );
 }
-void SMS_autoSetUpTextRenderer( void )
+void devkit_SMS_autoSetUpTextRenderer( void )
 {
 	SMS_autoSetUpTextRenderer();
 }

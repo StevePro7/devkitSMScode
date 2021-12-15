@@ -111,8 +111,8 @@ void devkit_SMS_zeroBGPalette( void );
 void devkit_SMS_zeroSpritePalette( void );
 
 /* text renderer */
-void SMS_configureTextRenderer( signed int ascii_to_tile_offset );
-void SMS_autoSetUpTextRenderer( void );
+void devkit_SMS_configureTextRenderer( signed int ascii_to_tile_offset );
+void devkit_SMS_autoSetUpTextRenderer( void );
 
 /* decompress ZX7-compressed data to RAM */
 void devkit_SMS_decompressZX7( const void *src, void *dst );
@@ -184,7 +184,6 @@ void devkit_UNSAFE_SMS_load4Tiles( void *src, unsigned int tilefrom );
 /* the Interrupt Service Routines (do not modify) */
 void dekvit_SMS_isr( void ); // __naked;
 void dekvit_SMS_nmi_isr( void ); // __naked;
-
 
 
 // Helper functions.
