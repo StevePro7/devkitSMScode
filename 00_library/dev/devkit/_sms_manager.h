@@ -149,8 +149,17 @@ unsigned char devkit_isCollisionDetected();
 //#define SMS_enableLineInterrupt()   SMS_VDPturnOnFeature(0x0010)   /* turns on line IRQ */
 //#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
 
-void devkit_UNSAFE_SMS_copySpritestoSAT();
 
+/* VRAM unsafe functions. Fast, but dangerous! */
+void devkit_UNSAFE_SMS_copySpritestoSAT( void );
+void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void *src );
+void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void *src );
+void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void *src );
+
+///* handy macros for UNSAFE_SMS_VRAMmemcpy* */
+//#define devkit_UNSAFE_SMS_load1Tile(src,theTile)     UNSAFE_SMS_VRAMmemcpy32((theTile)*32,(src))
+//#define devkit_UNSAFE_SMS_load2Tiles(src,tilefrom)   UNSAFE_SMS_VRAMmemcpy64((tilefrom)*32,(src))
+//#define devkit_UNSAFE_SMS_load4Tiles(src,tilefrom)   UNSAFE_SMS_VRAMmemcpy128((tilefrom)*32,(src))
 
 /* the Interrupt Service Routines (do not modify) */
 void dekvit_SMS_isr( void ); // __naked;

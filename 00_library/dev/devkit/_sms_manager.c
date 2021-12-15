@@ -333,11 +333,23 @@ unsigned char devkit_isCollisionDetected()
 //#define SMS_disableLineInterrupt()  SMS_VDPturnOffFeature(0x0010)  /* turns off line IRQ */
 
 
-void devkit_UNSAFE_SMS_copySpritestoSAT()
+/* VRAM unsafe functions. Fast, but dangerous! */
+void devkit_UNSAFE_SMS_copySpritestoSAT( void )
 {
 	UNSAFE_SMS_copySpritestoSAT();
 }
-
+void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void*src )
+{
+	UNSAFE_SMS_VRAMmemcpy32( dst, src );
+}
+void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void*src )
+{
+	UNSAFE_SMS_VRAMmemcpy64( dst, src );
+}
+void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void*src )
+{
+	UNSAFE_SMS_VRAMmemcpy128( dst, src );
+}
 
 
 
