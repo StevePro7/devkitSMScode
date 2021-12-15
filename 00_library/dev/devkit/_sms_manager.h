@@ -135,8 +135,8 @@ void devkit_SMS_setColor( unsigned char color ); /*__z88dk_fastcall __preserves_
 
 /* SMS macros for colors */
 unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b );
-//#define RGB8(r,g,b)       (((r)>>6)|(((g)>>6)<<2)|(((b)>>6)<<4))
-//#define RGBHTML(RGB24bit) (((RGB24bit)>>22)|((((RGB24bit)&0xFFFF)>>14)<<2)|((((RGB24bit)&0xFF)>>6)<<4))
+unsigned char devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b );
+unsigned char devkit_RGBHTML( const unsigned int RGB24bit );
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette );
 void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette );
 void devkit_SMS_zeroBGPalette( void );

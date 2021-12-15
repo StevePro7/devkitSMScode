@@ -378,8 +378,14 @@ unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const un
 {
 	return RGB( r, g, b );
 }
-//#define RGB8(r,g,b)       (((r)>>6)|(((g)>>6)<<2)|(((b)>>6)<<4))
-//#define RGBHTML(RGB24bit) (((RGB24bit)>>22)|((((RGB24bit)&0xFFFF)>>14)<<2)|((((RGB24bit)&0xFF)>>6)<<4))
+unsigned char devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	return RGB8( r, g, b );
+}
+unsigned char devkit_RGBHTML( const unsigned int RGB24bit )
+{
+	return RGBHTML( RGB24bit );
+}
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette )
 {
 	SMS_loadBGPaletteHalfBrightness( palette );
