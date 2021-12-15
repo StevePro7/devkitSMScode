@@ -200,6 +200,13 @@ void devkit_SMS_setTileatXY( unsigned int x, unsigned char y, unsigned int tile 
 	SMS_setTileatXY( x, y, tile );
 }
 
+//#define SMS_VDPVRAMWrite          0x4000
+/* macro for turning tile numbers into VRAM addr for writing */
+void devkit_TILEtoADDR( unsigned int tile )
+{
+	TILEtoADDR( tile );
+}
+
 /* handy defines for tilemaps entry */
 unsigned int devkit_TILE_FLIPPED_X()
 {
@@ -239,10 +246,22 @@ void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilef
 }
 
 /* UNSAFE functions to load compressed tiles into VRAM */
-//void UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst );
-//#define UNSAFE_SMS_loadZX7compressedTiles(src,tilefrom) UNSAFE_SMS_loadZX7compressedTilesatAddr((src),TILEtoADDR(tilefrom))
-//void UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst );
-//#define UNSAFE_SMS_loadaPLibcompressedTiles(src,tilefrom) UNSAFE_SMS_loadaPLibcompressedTilesatAddr((src),TILEtoADDR(tilefrom))
+void devkit_UNSAFE_SMS_loadZX7compressedTilesatAddr( const void *src, unsigned int dst )
+{
+	UNSAFE_SMS_loadZX7compressedTilesatAddr( src, dst );
+}
+void devkit_UNSAFE_SMS_loadZX7compressedTiles( const void *src, unsigned int tilefrom )
+{
+	UNSAFE_SMS_loadZX7compressedTiles( src, tilefrom );
+}
+void devkit_UNSAFE_SMS_loadaPLibcompressedTilesatAddr( const void *src, unsigned int dst )
+{
+	UNSAFE_SMS_loadaPLibcompressedTilesatAddr( src, dst );
+}
+void devkit_UNSAFE_SMS_loadaPLibcompressedTiles( const void *src, unsigned int tilefrom )
+{
+	UNSAFE_SMS_loadaPLibcompressedTiles( src, tilefrom );
+}
 
 /* functions for the tilemap */
 void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size )
