@@ -131,8 +131,10 @@ unsigned int devkit_PORT_A_KEY_2();
 unsigned int devkit_PORT_A_KEY_START();
 
 /* paddle controller handling (SMS only) */
-//_Bool SMS_detectPaddle( unsigned char port ) __z88dk_fastcall __naked;
-//unsigned char SMS_readPaddle( unsigned char port ) __z88dk_fastcall __naked;
+unsigned char devkit_PORT_A();
+unsigned char devkit_PORT_B();
+unsigned char devkit_SMS_detectPaddle( unsigned char port ); //__z88dk_fastcall __naked;
+unsigned char devkit_SMS_readPaddle( unsigned char port ); //__z88dk_fastcall __naked;
 
 /* pause handling (SMS only) */
 unsigned char devkit_SMS_queryPauseRequested();

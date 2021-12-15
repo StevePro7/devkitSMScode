@@ -305,6 +305,23 @@ unsigned int devkit_PORT_A_KEY_START()
 }
 
 /* paddle controller handling (SMS only) */
+unsigned char devkit_PORT_A()
+{
+	return PORT_A;
+}
+unsigned char devkit_PORT_B()
+{
+	return PORT_B;
+}
+unsigned char devkit_SMS_detectPaddle( unsigned char port )
+{
+	return SMS_detectPaddle( port );
+}
+unsigned char devkit_SMS_readPaddle( unsigned char port )
+{
+	return SMS_readPaddle( port );
+}
+
 /* pause handling (SMS only) */
 unsigned char devkit_SMS_queryPauseRequested()
 {
