@@ -341,6 +341,15 @@ void devkit_UNSAFE_SMS_copySpritestoSAT()
 
 
 
+/* the Interrupt Service Routines (do not modify) */
+void dekvit_SMS_isr( void )
+{
+	SMS_isr();
+}
+void dekvit_SMS_nmi_isr( void )
+{
+	SMS_nmi_isr();
+}
 
 
 

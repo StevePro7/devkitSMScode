@@ -152,6 +152,9 @@ unsigned char devkit_isCollisionDetected();
 void devkit_UNSAFE_SMS_copySpritestoSAT();
 
 
+/* the Interrupt Service Routines (do not modify) */
+void dekvit_SMS_isr( void ); // __naked;
+void dekvit_SMS_nmi_isr( void ); // __naked;
 
 
 
