@@ -2,8 +2,14 @@
 Test repository for devkitSMS code samples!
 
 TODO
-test scroll example with devkit_SMS from here 
+3D City light phaser	checkout Etch-Sketch code base has example?
+
+test scroll example with devkit_SMS from here 	function pointer to line interrupt?
 E:\GitHub\StevePro7\SegaMasterSystemLinux\Examples\01-ScrollWorld
+
+Candy Kid code block example opaque tile
+Candy Kid SRAM example and helper function
+Van Halen sound FX - any helper SMS function here?
 
 Check
 #define SMS_loadSTMcompressedTileMap(x,y,src)       SMS_loadSTMcompressedTileMapatAddr(XYtoADDR((x),(y)),(src))

@@ -131,6 +131,14 @@ void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
 }
 
 /* handy defines for tilemaps entry */
+unsigned int devkit_TILE_FLIPPED_X()
+{
+	return TILE_FLIPPED_X;
+}
+unsigned int devkit_TILE_FLIPPED_Y()
+{
+	return TILE_FLIPPED_Y;
+}
 unsigned int devkit_TILE_USE_SPRITE_PALETTE()
 {
 	return TILE_USE_SPRITE_PALETTE;
