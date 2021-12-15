@@ -321,6 +321,52 @@ unsigned int devkit_PORT_A_KEY_START()
 	return PORT_A_KEY_START;
 }
 
+unsigned int devkit_PORT_B_KEY_UP()
+{
+	return PORT_B_KEY_UP;
+}
+unsigned int devkit_PORT_B_KEY_DOWN()
+{
+	return PORT_B_KEY_DOWN;
+}
+unsigned int devkit_PORT_B_KEY_LEFT()
+{
+	return PORT_B_KEY_LEFT;
+}
+unsigned int devkit_PORT_B_KEY_RIGHT()
+{
+	return PORT_B_KEY_RIGHT;
+}
+unsigned int devkit_PORT_B_KEY_1()
+{
+	return PORT_B_KEY_1;
+}
+unsigned int devkit_PORT_B_KEY_2()
+{
+	return PORT_B_KEY_2;
+}
+unsigned int devkit_PORT_B_KEY_START()
+{
+	return PORT_B_KEY_START;
+}
+
+unsigned int devkit_RESET_KEY()
+{
+	return RESET_KEY; 
+}
+unsigned int devkit_CARTRIDGE_SLOT()
+{
+	return CARTRIDGE_SLOT; 
+}
+unsigned int devkit_PORT_A_TH()
+{
+	return PORT_A_TH; 
+}
+unsigned int devkit_PORT_B_TH()
+{
+	return PORT_B_TH; 
+}
+
 /* paddle controller handling (SMS only) */
 unsigned char devkit_PORT_A()
 {

@@ -134,6 +134,19 @@ unsigned int devkit_PORT_A_KEY_1();
 unsigned int devkit_PORT_A_KEY_2();
 unsigned int devkit_PORT_A_KEY_START();
 
+unsigned int devkit_PORT_B_KEY_UP();
+unsigned int devkit_PORT_B_KEY_DOWN();
+unsigned int devkit_PORT_B_KEY_LEFT();
+unsigned int devkit_PORT_B_KEY_RIGHT();
+unsigned int devkit_PORT_B_KEY_1();
+unsigned int devkit_PORT_B_KEY_2();
+unsigned int devkit_PORT_B_KEY_START();
+
+unsigned int devkit_RESET_KEY();
+unsigned int devkit_CARTRIDGE_SLOT();
+unsigned int devkit_PORT_A_TH();
+unsigned int devkit_PORT_B_TH();
+
 /* paddle controller handling (SMS only) */
 unsigned char devkit_PORT_A();
 unsigned char devkit_PORT_B();
