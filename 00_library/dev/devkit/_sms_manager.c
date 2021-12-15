@@ -357,6 +357,23 @@ unsigned char devkit_SMS_getHCount( void )
 	return SMS_getHCount();
 }
 
+/* low level functions */
+void devkit_SMS_VRAMmemcpy( unsigned int dst, const void *src, unsigned int size )
+{
+	SMS_VRAMmemcpy( dst, src, size );
+}
+void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, const void *src, unsigned char size )
+{
+	SMS_VRAMmemcpy_brief( dst, src, size );
+}
+void devkit_SMS_VRAMmemset( unsigned int dst, unsigned char value, unsigned int size )
+{
+	SMS_VRAMmemset( dst, value, size );
+}
+void devkit_SMS_VRAMmemsetW( unsigned int dst, unsigned int value, unsigned int size )
+{
+	SMS_VRAMmemsetW( dst, value, size );
+}
 
 /* VRAM unsafe functions. Fast, but dangerous! */
 void devkit_UNSAFE_SMS_copySpritestoSAT( void )

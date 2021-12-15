@@ -278,16 +278,16 @@ unsigned char SMS_getVCount (void) { return 1; }
 unsigned char SMS_getHCount (void) { return 1; }
 
 /* low level functions */
-void SMS_VRAMmemcpy (unsigned int dst, void *src, unsigned int size) {}
-void SMS_VRAMmemcpy_brief (unsigned int dst, void *src, unsigned char size) {}
-void SMS_VRAMmemset (unsigned int dst, unsigned char value, unsigned int size) {}
-void SMS_VRAMmemsetW (unsigned int dst, unsigned int value, unsigned int size) {}
+void SMS_VRAMmemcpy( unsigned int dst, const void *src, unsigned int size ) {} /*__naked __z88dk_callee __preserves_regs( iyh, iyl )*/
+void SMS_VRAMmemcpy_brief( unsigned int dst, const void *src, unsigned char size ) {} /*__naked __z88dk_callee __preserves_regs( iyh, iyl )*/
+void SMS_VRAMmemset( unsigned int dst, unsigned char value, unsigned int size ) {}
+void SMS_VRAMmemsetW( unsigned int dst, unsigned int value, unsigned int size ) {}
 
 /* VRAM unsafe functions. Fast, but dangerous! */
 void UNSAFE_SMS_copySpritestoSAT (void) {}
-void UNSAFE_SMS_VRAMmemcpy32 (unsigned int dst, void *src) {}
-void UNSAFE_SMS_VRAMmemcpy64 (unsigned int dst, void *src) {}
-void UNSAFE_SMS_VRAMmemcpy128 (unsigned int dst, void *src) {}
+void UNSAFE_SMS_VRAMmemcpy32 (unsigned int dst, const void *src) {}
+void UNSAFE_SMS_VRAMmemcpy64 (unsigned int dst, const void *src) {}
+void UNSAFE_SMS_VRAMmemcpy128 (unsigned int dst, const void *src) {}
 
 /* handy macros for UNSAFE_SMS_VRAMmemcpy* */
 #define UNSAFE_SMS_load1Tile(src,theTile)     UNSAFE_SMS_VRAMmemcpy32((theTile)*32,(src))
