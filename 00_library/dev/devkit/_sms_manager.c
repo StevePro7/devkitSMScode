@@ -338,19 +338,32 @@ void devkit_UNSAFE_SMS_copySpritestoSAT( void )
 {
 	UNSAFE_SMS_copySpritestoSAT();
 }
-void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void*src )
+void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void *src )
 {
 	UNSAFE_SMS_VRAMmemcpy32( dst, src );
 }
-void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void*src )
+void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void *src )
 {
 	UNSAFE_SMS_VRAMmemcpy64( dst, src );
 }
-void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void*src )
+void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void *src )
 {
 	UNSAFE_SMS_VRAMmemcpy128( dst, src );
 }
 
+/* handy macros for UNSAFE_SMS_VRAMmemcpy* */
+void devkit_UNSAFE_SMS_load1Tile( void *src, unsigned int theTile )
+{
+	UNSAFE_SMS_VRAMmemcpy32( ( theTile ) * 32, ( src ) );
+}
+void devkit_UNSAFE_SMS_load2Tiles( void *src, unsigned int tilefrom )
+{
+	UNSAFE_SMS_VRAMmemcpy64( ( tilefrom ) * 32, ( src ) );
+}
+void devkit_UNSAFE_SMS_load4Tiles( void *src, unsigned int tilefrom )
+{
+	UNSAFE_SMS_VRAMmemcpy128( ( tilefrom ) * 32, ( src ) );
+}
 
 
 /* the Interrupt Service Routines (do not modify) */

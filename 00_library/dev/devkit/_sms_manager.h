@@ -156,10 +156,10 @@ void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void *src );
 void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void *src );
 void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void *src );
 
-///* handy macros for UNSAFE_SMS_VRAMmemcpy* */
-//#define devkit_UNSAFE_SMS_load1Tile(src,theTile)     UNSAFE_SMS_VRAMmemcpy32((theTile)*32,(src))
-//#define devkit_UNSAFE_SMS_load2Tiles(src,tilefrom)   UNSAFE_SMS_VRAMmemcpy64((tilefrom)*32,(src))
-//#define devkit_UNSAFE_SMS_load4Tiles(src,tilefrom)   UNSAFE_SMS_VRAMmemcpy128((tilefrom)*32,(src))
+/* handy macros for UNSAFE_SMS_VRAMmemcpy* */
+void devkit_UNSAFE_SMS_load1Tile( void *src, unsigned int theTile );
+void devkit_UNSAFE_SMS_load2Tiles( void *src, unsigned int tilefrom );
+void devkit_UNSAFE_SMS_load4Tiles( void *src, unsigned int tilefrom );
 
 /* the Interrupt Service Routines (do not modify) */
 void dekvit_SMS_isr( void ); // __naked;
