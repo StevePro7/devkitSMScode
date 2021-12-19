@@ -49,6 +49,7 @@ void devkit_SMS_mapROMBank( unsigned char n );
 void devkit_SMS_enableSRAM();
 void devkit_SMS_enableSRAMBank( unsigned char n );
 void devkit_SMS_disableSRAM();
+
 /* SRAM access is as easy as accessing an array of char */
 unsigned char* devkit_SMS_SRAM();
 
@@ -114,7 +115,7 @@ void devkit_SMS_updateSpriteImage( signed char sprite, unsigned char tile );
 void devkit_SMS_hideSprite( signed char sprite );
 void devkit_SMS_setClippingWindow( unsigned char x0, unsigned char y0, unsigned char x1, unsigned char y1 );
 signed char devkit_SMS_addSpriteClipping( int x, int y, unsigned char tile );   /* returns -1 if no more sprites are available or sprite clipped */
-void devkit_SMS_finalizeSprites();
+void devkit_SMS_finalizeSprites();     // *DEPRECATED* - will be dropped at some point in 2018
 void devkit_SMS_copySpritestoSAT();
 
 /* ***************************************************************** */

@@ -146,6 +146,7 @@ void devkit_SMS_disableSRAM()
 {
 	SMS_disableSRAM();
 }
+
 /* SRAM access is as easy as accessing an array of char */
 unsigned char* devkit_SMS_SRAM()
 {
