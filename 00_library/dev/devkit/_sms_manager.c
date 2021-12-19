@@ -383,10 +383,11 @@ unsigned char devkit_RGB8( const unsigned char r, const unsigned char g, const u
 {
 	return RGB8( r, g, b );
 }
-unsigned char devkit_RGBHTML( const unsigned int RGB24bit )
-{
-	return RGBHTML( RGB24bit );
-}
+//_sms_manager.c:388: warning 116: right shifting more than size of object changed to zero
+//unsigned char devkit_RGBHTML( const unsigned int RGB24bit )
+//{
+//	return RGBHTML( RGB24bit );
+//}
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette )
 {
 	SMS_loadBGPaletteHalfBrightness( palette );
@@ -543,19 +544,19 @@ void devkit_SMS_resetPauseRequest()
 }
 
 // SMS_VDPType
-unsigned char devkit_SMS_VDPType( void )
-{
-	return SMS_VDPType();
-}
+//unsigned char devkit_SMS_VDPType( void )
+//{
+//	return SMS_VDPType();
+//}
 ///* WARNING: these constants may change value later, please use defines */
-unsigned char devkit_VDP_PAL()
-{
-	return VDP_PAL;
-}
-unsigned char devkit_VDP_NTSC()
-{
-	return VDP_NTSC;
-}
+//unsigned char devkit_VDP_PAL()
+//{
+//	return VDP_PAL;
+//}
+//unsigned char devkit_VDP_NTSC()
+//{
+//	return VDP_NTSC;
+//}
 
 // SMS_VDPFlags
 unsigned char devkit_SMS_VDPFlags( void )

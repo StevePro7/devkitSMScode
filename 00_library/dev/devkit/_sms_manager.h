@@ -137,7 +137,7 @@ void devkit_SMS_setColor( unsigned char color ); /*__z88dk_fastcall __preserves_
 /* SMS macros for colors */
 unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b );
 unsigned char devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b );
-unsigned char devkit_RGBHTML( const unsigned int RGB24bit );
+//unsigned char devkit_RGBHTML( const unsigned int RGB24bit );
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette );
 void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette );
 void devkit_SMS_zeroBGPalette( void );
@@ -189,10 +189,10 @@ unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
 
 // SMS_VDPType
-unsigned char devkit_SMS_VDPType( void );
+//unsigned char devkit_SMS_VDPType( void );
 ///* WARNING: these constants may change value later, please use defines */
-unsigned char devkit_VDP_PAL();
-unsigned char devkit_VDP_NTSC();
+//unsigned char devkit_VDP_PAL();
+//unsigned char devkit_VDP_NTSC();
 
 // SMS_VDPFlags
 unsigned char devkit_SMS_VDPFlags( void );

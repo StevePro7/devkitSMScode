@@ -127,8 +127,8 @@ void SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) {} /*
 #else
 signed char SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) { return -1; } /*__naked __preserves_regs( iyh, iyl );*/ /* returns -1 if no more sprites are available, -2 if invalid Y coord */
 #endif
-void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) () /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
-void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) () /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
+void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) {} /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
+void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) {} /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
 signed char SMS_reserveSprite (void) { return -1; }
 void SMS_updateSpritePosition (signed char sprite, unsigned char x, unsigned char y) {}
 void SMS_updateSpriteImage (signed char sprite, unsigned char image) {}
@@ -240,7 +240,7 @@ unsigned int SMS_getMDKeysReleased (void);
 /* paddle controller handling (SMS only) */
 #define PORT_A      0
 #define PORT_B      1
-_Bool SMS_detectPaddle( unsigned char port ) { return 1; } /*__z88dk_fastcall __naked8/
+_Bool SMS_detectPaddle( unsigned char port ) { return 1; } /*__z88dk_fastcall __naked8;*/
 unsigned char SMS_readPaddle( unsigned char port ) { return 1; } /*__z88dk_fastcall __naked;*/
 #endif
 
@@ -251,13 +251,13 @@ void SMS_resetPauseRequest (void) {}
 #endif
 
 #ifndef TARGET_GG
-//#ifdef  VDPTYPE_DETECTION
+#ifdef  VDPTYPE_DETECTION
 /* VDPType handling (SMS only) */
 unsigned char SMS_VDPType( void ) { return 0x80; }
 /* WARNING: these constants may change value later, please use defines */
 #define VDP_PAL                 0x80
 #define VDP_NTSC                0x40
-//#endif
+#endif
 #endif
 
 /*extern volatile*/unsigned char SMS_VDPFlags;

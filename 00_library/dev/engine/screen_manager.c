@@ -6,7 +6,7 @@
 
 void engine_screen_manager_init()
 {
-	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM!!!", 3, 5 );
+	engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM.", 3, 5 );
 }
 
 void engine_screen_manager_update()
