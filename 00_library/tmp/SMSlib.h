@@ -16,8 +16,8 @@
 void SMS_init (void) {}
 
 /* VDP operative mode handling functions */
-void SMS_VDPturnOnFeature (unsigned int feature) {} //__z88dk_fastcall;
-void SMS_VDPturnOffFeature (unsigned int feature) {} //__z88dk_fastcall;
+void SMS_VDPturnOnFeature (unsigned int feature) {} /*__z88dk_fastcall;*/
+void SMS_VDPturnOffFeature (unsigned int feature) {} /*__z88dk_fastcall;*/
 /* turns on/off a VDP feature */
 /* feature can be one of the following: */
 
@@ -44,11 +44,11 @@ void SMS_VDPturnOffFeature (unsigned int feature) {} //__z88dk_fastcall;
 #define SMS_displayOn()   SMS_VDPturnOnFeature(VDPFEATURE_SHOWDISPLAY)   /* turns on display */
 #define SMS_displayOff()  SMS_VDPturnOffFeature(VDPFEATURE_SHOWDISPLAY)  /* turns off display */
 
-void SMS_setBGScrollX (unsigned char scrollX) {} //__z88dk_fastcall;
-void SMS_setBGScrollY (unsigned char scrollY) {} //__z88dk_fastcall;
-void SMS_setBackdropColor (unsigned char entry) {} //__z88dk_fastcall;
-void SMS_useFirstHalfTilesforSprites (_Bool usefirsthalf) {} //__z88dk_fastcall;
-void SMS_setSpriteMode (unsigned char mode) {} //__z88dk_fastcall;
+void SMS_setBGScrollX (unsigned char scrollX) {} /*__z88dk_fastcall;*/
+void SMS_setBGScrollY (unsigned char scrollY) {} /*__z88dk_fastcall;*/
+void SMS_setBackdropColor (unsigned char entry) {} /*__z88dk_fastcall;*/
+void SMS_useFirstHalfTilesforSprites (_Bool usefirsthalf) {} /*__z88dk_fastcall;*/
+void SMS_setSpriteMode (unsigned char mode) {} /*__z88dk_fastcall;*/
 /* modes for SMS_setSpriteMode */
 #define SPRITEMODE_NORMAL         0x00
 #define SPRITEMODE_TALL           0x01
@@ -71,8 +71,8 @@ void SMS_setSpriteMode (unsigned char mode) {} //__z88dk_fastcall;
 /* wait until next VBlank starts */
 void SMS_waitForVBlank (void) {}
 
-void SMS_crt0_RST08(unsigned int addr) {} //__z88dk_fastcall __preserves_regs(a,b,d,e,h,l,iyh,iyl);
-void SMS_crt0_RST18(unsigned int tile) {} //__z88dk_fastcall __preserves_regs(b,c,d,e,h,l,iyh,iyl);
+void SMS_crt0_RST08(unsigned int addr) {} /*__z88dk_fastcall __preserves_regs(a,b,d,e,h,l,iyh,iyl);*/
+void SMS_crt0_RST18(unsigned int tile) {} /*__z88dk_fastcall __preserves_regs(b,c,d,e,h,l,iyh,iyl);*/
 
 /* function for setting tiles/moving 'cursor' */
 #define SMS_setTile(tile)         //SMS_crt0_RST18(tile)
@@ -123,12 +123,12 @@ void SMS_loadSTMcompressedTileMapatAddr( unsigned int dst, const void *src ) {}
 /* functions for sprites handling */
 void SMS_initSprites (void) {}
 #ifdef NO_SPRITE_CHECKS
-void SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}
+void SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) {} /*__naked __preserves_regs( iyh, iyl );*/
 #else
-signed char SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ { return -1; }  /* returns -1 if no more sprites are available, -2 if invalid Y coord */
+signed char SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile ) { return -1; } /*__naked __preserves_regs( iyh, iyl );*/ /* returns -1 if no more sprites are available, -2 if invalid Y coord */
 #endif
-void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}  /* doesn't return anything */
-void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) /*__naked __preserves_regs( iyh, iyl );*/ {}   /* doesn't return anything */
+void SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) () /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
+void SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile ) () /*__naked __preserves_regs( iyh, iyl );*/ /* doesn't return anything */
 signed char SMS_reserveSprite (void) { return -1; }
 void SMS_updateSpritePosition (signed char sprite, unsigned char x, unsigned char y) {}
 void SMS_updateSpriteImage (signed char sprite, unsigned char image) {}
@@ -147,10 +147,10 @@ void SMS_copySpritestoSAT( void ) {}
 
 #ifdef TARGET_GG
 /* GG functions to set a color / load a palette */
-void GG_setBGPaletteColor( unsigned char entry, unsigned int color );
-void GG_setSpritePaletteColor( unsigned char entry, unsigned int color );
-void GG_loadBGPalette( const void *palette ) __z88dk_fastcall;
-void GG_loadSpritePalette( const void *palette ) __z88dk_fastcall;
+void GG_setBGPaletteColor( unsigned char entry, unsigned int color ) {}
+void GG_setSpritePaletteColor( unsigned char entry, unsigned int color ) {}
+void GG_loadBGPalette( const void *palette ) {} /*__z88dk_fastcall;*/
+void GG_loadSpritePalette( const void *palette ) {} /*__z88dk_fastcall;*/
 #define GG_setNextBGColoratIndex(i)       SMS_setAddr(SMS_CRAMAddress|((i)<<1))
 #define GG_setNextSpriteColoratIndex(i)   SMS_setAddr(SMS_CRAMAddress|0x20|((i)<<1))
 #define GG_setColor(color)       SMS_crt0_RST18(color)
@@ -162,23 +162,23 @@ void GG_loadSpritePalette( const void *palette ) __z88dk_fastcall;
 /* SMS functions to set a color / load a palette */
 void SMS_setBGPaletteColor (unsigned char entry, unsigned char color) {}
 void SMS_setSpritePaletteColor (unsigned char entry, unsigned char color) {}
-void SMS_loadBGPalette (void *palette) {} // __z88dk_fastcall;
-void SMS_loadSpritePalette (void *palette) {} //__z88dk_fastcall;
+void SMS_loadBGPalette (void *palette) {} /*__z88dk_fastcall;*/
+void SMS_loadSpritePalette (void *palette) {} /*__z88dk_fastcall;*/
 #define SMS_setNextBGColoratIndex(i)       SMS_setAddr(SMS_CRAMAddress|(i))
 #define SMS_setNextSpriteColoratIndex(i)   SMS_setAddr(SMS_CRAMAddress|0x10|(i))
-void SMS_setColor (unsigned char color) {} // __z88dk_fastcall __preserves_regs(b,c,d,e,h,l,iyh,iyl);
+void SMS_setColor (unsigned char color) {} /*__z88dk_fastcall __preserves_regs(b,c,d,e,h,l,iyh,iyl);*/
 /* SMS macros for colors */
 #define RGB(r,g,b)        ((r)|((g)<<2)|((b)<<4))
 #define RGB8(r,g,b)       (((r)>>6)|(((g)>>6)<<2)|(((b)>>6)<<4))
 #define RGBHTML(RGB24bit) (((RGB24bit)>>22)|((((RGB24bit)&0xFFFF)>>14)<<2)|((((RGB24bit)&0xFF)>>6)<<4))
-void SMS_loadBGPaletteHalfBrightness (void *palette) {} //__z88dk_fastcall;
-void SMS_loadSpritePaletteHalfBrightness (void *palette) {} // __z88dk_fastcall;
+void SMS_loadBGPaletteHalfBrightness (void *palette) {} /*__z88dk_fastcall;*/
+void SMS_loadSpritePaletteHalfBrightness (void *palette) {} /*__z88dk_fastcall;*/
 void SMS_zeroBGPalette (void) {}
 void SMS_zeroSpritePalette (void) {}
 #endif
 
 /* text renderer */
-void SMS_configureTextRenderer( signed int ascii_to_tile_offset ) {} // __z88dk_fastcall;
+void SMS_configureTextRenderer( signed int ascii_to_tile_offset ) {} /*__z88dk_fastcall;*/
 void SMS_autoSetUpTextRenderer( void ) {}
 
 /* decompress ZX7-compressed data to RAM */
@@ -240,8 +240,8 @@ unsigned int SMS_getMDKeysReleased (void);
 /* paddle controller handling (SMS only) */
 #define PORT_A      0
 #define PORT_B      1
-_Bool SMS_detectPaddle( unsigned char port ) /*__z88dk_fastcall __naked;*/ { return 1; }
-unsigned char SMS_readPaddle( unsigned char port ) /*__z88dk_fastcall __naked;*/ { return 1; }
+_Bool SMS_detectPaddle( unsigned char port ) { return 1; } /*__z88dk_fastcall __naked8/
+unsigned char SMS_readPaddle( unsigned char port ) { return 1; } /*__z88dk_fastcall __naked;*/
 #endif
 
 #ifndef TARGET_GG
@@ -365,7 +365,7 @@ void UNSAFE_SMS_VRAMmemcpy128 (unsigned int dst, const void *src) {}
                   SMS_EMBED_SDSC_HEADER_16KB((verMaj),(verMin),0,0,0,(author),(name),(descr))
 
 /* the Interrupt Service Routines (do not modify) */
-void SMS_isr (void) {} // __interrupt 
-void SMS_nmi_isr (void) {} //__critical __interrupt;
+void SMS_isr (void) {} /*__interrupt*/
+void SMS_nmi_isr (void) {} /*__critical __interrupt;*/
 
 /* EOF */
