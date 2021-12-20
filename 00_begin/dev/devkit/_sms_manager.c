@@ -1,5 +1,5 @@
 #include "_sms_manager.h"
-#include "..\game.h"
+#include "../game.h"
 
 #include <stdbool.h>
 
