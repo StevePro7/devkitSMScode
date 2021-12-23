@@ -8,9 +8,6 @@
     <Filter Include="Header Files\devkit">
       <UniqueIdentifier>{7f633552-a6d4-4fb7-a338-9117501e7ee0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\engine">
-      <UniqueIdentifier>{e2fd97d9-ac69-4a7a-8d99-fddc5462cbbd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -18,18 +15,9 @@
     <Filter Include="Source Files\devkit">
       <UniqueIdentifier>{f148aff4-06ab-469a-9d2a-cf52e99900e0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\engine">
-      <UniqueIdentifier>{741adb6f-8ef6-4422-953c-1a6aa5238433}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Header Files\banks">
-      <UniqueIdentifier>{ec76ccbd-c1ac-4b6b-9dec-35411b4a1adc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\banks">
-      <UniqueIdentifier>{91d8a51f-6bc7-41fe-8a24-665c42127882}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\content">
       <UniqueIdentifier>{9670665b-7051-44d7-b4e6-a812b46a8a53}</UniqueIdentifier>
@@ -48,35 +36,8 @@
     <ClCompile Include="devkit\_sms_manager.c">
       <Filter>Source Files\devkit</Filter>
     </ClCompile>
-    <ClCompile Include="engine\content_manager.c">
-      <Filter>Source Files\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\asm_manager.c">
-      <Filter>Source Files\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\font_manager.c">
-      <Filter>Source Files\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\screen_manager.c">
-      <Filter>Source Files\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\input_manager.c">
-      <Filter>Source Files\engine</Filter>
-    </ClCompile>
-    <ClCompile Include="banks\banked_code_1.c">
-      <Filter>Source Files\banks</Filter>
-    </ClCompile>
-    <ClCompile Include="banks\banked_code_2.c">
-      <Filter>Source Files\banks</Filter>
-    </ClCompile>
-    <ClCompile Include="banks\banked_code_3.c">
-      <Filter>Source Files\banks</Filter>
-    </ClCompile>
     <ClCompile Include="devkit\_snd_manager.c">
       <Filter>Source Files\devkit</Filter>
-    </ClCompile>
-    <ClCompile Include="gfx.c">
-      <Filter>Source Files\content</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,35 +55,8 @@
     <ClInclude Include="devkit\_sms_manager.h">
       <Filter>Header Files\devkit</Filter>
     </ClInclude>
-    <ClInclude Include="engine\content_manager.h">
-      <Filter>Header Files\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\asm_manager.h">
-      <Filter>Header Files\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\font_manager.h">
-      <Filter>Header Files\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\screen_manager.h">
-      <Filter>Header Files\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="engine\input_manager.h">
-      <Filter>Header Files\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="banks\banked_code_1.h">
-      <Filter>Header Files\banks</Filter>
-    </ClInclude>
-    <ClInclude Include="banks\banked_code_2.h">
-      <Filter>Header Files\banks</Filter>
-    </ClInclude>
-    <ClInclude Include="banks\banked_code_3.h">
-      <Filter>Header Files\banks</Filter>
-    </ClInclude>
     <ClInclude Include="devkit\_snd_manager.h">
       <Filter>Header Files\devkit</Filter>
-    </ClInclude>
-    <ClInclude Include="gfx.h">
-      <Filter>Header Files\content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
