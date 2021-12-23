@@ -7,7 +7,9 @@
 -l ../lib/SMSlib.lib
 -l z80
 ../crt0/crt0_sms.rel
-../lib/PSGlib.rel
 main.rel
+../lib/PSGlib.rel
+devkit/_sms_manager.rel
+devkit/_snd_manager.rel
 
 -e

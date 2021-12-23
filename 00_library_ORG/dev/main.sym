@@ -1,0 +1,72 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  2710 L
+    .__.ABS.                                                    =  0000 G
+    .__.CPU.                                                    =  0000 L
+    .__.H$L.                                                    =  0000 L
+  0 A$main$103                                                     0027 GR
+  0 A$main$108                                                     002A GR
+  0 A$main$113                                                     002D GR
+  0 A$main$65                                                      0000 GR
+  0 A$main$69                                                      0003 GR
+  0 A$main$73                                                      0006 GR
+  0 A$main$74                                                      0009 GR
+  0 A$main$75                                                      000A GR
+  0 A$main$76                                                      000B GR
+  0 A$main$77                                                      000C GR
+  0 A$main$78                                                      000F GR
+  0 A$main$82                                                      0010 GR
+  0 A$main$86                                                      0013 GR
+  0 A$main$87                                                      0016 GR
+  0 A$main$88                                                      0017 GR
+  0 A$main$89                                                      001A GR
+  0 A$main$93                                                      001B GR
+  0 A$main$94                                                      001E GR
+  0 A$main$95                                                      001F GR
+  0 A$main$96                                                      0021 GR
+  0 A$main$97                                                      0022 GR
+  0 A$main$98                                                      0025 GR
+  0 A$main$99                                                      0026 GR
+  0 C$main.c$10$1$38                                            =  0010 GR
+  0 C$main.c$11$1$38                                            =  0013 GR
+  0 C$main.c$16$1$38                                            =  001B GR
+  0 C$main.c$18$1$38                                            =  0027 GR
+  0 C$main.c$26$3$40                                            =  002A GR
+  0 C$main.c$29$2$39                                            =  002D GR
+  0 C$main.c$3$0$0                                              =  0000 GR
+  0 C$main.c$5$1$38                                             =  0000 GR
+  0 C$main.c$6$1$38                                             =  0003 GR
+  0 C$main.c$9$1$38                                             =  0006 GR
+  0 G$main$0$0                                                  =  0000 GR
+  0 XG$main$0$0                                                 =  002D GR
+    _devkit_SMS_VDPturnOnFeature                                   **** GX
+    _devkit_SMS_displayOff                                         **** GX
+    _devkit_SMS_displayOn                                          **** GX
+    _devkit_SMS_init                                               **** GX
+    _devkit_SMS_setSpriteMode                                      **** GX
+    _devkit_SMS_setSpritePaletteColor                              **** GX
+    _devkit_SMS_useFirstHalfTilesforSprites_False                  **** GX
+    _devkit_SMS_waitForVBlank                                      **** GX
+    _devkit_SPRITEMODE_NORMAL                                      **** GX
+    _devkit_VDPFEATURE_HIDEFIRSTCOL                                **** GX
+  0 _main                                                          0000 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE                                      size   2F   flags    0
+   1 _DATA                                      size    0   flags    0
+   2 _INITIALIZED                               size    0   flags    0
+   3 _DABS                                      size    0   flags    8
+   4 _HOME                                      size    0   flags    0
+   5 _GSINIT                                    size    0   flags    0
+   6 _GSFINAL                                   size    0   flags    0
+   7 _INITIALIZER                               size    0   flags    0
+   8 _CABS                                      size    0   flags    8
+
