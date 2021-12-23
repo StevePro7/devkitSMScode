@@ -34,6 +34,7 @@ S A$font_manager$203 Def0098
 S A$font_manager$140 Def0059
 S A$font_manager$131 Def004F
 S A$font_manager$122 Def0046
+S C$font_manager.c$20$1$70 Def0035
 S A$font_manager$420 Def01AD
 S A$font_manager$411 Def019E
 S A$font_manager$402 Def0196
@@ -46,7 +47,6 @@ S A$font_manager$150 Def0062
 S A$font_manager$141 Def005A
 S A$font_manager$123 Def0048
 S A$font_manager$105 Def002C
-S C$font_manager.c$30$1$70 Def007D
 S A$font_manager$412 Def01A1
 S A$font_manager$403 Def0197
 S A$font_manager$340 Def0140
@@ -60,6 +60,7 @@ S A$font_manager$142 Def005B
 S A$font_manager$124 Def0049
 S A$font_manager$115 Def0035
 S A$font_manager$106 Def002E
+S C$font_manager.c$13$1$70 Def0008
 S _engine_font_manager_draw_zero Def012F
 S A$font_manager$413 Def01A2
 S A$font_manager$404 Def0198
@@ -77,8 +78,8 @@ S A$font_manager$143 Def005C
 S A$font_manager$125 Def004A
 S A$font_manager$116 Def0038
 S A$font_manager$107 Def0032
-S C$font_manager.c$32$1$70 Def007E
-S C$font_manager.c$23$1$70 Def0035
+S C$font_manager.c$30$1$72 Def007D
+S C$font_manager.c$14$1$70 Def000E
 S A$font_manager$414 Def01A4
 S A$font_manager$405 Def019B
 S A$font_manager$360 Def0162
@@ -97,6 +98,7 @@ S A$font_manager$144 Def005D
 S A$font_manager$135 Def0050
 S A$font_manager$126 Def004B
 S A$font_manager$108 Def0034
+S C$font_manager.c$15$1$70 Def001B
 S A$font_manager$424 Def01AE
 S A$font_manager$415 Def01A6
 S A$font_manager$406 Def019C
@@ -118,7 +120,9 @@ S A$font_manager$154 Def0069
 S A$font_manager$145 Def0060
 S A$font_manager$136 Def0051
 S A$font_manager$118 Def003C
-S C$font_manager.c$34$1$70 Def008B
+S C$font_manager.c$32$1$72 Def007E
+S C$font_manager.c$23$1$72 Def0035
+S C$font_manager.c$16$1$70 Def002B
 S A$font_manager$434 Def01B8
 S A$font_manager$425 Def01AF
 S A$font_manager$416 Def01A7
@@ -156,8 +160,8 @@ S A$font_manager$228 Def00BF
 S A$font_manager$219 Def00B1
 S A$font_manager$156 Def006B
 S A$font_manager$138 Def0055
-S C$font_manager.c$25$2$71 Def004D
-S C$font_manager.c$20$1$68 Def0035
+S C$font_manager.c$34$1$72 Def008B
+S C$font_manager.c$18$1$70 Def002C
 S C$font_manager.c$10$0$0 Def0000
 S _engine_font_manager_draw_text Def002C
 S A$font_manager$427 Def01B2
@@ -174,7 +178,6 @@ S A$font_manager$238 Def00CA
 S A$font_manager$229 Def00C2
 S A$font_manager$157 Def006C
 S A$font_manager$139 Def0056
-S C$font_manager.c$26$2$71 Def0050
 S A$font_manager$428 Def01B4
 S A$font_manager$419 Def01AC
 S A$font_manager$383 Def0180
@@ -191,9 +194,7 @@ S A$font_manager$239 Def00CD
 S A$font_manager$176 Def007D
 S A$font_manager$167 Def0075
 S A$font_manager$158 Def006D
-S C$font_manager.c$80$3$80 Def019E
-S C$font_manager.c$27$2$71 Def0062
-S C$font_manager.c$13$1$68 Def0008
+S C$font_manager.c$25$2$73 Def004D
 S A$font_manager$429 Def01B6
 S A$font_manager$384 Def0183
 S A$font_manager$375 Def0172
@@ -209,11 +210,8 @@ S A$font_manager$249 Def00DB
 S A$font_manager$186 Def007E
 S A$font_manager$168 Def0078
 S A$font_manager$159 Def006E
-S C$font_manager.c$72$3$80 Def013C
-S C$font_manager.c$61$2$74 Def012E
-S C$font_manager.c$43$2$74 Def011F
-S C$font_manager.c$28$2$71 Def0075
-S C$font_manager.c$14$1$68 Def000E
+S C$font_manager.c$72$2$81 Def01AE
+S C$font_manager.c$26$2$73 Def0050
 S C$font_manager.c$12$1$0 Def0008
 S A$font_manager$394 Def018A
 S A$font_manager$376 Def0175
@@ -225,8 +223,9 @@ S A$font_manager$286 Def010A
 S A$font_manager$277 Def00F9
 S A$font_manager$259 Def00E2
 S A$font_manager$187 Def0080
-S C$font_manager.c$51$3$75 Def00DE
-S C$font_manager.c$15$1$68 Def001B
+S C$font_manager.c$82$2$81 Def01B8
+S C$font_manager.c$80$3$82 Def019E
+S C$font_manager.c$27$2$73 Def0062
 S A$font_manager$395 Def018B
 S A$font_manager$377 Def0178
 S A$font_manager$359 Def015F
@@ -234,12 +233,10 @@ S A$font_manager$296 Def0116
 S A$font_manager$287 Def010D
 S A$font_manager$278 Def00FC
 S A$font_manager$188 Def0084
-S C$font_manager.c$74$3$80 Def014B
-S C$font_manager.c$63$2$74 Def012F
-S C$font_manager.c$52$3$75 Def00E2
-S C$font_manager.c$45$2$74 Def009F
-S C$font_manager.c$43$3$75 Def008B
-S C$font_manager.c$16$1$68 Def002B
+S C$font_manager.c$72$3$82 Def013C
+S C$font_manager.c$61$2$76 Def012E
+S C$font_manager.c$43$2$76 Def011F
+S C$font_manager.c$28$2$73 Def0075
 S A$font_manager$396 Def018C
 S A$font_manager$378 Def0179
 S A$font_manager$297 Def0117
@@ -247,36 +244,39 @@ S A$font_manager$288 Def010E
 S A$font_manager$279 Def00FF
 S A$font_manager$198 Def008B
 S A$font_manager$189 Def0086
-S C$font_manager.c$65$1$74 Def013C
-S C$font_manager.c$46$2$74 Def00B7
+S C$font_manager.c$75$2$81 Def016C
+S C$font_manager.c$51$3$77 Def00DE
 S A$font_manager$397 Def018F
 S A$font_manager$388 Def0186
 S A$font_manager$379 Def017C
 S A$font_manager$298 Def0118
 S A$font_manager$199 Def008E
 S XG$engine_font_manager_draw_zero$0$0 Def01B8
-S C$font_manager.c$18$1$68 Def002C
+S C$font_manager.c$74$3$82 Def014B
+S C$font_manager.c$63$2$76 Def012F
+S C$font_manager.c$52$3$77 Def00E2
+S C$font_manager.c$45$2$76 Def009F
+S C$font_manager.c$43$3$77 Def008B
 S A$font_manager$398 Def0190
 S A$font_manager$389 Def0187
 S A$font_manager$299 Def0119
-S C$font_manager.c$77$3$80 Def0186
+S C$font_manager.c$65$1$76 Def013C
+S C$font_manager.c$46$2$76 Def00B7
 S A$font_manager$399 Def0191
 S G$engine_font_manager_draw_data$0$0 Def007E
-S C$font_manager.c$72$2$79 Def01AE
-S C$font_manager.c$79$3$80 Def018A
-S C$font_manager.c$55$4$76 Def00F4
-S C$font_manager.c$48$3$75 Def00CA
-S C$font_manager.c$82$2$79 Def01B8
-S C$font_manager.c$58$3$75 Def00F6
-S C$font_manager.c$49$3$75 Def00D8
-S C$font_manager.c$59$3$75 Def010F
+S C$font_manager.c$77$3$82 Def0186
+S C$font_manager.c$79$3$82 Def018A
+S C$font_manager.c$55$4$78 Def00F4
+S C$font_manager.c$48$3$77 Def00CA
 S XG$engine_font_manager_draw_text$0$0 Def007D
 S A$font_manager$90 Def0029
 S A$font_manager$72 Def000E
-S C$font_manager.c$75$2$79 Def016C
+S C$font_manager.c$58$3$77 Def00F6
+S C$font_manager.c$49$3$77 Def00D8
 S G$engine_font_manager_draw_char$0$0 Def0000
 S A$font_manager$82 Def001B
 S A$font_manager$73 Def000F
+S C$font_manager.c$59$3$77 Def010F
 S A$font_manager$83 Def001E
 S A$font_manager$74 Def0012
 S A$font_manager$84 Def001F
@@ -346,27 +346,27 @@ T 7E 00 DD E5 DD 21 00 00 DD 39 21 F6 FF 39 F9 21
 R 00 00 00 00
 T 8C 00 00 00 39 DD 75 FE DD 74 FF DD 7E 06 DD 77
 R 00 00 00 00
-T 9A 00 FD DD 36 FA 00
+T 9A 00 FB DD 36 FA 00
 R 00 00 00 00
 T 9F 00
 R 00 00 00 00
 T 9F 00 21 0A 00 E5 DD 6E 04 DD 66 05 E5 CD 00 00
 R 00 00 00 00 02 0E 00 00
-T AD 00 F1 F1 4D 44 DD 71 FB DD 70 FC C5 21 0A 00
+T AD 00 F1 F1 4D 44 DD 71 FC DD 70 FD C5 21 0A 00
 R 00 00 00 00
 T BB 00 E5 DD 6E 04 DD 66 05 E5 CD 00 00 F1 F1 C1
 R 00 00 00 00 02 0B 05 00
 T C9 00 5D DD 7E FA DD 86 FE 6F 3E 00 DD 8E FF 67
 R 00 00 00 00
-T D7 00 73 DD 71 04 DD 70 05 7B C6 10 4F DD 7E FC
+T D7 00 73 DD 71 04 DD 70 05 7B C6 10 4F DD 7E FD
 R 00 00 00 00
-T E5 00 DD B6 FB 20 0C 7B B7 20 08 DD 7E FA B7 28
+T E5 00 DD B6 FC 20 0C 7B B7 20 08 DD 7E FA B7 28
 R 00 00 00 00
 T F3 00 02 0E 00
 R 00 00 00 00
 T F6 00
 R 00 00 00 00
-T F6 00 DD 46 FD DD 35 FD DD 7E FD DD 77 06 C5 DD
+T F6 00 DD 46 FB DD 35 FB DD 7E FB DD 77 06 C5 DD
 R 00 00 00 00
 T 04 01 7E 07 F5 33 C5 33 CD 00 00 F1 C1 21 00 00
 R 00 00 00 00 02 09 01 00 02 0E 04 00

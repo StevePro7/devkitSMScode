@@ -119,5 +119,7 @@ S:G$devkit_UNSAFE_SMS_load2Tiles$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_UNSAFE_SMS_load4Tiles$0$0({2}DF,SV:S),C,0,0
 S:G$dekvit_SMS_isr$0$0({2}DF,SV:S),C,0,0
 S:G$dekvit_SMS_nmi_isr$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_addSprite_bulk8$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_addSprite_bulk12$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setTilePriority$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),C,0,0

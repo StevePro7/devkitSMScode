@@ -9,9 +9,9 @@ S _font_tiles__tiles__psgcompr Ref0000
 S .__.ABS. Def0000
 S _font_tiles__palette__bin Ref0000
 A _CODE size 16 flags 0 addr 0
-S C$content_manager.c$10$1$63 Def0000
-S C$content_manager.c$11$1$63 Def000D
-S C$content_manager.c$12$1$63 Def0015
+S C$content_manager.c$10$1$65 Def0000
+S C$content_manager.c$11$1$65 Def000D
+S C$content_manager.c$12$1$65 Def0015
 S G$engine_content_manager_load_tiles$0$0 Def0000
 S A$content_manager$60 Def0007
 S A$content_manager$70 Def0014

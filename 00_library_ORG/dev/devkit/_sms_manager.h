@@ -200,6 +200,8 @@ void dekvit_SMS_nmi_isr( void );
 
 
 // Helper functions.
+void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, int tile );
+void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, int tile );
 void devkit_SMS_setTilePriority( const unsigned char tile );
 unsigned char devkit_isCollisionDetected();
 
