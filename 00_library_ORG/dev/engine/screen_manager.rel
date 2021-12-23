@@ -1,0 +1,76 @@
+;!FILE screen_manager.asm
+XL2
+H 9 areas 28 global symbols
+M screen_manager
+O -mz80
+S _engine_font_manager_draw_text Ref0000
+S _engine_input_manager_hold_fire1 Ref0000
+S .__.ABS. Def0000
+A _CODE size 56 flags 0 addr 0
+S _engine_screen_manager_init Def0000
+S G$engine_screen_manager_update$0$0 Def0028
+S XG$engine_screen_manager_init$0$0 Def000D
+S _engine_screen_manager_update Def0028
+S A$screen_manager$100 Def0036
+S A$screen_manager$110 Def003B
+S A$screen_manager$101 Def0039
+S A$screen_manager$102 Def003A
+S XG$engine_screen_manager_update$0$0 Def003B
+S C$screen_manager.c$10$1$5 Def0028
+S A$screen_manager$60 Def0004
+S C$screen_manager.c$13$1$6 Def0028
+S A$screen_manager$61 Def0007
+S C$screen_manager.c$14$1$6 Def002B
+S A$screen_manager$62 Def0008
+S A$screen_manager$90 Def002B
+S A$screen_manager$63 Def000B
+S A$screen_manager$91 Def002C
+S A$screen_manager$64 Def000C
+S A$screen_manager$92 Def002D
+S C$screen_manager.c$16$2$7 Def002E
+S C$screen_manager.c$19$1$6 Def003B
+S C$screen_manager.c$17$2$7 Def003B
+S A$screen_manager$58 Def0000
+S A$screen_manager$86 Def0028
+S A$screen_manager$59 Def0003
+S A$screen_manager$96 Def002E
+S A$screen_manager$69 Def000D
+S Fscreen_manager$__str_0$0$0 Def000E
+S A$screen_manager$97 Def0031
+S Fscreen_manager$__str_1$0$0 Def003C
+S C$screen_manager.c$5$0$0 Def0000
+S A$screen_manager$98 Def0032
+S A$screen_manager$99 Def0035
+S G$engine_screen_manager_init$0$0 Def0000
+S C$screen_manager.c$7$1$5 Def0000
+S C$screen_manager.c$8$1$5 Def000D
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 21 03 05 E5 21 0E 00 E5 CD 00 00 F1 F1 C9
+R 00 00 00 00 00 07 00 00 02 0B 00 00
+T 0E 00
+R 00 00 00 00
+T 0E 00 48 45 4C 4C 4F 20 53 45 47 41 20 4D 41 53
+R 00 00 00 00
+T 1C 00 54 45 52 20 53 59 53 54 45 4D 2E 00
+R 00 00 00 00
+T 28 00
+R 00 00 00 00
+T 28 00 CD 00 00 7D B7 C8 21 03 07 E5 21 3C 00 E5
+R 00 00 00 00 02 03 01 00 00 0D 00 00
+T 36 00 CD 00 00 F1 F1 C9
+R 00 00 00 00 02 03 00 00
+T 3C 00
+R 00 00 00 00
+T 3C 00 48 45 4C 4C 4F 20 53 45 47 41 20 4D 41 53
+R 00 00 00 00
+T 4A 00 54 45 52 20 53 59 53 54 45 4D 2E 00
+R 00 00 00 00
