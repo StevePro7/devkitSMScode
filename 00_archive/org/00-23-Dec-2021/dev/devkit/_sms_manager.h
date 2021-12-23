@@ -199,12 +199,8 @@ void dekvit_SMS_isr( void );
 void dekvit_SMS_nmi_isr( void );
 
 
-// Helpers
+// Helper functions.
 void devkit_SMS_setTilePriority( const unsigned char tile );
 unsigned char devkit_isCollisionDetected();
-
-// TODO delete
-void devkit_SMS_useFirstHalfTilesforSprites_False();
-void devkit_SMS_useFirstHalfTilesforSprites_True();
 
 #endif//_SMS_MANAGER_H_

@@ -632,17 +632,6 @@ unsigned char devkit_isCollisionDetected()
 }
 
 
-// TODO delete
-void devkit_SMS_useFirstHalfTilesforSprites_False()
-{
-	SMS_useFirstHalfTilesforSprites( false );
-}
-void devkit_SMS_useFirstHalfTilesforSprites_True()
-{
-	SMS_useFirstHalfTilesforSprites( true );
-}
-
-
 // Sega header.
 #ifdef _CONSOLE
 #else
