@@ -64,3 +64,15 @@ S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_TILE_PRIORITY$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_TILE_USE_SPRITE_PALETTE$0$0({2}DF,SI:U),C,0,0
 S:G$main$0$0({2}DF,SV:S),C,0,0
+L:C$main.c$3$0$0:7AB
+L:C$main.c$5$1$38:7AB
+L:G$main$0$0:7AB
+L:C$main.c$6$1$38:7AE
+L:C$main.c$9$1$38:7B1
+L:C$main.c$10$1$38:7BB
+L:C$main.c$11$1$38:7BE
+L:C$main.c$16$1$38:7C6
+L:C$main.c$18$1$38:7D2
+L:C$main.c$26$3$40:7D5
+L:C$main.c$29$2$39:7D8
+L:XG$main$0$0:7D8
