@@ -39,6 +39,9 @@
     <ClCompile Include="devkit\_snd_manager.c">
       <Filter>Source Files\devkit</Filter>
     </ClCompile>
+    <ClCompile Include="content\gfx.c">
+      <Filter>Source Files\content</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -57,6 +60,9 @@
     </ClInclude>
     <ClInclude Include="devkit\_snd_manager.h">
       <Filter>Header Files\devkit</Filter>
+    </ClInclude>
+    <ClInclude Include="content\gfx.h">
+      <Filter>Header Files\content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
