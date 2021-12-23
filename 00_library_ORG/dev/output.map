@@ -46,11 +46,11 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000110  l__DATA                         
      0000012A  l__HEADER5                      
      00000200  s__CODE                         
-     00000E2D  l__CODE                         
-     0000102D  s__HOME                         
-     0000102D  s__INITIALIZER                  
-     00001031  s__GSINIT                       
-     00001040  s__GSFINAL                      
+     00000E4E  l__CODE                         
+     0000104E  s__HOME                         
+     0000104E  s__INITIALIZER                  
+     00001052  s__GSINIT                       
+     00001061  s__GSFINAL                      
      00008000  G$SMS_SRAM$0$0                     _sms_manager
      00008000  _SMS_SRAM                          SMSlib_PSGaiden
      0000C000  s__DATA                         
@@ -77,7 +77,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -136,7 +136,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -196,7 +196,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -256,7 +256,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -316,7 +316,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -376,7 +376,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -436,7 +436,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -496,7 +496,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -556,7 +556,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -616,7 +616,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -676,7 +676,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -728,233 +728,293 @@ _CODE                               00000200    00000E2D =        3629. bytes (R
      00000975  F_sms_manager$__str_0$0$0          _sms_manager
      00000983  F_sms_manager$__str_1$0$0          _sms_manager
      00000990  F_sms_manager$__str_2$0$0          _sms_manager
-     000009C8  A$_snd_manager$83                  _snd_manager
-     000009C8  C$_snd_manager.c$11$1$31           _snd_manager
-     000009C8  C$_snd_manager.c$9$0$0             _snd_manager
+     000009C8  A$_snd_manager$91                  _snd_manager
+     000009C8  C$_snd_manager.c$10$0$0            _snd_manager
+     000009C8  C$_snd_manager.c$12$1$33           _snd_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000009C8  G$devkit_PSGPlay$0$0               _snd_manager
-     000009C8  _devkit_PSGPlay                    _snd_manager
-     000009C9  A$_snd_manager$84                  _snd_manager
-     000009CA  A$_snd_manager$85                  _snd_manager
-     000009CB  A$_snd_manager$86                  _snd_manager
-     000009CC  A$_snd_manager$87                  _snd_manager
-     000009CD  A$_snd_manager$88                  _snd_manager
-     000009D0  A$_snd_manager$89                  _snd_manager
-     000009D1  A$_snd_manager$94                  _snd_manager
-     000009D1  C$_snd_manager.c$12$1$31           _snd_manager
-     000009D1  XG$devkit_PSGPlay$0$0              _snd_manager
-     000009D2  A$_snd_manager$107                 _snd_manager
-     000009D2  C$_snd_manager.c$13$1$31           _snd_manager
-     000009D2  C$_snd_manager.c$15$1$33           _snd_manager
-     000009D2  G$devkit_PSGPlayNoRepeat$0$0       _snd_manager
-     000009D2  _devkit_PSGPlayNoRepeat            _snd_manager
-     000009D3  A$_snd_manager$108                 _snd_manager
-     000009D4  A$_snd_manager$109                 _snd_manager
-     000009D5  A$_snd_manager$110                 _snd_manager
-     000009D6  A$_snd_manager$111                 _snd_manager
-     000009D7  A$_snd_manager$112                 _snd_manager
-     000009DA  A$_snd_manager$113                 _snd_manager
-     000009DB  A$_snd_manager$118                 _snd_manager
-     000009DB  C$_snd_manager.c$16$1$33           _snd_manager
-     000009DB  XG$devkit_PSGPlayNoRepeat$0$0      _snd_manager
-     000009DC  A$_snd_manager$135                 _snd_manager
-     000009DC  C$_snd_manager.c$17$1$33           _snd_manager
-     000009DC  C$_snd_manager.c$19$1$35           _snd_manager
-     000009DC  C$_snd_manager.c$20$1$35           _snd_manager
-     000009DC  G$devkit_PSGStop$0$0               _snd_manager
-     000009DC  XG$devkit_PSGStop$0$0              _snd_manager
-     000009DC  _devkit_PSGStop                    _snd_manager
-     000009DF  A$_snd_manager$152                 _snd_manager
-     000009DF  C$_snd_manager.c$21$1$35           _snd_manager
-     000009DF  C$_snd_manager.c$23$1$37           _snd_manager
-     000009DF  C$_snd_manager.c$24$1$37           _snd_manager
-     000009DF  G$devkit_PSGResume$0$0             _snd_manager
-     000009DF  XG$devkit_PSGResume$0$0            _snd_manager
-     000009DF  _devkit_PSGResume                  _snd_manager
-     000009E2  A$_snd_manager$169                 _snd_manager
-     000009E2  C$_snd_manager.c$25$1$37           _snd_manager
-     000009E2  C$_snd_manager.c$27$1$39           _snd_manager
-     000009E2  C$_snd_manager.c$28$1$39           _snd_manager
-     000009E2  G$devkit_PSGGetStatus$0$0          _snd_manager
-     000009E2  XG$devkit_PSGGetStatus$0$0         _snd_manager
-     000009E2  _devkit_PSGGetStatus               _snd_manager
-     000009E5  A$_snd_manager$182                 _snd_manager
-     000009E5  C$_snd_manager.c$29$1$39           _snd_manager
-     000009E5  C$_snd_manager.c$31$1$41           _snd_manager
-     000009E5  G$devkit_PSGSetMusicVolumeAttenu   _snd_manager
-     000009E5  _devkit_PSGSetMusicVolumeAttenua   _snd_manager
+     000009C8  G$devkit_PSG_STOPPED$0$0           _snd_manager
+     000009C8  _devkit_PSG_STOPPED                _snd_manager
+     000009CA  A$_snd_manager$96                  _snd_manager
+     000009CA  C$_snd_manager.c$13$1$33           _snd_manager
+     000009CA  XG$devkit_PSG_STOPPED$0$0          _snd_manager
+     000009CB  A$_snd_manager$109                 _snd_manager
+     000009CB  C$_snd_manager.c$14$1$33           _snd_manager
+     000009CB  C$_snd_manager.c$16$1$34           _snd_manager
+     000009CB  G$devkit_PSG_PLAYING$0$0           _snd_manager
+     000009CB  _devkit_PSG_PLAYING                _snd_manager
+     000009CD  A$_snd_manager$114                 _snd_manager
+     000009CD  C$_snd_manager.c$17$1$34           _snd_manager
+     000009CD  XG$devkit_PSG_PLAYING$0$0          _snd_manager
+     000009CE  A$_snd_manager$127                 _snd_manager
+     000009CE  C$_snd_manager.c$19$1$34           _snd_manager
+     000009CE  C$_snd_manager.c$21$1$35           _snd_manager
+     000009CE  G$devkit_SFX_CHANNEL2$0$0          _snd_manager
+     000009CE  _devkit_SFX_CHANNEL2               _snd_manager
+     000009D0  A$_snd_manager$132                 _snd_manager
+     000009D0  C$_snd_manager.c$22$1$35           _snd_manager
+     000009D0  XG$devkit_SFX_CHANNEL2$0$0         _snd_manager
+     000009D1  A$_snd_manager$145                 _snd_manager
+     000009D1  C$_snd_manager.c$23$1$35           _snd_manager
+     000009D1  C$_snd_manager.c$25$1$36           _snd_manager
+     000009D1  G$devkit_SFX_CHANNEL3$0$0          _snd_manager
+     000009D1  _devkit_SFX_CHANNEL3               _snd_manager
+     000009D3  A$_snd_manager$150                 _snd_manager
+     000009D3  C$_snd_manager.c$26$1$36           _snd_manager
+     000009D3  XG$devkit_SFX_CHANNEL3$0$0         _snd_manager
+     000009D4  A$_snd_manager$163                 _snd_manager
+     000009D4  C$_snd_manager.c$27$1$36           _snd_manager
+     000009D4  C$_snd_manager.c$29$1$37           _snd_manager
+     000009D4  G$devkit_SFX_CHANNELS2AND3$0$0     _snd_manager
+     000009D4  _devkit_SFX_CHANNELS2AND3          _snd_manager
+     000009D6  A$_snd_manager$168                 _snd_manager
+     000009D6  C$_snd_manager.c$30$1$37           _snd_manager
+     000009D6  XG$devkit_SFX_CHANNELS2AND3$0$0    _snd_manager
+     000009D7  A$_snd_manager$181                 _snd_manager
+     000009D7  C$_snd_manager.c$33$1$37           _snd_manager
+     000009D7  C$_snd_manager.c$35$1$39           _snd_manager
+     000009D7  G$devkit_PSGPlay$0$0               _snd_manager
+     000009D7  _devkit_PSGPlay                    _snd_manager
+     000009D8  A$_snd_manager$182                 _snd_manager
+     000009D9  A$_snd_manager$183                 _snd_manager
+     000009DA  A$_snd_manager$184                 _snd_manager
+     000009DB  A$_snd_manager$185                 _snd_manager
+     000009DC  A$_snd_manager$186                 _snd_manager
+     000009DF  A$_snd_manager$187                 _snd_manager
+     000009E0  A$_snd_manager$192                 _snd_manager
+     000009E0  C$_snd_manager.c$36$1$39           _snd_manager
+     000009E0  XG$devkit_PSGPlay$0$0              _snd_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000009E8  A$_snd_manager$183                 _snd_manager
-     000009E9  A$_snd_manager$184                 _snd_manager
-     000009EA  A$_snd_manager$185                 _snd_manager
-     000009EB  A$_snd_manager$186                 _snd_manager
-     000009EC  A$_snd_manager$187                 _snd_manager
-     000009EF  A$_snd_manager$188                 _snd_manager
-     000009F0  A$_snd_manager$193                 _snd_manager
-     000009F0  C$_snd_manager.c$32$1$41           _snd_manager
-     000009F0  XG$devkit_PSGSetMusicVolumeAtten   _snd_manager
-     000009F1  A$_snd_manager$206                 _snd_manager
-     000009F1  C$_snd_manager.c$34$1$41           _snd_manager
-     000009F1  C$_snd_manager.c$36$1$43           _snd_manager
-     000009F1  G$devkit_PSGSFXPlay$0$0            _snd_manager
-     000009F1  _devkit_PSGSFXPlay                 _snd_manager
-     000009F4  A$_snd_manager$207                 _snd_manager
-     000009F5  A$_snd_manager$208                 _snd_manager
-     000009F6  A$_snd_manager$209                 _snd_manager
-     000009F7  A$_snd_manager$210                 _snd_manager
-     000009F8  A$_snd_manager$211                 _snd_manager
-     000009FB  A$_snd_manager$212                 _snd_manager
-     000009FC  A$_snd_manager$213                 _snd_manager
-     000009FD  A$_snd_manager$214                 _snd_manager
-     000009FE  A$_snd_manager$215                 _snd_manager
-     000009FF  A$_snd_manager$216                 _snd_manager
-     00000A00  A$_snd_manager$217                 _snd_manager
-     00000A03  A$_snd_manager$218                 _snd_manager
-     00000A04  A$_snd_manager$219                 _snd_manager
-     00000A05  A$_snd_manager$224                 _snd_manager
-     00000A05  C$_snd_manager.c$37$1$43           _snd_manager
-     00000A05  XG$devkit_PSGSFXPlay$0$0           _snd_manager
-     00000A06  A$_snd_manager$241                 _snd_manager
-     00000A06  C$_snd_manager.c$38$1$43           _snd_manager
-     00000A06  C$_snd_manager.c$40$1$45           _snd_manager
-     00000A06  C$_snd_manager.c$41$1$45           _snd_manager
-     00000A06  G$devkit_PSGSFXStop$0$0            _snd_manager
-     00000A06  XG$devkit_PSGSFXStop$0$0           _snd_manager
-     00000A06  _devkit_PSGSFXStop                 _snd_manager
-     00000A09  A$_snd_manager$258                 _snd_manager
-     00000A09  C$_snd_manager.c$42$1$45           _snd_manager
-     00000A09  C$_snd_manager.c$44$1$47           _snd_manager
-     00000A09  C$_snd_manager.c$45$1$47           _snd_manager
-     00000A09  G$devkit_PSGSFXGetStatus$0$0       _snd_manager
-     00000A09  XG$devkit_PSGSFXGetStatus$0$0      _snd_manager
-     00000A09  _devkit_PSGSFXGetStatus            _snd_manager
-     00000A0C  A$_snd_manager$275                 _snd_manager
-     00000A0C  C$_snd_manager.c$47$1$47           _snd_manager
-     00000A0C  C$_snd_manager.c$49$1$49           _snd_manager
-     00000A0C  C$_snd_manager.c$50$1$49           _snd_manager
-     00000A0C  G$devkit_PSGSilenceChannels$0$0    _snd_manager
-     00000A0C  XG$devkit_PSGSilenceChannels$0$0   _snd_manager
-     00000A0C  _devkit_PSGSilenceChannels         _snd_manager
+     000009E1  A$_snd_manager$209                 _snd_manager
+     000009E1  C$_snd_manager.c$37$1$39           _snd_manager
+     000009E1  C$_snd_manager.c$39$1$41           _snd_manager
+     000009E1  C$_snd_manager.c$40$1$41           _snd_manager
+     000009E1  G$devkit_PSGCancelLoop$0$0         _snd_manager
+     000009E1  XG$devkit_PSGCancelLoop$0$0        _snd_manager
+     000009E1  _devkit_PSGCancelLoop              _snd_manager
+     000009E4  A$_snd_manager$222                 _snd_manager
+     000009E4  C$_snd_manager.c$41$1$41           _snd_manager
+     000009E4  C$_snd_manager.c$43$1$43           _snd_manager
+     000009E4  G$devkit_PSGPlayNoRepeat$0$0       _snd_manager
+     000009E4  _devkit_PSGPlayNoRepeat            _snd_manager
+     000009E5  A$_snd_manager$223                 _snd_manager
+     000009E6  A$_snd_manager$224                 _snd_manager
+     000009E7  A$_snd_manager$225                 _snd_manager
+     000009E8  A$_snd_manager$226                 _snd_manager
+     000009E9  A$_snd_manager$227                 _snd_manager
+     000009EC  A$_snd_manager$228                 _snd_manager
+     000009ED  A$_snd_manager$233                 _snd_manager
+     000009ED  C$_snd_manager.c$44$1$43           _snd_manager
+     000009ED  XG$devkit_PSGPlayNoRepeat$0$0      _snd_manager
+     000009EE  A$_snd_manager$250                 _snd_manager
+     000009EE  C$_snd_manager.c$45$1$43           _snd_manager
+     000009EE  C$_snd_manager.c$47$1$45           _snd_manager
+     000009EE  C$_snd_manager.c$48$1$45           _snd_manager
+     000009EE  G$devkit_PSGStop$0$0               _snd_manager
+     000009EE  XG$devkit_PSGStop$0$0              _snd_manager
+     000009EE  _devkit_PSGStop                    _snd_manager
+     000009F1  A$_snd_manager$267                 _snd_manager
+     000009F1  C$_snd_manager.c$49$1$45           _snd_manager
+     000009F1  C$_snd_manager.c$51$1$47           _snd_manager
+     000009F1  C$_snd_manager.c$52$1$47           _snd_manager
+     000009F1  G$devkit_PSGResume$0$0             _snd_manager
+     000009F1  XG$devkit_PSGResume$0$0            _snd_manager
+     000009F1  _devkit_PSGResume                  _snd_manager
+     000009F4  A$_snd_manager$284                 _snd_manager
+     000009F4  C$_snd_manager.c$53$1$47           _snd_manager
+     000009F4  C$_snd_manager.c$55$1$49           _snd_manager
+     000009F4  C$_snd_manager.c$56$1$49           _snd_manager
+     000009F4  G$devkit_PSGGetStatus$0$0          _snd_manager
+     000009F4  XG$devkit_PSGGetStatus$0$0         _snd_manager
+     000009F4  _devkit_PSGGetStatus               _snd_manager
+     000009F7  A$_snd_manager$297                 _snd_manager
+     000009F7  C$_snd_manager.c$57$1$49           _snd_manager
+     000009F7  C$_snd_manager.c$59$1$51           _snd_manager
+     000009F7  G$devkit_PSGSetMusicVolumeAttenu   _snd_manager
+     000009F7  _devkit_PSGSetMusicVolumeAttenua   _snd_manager
+     000009FA  A$_snd_manager$298                 _snd_manager
+     000009FB  A$_snd_manager$299                 _snd_manager
+     000009FC  A$_snd_manager$300                 _snd_manager
+     000009FD  A$_snd_manager$301                 _snd_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000A0F  A$_snd_manager$292                 _snd_manager
-     00000A0F  C$_snd_manager.c$51$1$49           _snd_manager
-     00000A0F  C$_snd_manager.c$53$1$51           _snd_manager
-     00000A0F  C$_snd_manager.c$54$1$51           _snd_manager
-     00000A0F  G$devkit_PSGRestoreVolumes$0$0     _snd_manager
-     00000A0F  XG$devkit_PSGRestoreVolumes$0$0    _snd_manager
-     00000A0F  _devkit_PSGRestoreVolumes          _snd_manager
-     00000A12  A$_snd_manager$309                 _snd_manager
-     00000A12  C$_snd_manager.c$56$1$51           _snd_manager
-     00000A12  C$_snd_manager.c$58$1$53           _snd_manager
-     00000A12  C$_snd_manager.c$59$1$53           _snd_manager
-     00000A12  G$devkit_PSGFrame$0$0              _snd_manager
-     00000A12  XG$devkit_PSGFrame$0$0             _snd_manager
-     00000A12  _devkit_PSGFrame                   _snd_manager
-     00000A15  A$_snd_manager$326                 _snd_manager
-     00000A15  C$_snd_manager.c$60$1$53           _snd_manager
-     00000A15  C$_snd_manager.c$62$1$55           _snd_manager
-     00000A15  C$_snd_manager.c$63$1$55           _snd_manager
-     00000A15  G$devkit_PSGSFXFrame$0$0           _snd_manager
-     00000A15  XG$devkit_PSGSFXFrame$0$0          _snd_manager
-     00000A15  _devkit_PSGSFXFrame                _snd_manager
-     00000A18  A$_snd_manager$339                 _snd_manager
-     00000A18  C$_snd_manager.c$66$1$55           _snd_manager
-     00000A18  C$_snd_manager.c$68$1$56           _snd_manager
-     00000A18  G$devkit_SFX_CHANNEL2$0$0          _snd_manager
-     00000A18  _devkit_SFX_CHANNEL2               _snd_manager
-     00000A1A  A$_snd_manager$344                 _snd_manager
-     00000A1A  C$_snd_manager.c$69$1$56           _snd_manager
-     00000A1A  XG$devkit_SFX_CHANNEL2$0$0         _snd_manager
-     00000A1B  A$_snd_manager$357                 _snd_manager
-     00000A1B  C$_snd_manager.c$70$1$56           _snd_manager
-     00000A1B  C$_snd_manager.c$72$1$57           _snd_manager
-     00000A1B  G$devkit_SFX_CHANNEL3$0$0          _snd_manager
-     00000A1B  _devkit_SFX_CHANNEL3               _snd_manager
-     00000A1D  A$_snd_manager$362                 _snd_manager
-     00000A1D  C$_snd_manager.c$73$1$57           _snd_manager
-     00000A1D  XG$devkit_SFX_CHANNEL3$0$0         _snd_manager
-     00000A1E  A$_snd_manager$375                 _snd_manager
-     00000A1E  C$_snd_manager.c$74$1$57           _snd_manager
-     00000A1E  C$_snd_manager.c$76$1$58           _snd_manager
-     00000A1E  G$devkit_SFX_CHANNELS2AND3$0$0     _snd_manager
-     00000A1E  _devkit_SFX_CHANNELS2AND3          _snd_manager
-     00000A20  A$_snd_manager$380                 _snd_manager
-     00000A20  C$_snd_manager.c$77$1$58           _snd_manager
-     00000A20  XG$devkit_SFX_CHANNELS2AND3$0$0    _snd_manager
-     00000A21  _UNSAFE_SMS_copySpritestoSAT       SMSlib_UNSAFE
-     00000A39  _UNSAFE_SMS_VRAMmemcpy32           SMSlib_UNSAFE
-     00000A56  _UNSAFE_SMS_VRAMmemcpy64           SMSlib_UNSAFE
-     00000A73  _UNSAFE_SMS_VRAMmemcpy128          SMSlib_UNSAFE
-     00000A90  _SMS_init                          SMSlib
-     00000AE4  _VDPReg_init                       SMSlib
+     000009FE  A$_snd_manager$302                 _snd_manager
+     00000A01  A$_snd_manager$303                 _snd_manager
+     00000A02  A$_snd_manager$308                 _snd_manager
+     00000A02  C$_snd_manager.c$60$1$51           _snd_manager
+     00000A02  XG$devkit_PSGSetMusicVolumeAtten   _snd_manager
+     00000A03  A$_snd_manager$321                 _snd_manager
+     00000A03  C$_snd_manager.c$62$1$51           _snd_manager
+     00000A03  C$_snd_manager.c$64$1$53           _snd_manager
+     00000A03  G$devkit_PSGSFXPlay$0$0            _snd_manager
+     00000A03  _devkit_PSGSFXPlay                 _snd_manager
+     00000A06  A$_snd_manager$322                 _snd_manager
+     00000A07  A$_snd_manager$323                 _snd_manager
+     00000A08  A$_snd_manager$324                 _snd_manager
+     00000A09  A$_snd_manager$325                 _snd_manager
+     00000A0A  A$_snd_manager$326                 _snd_manager
+     00000A0D  A$_snd_manager$327                 _snd_manager
+     00000A0E  A$_snd_manager$328                 _snd_manager
+     00000A0F  A$_snd_manager$329                 _snd_manager
+     00000A10  A$_snd_manager$330                 _snd_manager
+     00000A11  A$_snd_manager$331                 _snd_manager
+     00000A12  A$_snd_manager$332                 _snd_manager
+     00000A15  A$_snd_manager$333                 _snd_manager
+     00000A16  A$_snd_manager$334                 _snd_manager
+     00000A17  A$_snd_manager$339                 _snd_manager
+     00000A17  C$_snd_manager.c$65$1$53           _snd_manager
+     00000A17  XG$devkit_PSGSFXPlay$0$0           _snd_manager
+     00000A18  A$_snd_manager$352                 _snd_manager
+     00000A18  C$_snd_manager.c$66$1$53           _snd_manager
+     00000A18  C$_snd_manager.c$68$1$55           _snd_manager
+     00000A18  G$devkit_PSGSFXPlayLoop$0$0        _snd_manager
+     00000A18  _devkit_PSGSFXPlayLoop             _snd_manager
+     00000A1B  A$_snd_manager$353                 _snd_manager
+     00000A1C  A$_snd_manager$354                 _snd_manager
+     00000A1D  A$_snd_manager$355                 _snd_manager
+     00000A1E  A$_snd_manager$356                 _snd_manager
+     00000A1F  A$_snd_manager$357                 _snd_manager
+     00000A22  A$_snd_manager$358                 _snd_manager
+     00000A23  A$_snd_manager$359                 _snd_manager
+     00000A24  A$_snd_manager$360                 _snd_manager
+     00000A25  A$_snd_manager$361                 _snd_manager
+     00000A26  A$_snd_manager$362                 _snd_manager
+     00000A27  A$_snd_manager$363                 _snd_manager
+     00000A2A  A$_snd_manager$364                 _snd_manager
+     00000A2B  A$_snd_manager$365                 _snd_manager
+     00000A2C  A$_snd_manager$370                 _snd_manager
+     00000A2C  C$_snd_manager.c$69$1$55           _snd_manager
+     00000A2C  XG$devkit_PSGSFXPlayLoop$0$0       _snd_manager
+     00000A2D  A$_snd_manager$387                 _snd_manager
+     00000A2D  C$_snd_manager.c$70$1$55           _snd_manager
+     00000A2D  C$_snd_manager.c$72$1$57           _snd_manager
+     00000A2D  C$_snd_manager.c$73$1$57           _snd_manager
 ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000E2D =        3629. bytes (REL,CON)
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000AEF  _SMS_VDPType                       SMSlib
-     00000AF7  _SMS_VDPturnOnFeature              SMSlib
-     00000B0E  _SMS_VDPturnOffFeature             SMSlib
-     00000B27  _SMS_setBGScrollX                  SMSlib
-     00000B31  _SMS_setBGScrollY                  SMSlib
-     00000B3B  _SMS_setBackdropColor              SMSlib
-     00000B45  _SMS_useFirstHalfTilesforSprites   SMSlib
-     00000B59  _SMS_setSpriteMode                 SMSlib
-     00000B9E  _SMS_setBGPaletteColor             SMSlib
-     00000BB2  _SMS_setSpritePaletteColor         SMSlib
-     00000BC6  _SMS_loadBGPalette                 SMSlib
-     00000BDA  _SMS_loadSpritePalette             SMSlib
-     00000BEE  _SMS_setColor                      SMSlib
-     00000BF2  _SMS_initSprites                   SMSlib
-     00000BF8  _SMS_addSprite                     SMSlib
-     00000C4D  _SMS_finalizeSprites               SMSlib
-     00000C5F  _SMS_copySpritestoSAT              SMSlib
-     00000C88  _SMS_waitForVBlank                 SMSlib
-     00000C95  _SMS_getKeysStatus                 SMSlib
-     00000C99  _SMS_getKeysPressed                SMSlib
-     00000CB6  _SMS_getKeysHeld                   SMSlib
-     00000CCD  _SMS_getKeysReleased               SMSlib
-     00000CEA  _SMS_queryPauseRequested           SMSlib
-     00000CF2  _SMS_resetPauseRequest             SMSlib
-     00000CF8  _SMS_setLineInterruptHandler       SMSlib
-     00000D09  _SMS_setLineCounter                SMSlib
-     00000D18  _SMS_getVCount                     SMSlib
-     00000D1C  _SMS_getHCount                     SMSlib
-     00000D20  _SMS_isr                           SMSlib
-     00000D56  _SMS_nmi_isr                       SMSlib
-     00000D69  _SMS_loadSTMcompressedTileMapAre   SMSlib_STMcomp
-     00000F4A  ___sdcc_call_hl                    
-     00000F4B  _SMS_loadPSGaidencompressedTiles   SMSlib_PSGaiden
-
+     00000A2D  G$devkit_PSGSFXCancelLoop$0$0      _snd_manager
+     00000A2D  XG$devkit_PSGSFXCancelLoop$0$0     _snd_manager
+     00000A2D  _devkit_PSGSFXCancelLoop           _snd_manager
+     00000A30  A$_snd_manager$404                 _snd_manager
+     00000A30  C$_snd_manager.c$74$1$57           _snd_manager
+     00000A30  C$_snd_manager.c$76$1$59           _snd_manager
+     00000A30  C$_snd_manager.c$77$1$59           _snd_manager
+     00000A30  G$devkit_PSGSFXStop$0$0            _snd_manager
+     00000A30  XG$devkit_PSGSFXStop$0$0           _snd_manager
+     00000A30  _devkit_PSGSFXStop                 _snd_manager
+     00000A33  A$_snd_manager$421                 _snd_manager
+     00000A33  C$_snd_manager.c$78$1$59           _snd_manager
+     00000A33  C$_snd_manager.c$80$1$61           _snd_manager
+     00000A33  C$_snd_manager.c$81$1$61           _snd_manager
+     00000A33  G$devkit_PSGSFXGetStatus$0$0       _snd_manager
+     00000A33  XG$devkit_PSGSFXGetStatus$0$0      _snd_manager
+     00000A33  _devkit_PSGSFXGetStatus            _snd_manager
+     00000A36  A$_snd_manager$438                 _snd_manager
+     00000A36  C$_snd_manager.c$83$1$61           _snd_manager
+     00000A36  C$_snd_manager.c$85$1$63           _snd_manager
+     00000A36  C$_snd_manager.c$86$1$63           _snd_manager
+     00000A36  G$devkit_PSGSilenceChannels$0$0    _snd_manager
+     00000A36  XG$devkit_PSGSilenceChannels$0$0   _snd_manager
+     00000A36  _devkit_PSGSilenceChannels         _snd_manager
+     00000A39  A$_snd_manager$455                 _snd_manager
+     00000A39  C$_snd_manager.c$87$1$63           _snd_manager
+     00000A39  C$_snd_manager.c$89$1$65           _snd_manager
+     00000A39  C$_snd_manager.c$90$1$65           _snd_manager
+     00000A39  G$devkit_PSGRestoreVolumes$0$0     _snd_manager
+     00000A39  XG$devkit_PSGRestoreVolumes$0$0    _snd_manager
+     00000A39  _devkit_PSGRestoreVolumes          _snd_manager
+     00000A3C  A$_snd_manager$472                 _snd_manager
+     00000A3C  C$_snd_manager.c$92$1$65           _snd_manager
+     00000A3C  C$_snd_manager.c$94$1$67           _snd_manager
+     00000A3C  C$_snd_manager.c$95$1$67           _snd_manager
+     00000A3C  G$devkit_PSGFrame$0$0              _snd_manager
+     00000A3C  XG$devkit_PSGFrame$0$0             _snd_manager
+     00000A3C  _devkit_PSGFrame                   _snd_manager
+     00000A3F  A$_snd_manager$489                 _snd_manager
+     00000A3F  C$_snd_manager.c$96$1$67           _snd_manager
+     00000A3F  C$_snd_manager.c$98$1$69           _snd_manager
+     00000A3F  C$_snd_manager.c$99$1$69           _snd_manager
+     00000A3F  G$devkit_PSGSFXFrame$0$0           _snd_manager
+     00000A3F  XG$devkit_PSGSFXFrame$0$0          _snd_manager
+     00000A3F  _devkit_PSGSFXFrame                _snd_manager
+     00000A42  _UNSAFE_SMS_copySpritestoSAT       SMSlib_UNSAFE
+     00000A5A  _UNSAFE_SMS_VRAMmemcpy32           SMSlib_UNSAFE
+     00000A77  _UNSAFE_SMS_VRAMmemcpy64           SMSlib_UNSAFE
+     00000A94  _UNSAFE_SMS_VRAMmemcpy128          SMSlib_UNSAFE
+     00000AB1  _SMS_init                          SMSlib
+     00000B05  _VDPReg_init                       SMSlib
 ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000200    00000E4E =        3662. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000B10  _SMS_VDPType                       SMSlib
+     00000B18  _SMS_VDPturnOnFeature              SMSlib
+     00000B2F  _SMS_VDPturnOffFeature             SMSlib
+     00000B48  _SMS_setBGScrollX                  SMSlib
+     00000B52  _SMS_setBGScrollY                  SMSlib
+     00000B5C  _SMS_setBackdropColor              SMSlib
+     00000B66  _SMS_useFirstHalfTilesforSprites   SMSlib
+     00000B7A  _SMS_setSpriteMode                 SMSlib
+     00000BBF  _SMS_setBGPaletteColor             SMSlib
+     00000BD3  _SMS_setSpritePaletteColor         SMSlib
+     00000BE7  _SMS_loadBGPalette                 SMSlib
+     00000BFB  _SMS_loadSpritePalette             SMSlib
+     00000C0F  _SMS_setColor                      SMSlib
+     00000C13  _SMS_initSprites                   SMSlib
+     00000C19  _SMS_addSprite                     SMSlib
+     00000C6E  _SMS_finalizeSprites               SMSlib
+     00000C80  _SMS_copySpritestoSAT              SMSlib
+     00000CA9  _SMS_waitForVBlank                 SMSlib
+     00000CB6  _SMS_getKeysStatus                 SMSlib
+     00000CBA  _SMS_getKeysPressed                SMSlib
+     00000CD7  _SMS_getKeysHeld                   SMSlib
+     00000CEE  _SMS_getKeysReleased               SMSlib
+     00000D0B  _SMS_queryPauseRequested           SMSlib
+     00000D13  _SMS_resetPauseRequest             SMSlib
+     00000D19  _SMS_setLineInterruptHandler       SMSlib
+     00000D2A  _SMS_setLineCounter                SMSlib
+     00000D39  _SMS_getVCount                     SMSlib
+     00000D3D  _SMS_getHCount                     SMSlib
+     00000D41  _SMS_isr                           SMSlib
+     00000D77  _SMS_nmi_isr                       SMSlib
+     00000D8A  _SMS_loadSTMcompressedTileMapAre   SMSlib_STMcomp
+     00000F6B  ___sdcc_call_hl                    
+     00000F6C  _SMS_loadPSGaidencompressedTiles   SMSlib_PSGaiden
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -965,7 +1025,7 @@ _HEADER0                            00000000    00000006 =           6. bytes (A
       -----  --------------------------------   ------------------------
      00000006  _SMS_crt0_RST08                    crt0
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -976,7 +1036,7 @@ _HEADER1                            00000000    00000009 =           9. bytes (A
       -----  --------------------------------   ------------------------
      00000011  _SMS_crt0_RST18                    crt0
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -985,7 +1045,7 @@ _HEADER2                            00000000    0000000A =          10. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -994,7 +1054,7 @@ _HEADER3                            00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1003,7 +1063,7 @@ _HEADER4                            00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1017,36 +1077,36 @@ _HEADER5                            00000000    0000012A =         298. bytes (A
      00000159  _OUTI32                            crt0
      00000199  _outi_block                        crt0
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZER                        0000102D    00000004 =           4. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
 ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSINIT                             00001031    0000000F =          15. bytes (REL,CON)
+_INITIALIZER                        0000104E    00000004 =           4. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00001031  gsinit                             crt0
-
 ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSFINAL                            00001040    00000001 =           1. bytes (REL,CON)
+_GSINIT                             00001052    0000000F =          15. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00001052  gsinit                             crt0
+
 ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSFINAL                            00001061    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1096,7 +1156,7 @@ _DATA                               0000C000    00000110 =         272. bytes (R
      0000C0EE  _SMS_theLineInterruptHandler       SMSlib
      0000C0F0  _decompBuffer                      SMSlib_PSGaiden
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1108,7 +1168,7 @@ _INITIALIZED                        0000C110    00000004 =           4. bytes (R
      0000C110  _VDPReg                            SMSlib
      0000C112  _spritesHeight                     SMSlib
      0000C113  _spritesWidth                      SMSlib
-ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1120,7 +1180,7 @@ _CABS0                              00000000    00000010 =          16. bytes (A
      00007FF0  G$__SMS__SEGA_signature$0$0        _sms_manager
      00007FF0  ___SMS__SEGA_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1132,7 +1192,7 @@ _CABS1                              00000000    0000000E =          14. bytes (A
      00007FD2  G$__SMS__SDSC_author$0$0           _sms_manager
      00007FD2  ___SMS__SDSC_author                _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1144,7 +1204,7 @@ _CABS2                              00000000    0000000D =          13. bytes (A
      00007FC5  G$__SMS__SDSC_name$0$0             _sms_manager
      00007FC5  ___SMS__SDSC_name                  _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1156,7 +1216,7 @@ _CABS3                              00000000    00000038 =          56. bytes (A
      00007F8D  G$__SMS__SDSC_descr$0$0            _sms_manager
      00007F8D  ___SMS__SDSC_descr                 _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1168,7 +1228,7 @@ _CABS4                              00000000    00000010 =          16. bytes (A
      00007FE0  G$__SMS__SDSC_signature$0$0        _sms_manager
      00007FE0  ___SMS__SDSC_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
 
 Files Linked                              [ module(s) ]
 
@@ -1188,7 +1248,7 @@ C:\Program Files\SDCC\bin\..\lib\z80/z80.lib
                                           [ __sdcc_call_hl.rel ]
 ../lib/SMSlib.lib                         [ SMSlib_PSGaiden.rel ]
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
 
 User Base Address Definitions
 
