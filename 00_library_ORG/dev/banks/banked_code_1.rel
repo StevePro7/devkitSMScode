@@ -1,0 +1,29 @@
+;!FILE banked_code_1.asm
+XL3
+H A areas A global symbols
+M banked_code_1
+O -mz80
+S b_foo Def000001
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _BANK1 size 4 flags 0 addr 0
+S G$foo$0$0 Def000000
+S A$banked_code_1$65 Def000003
+S _foo Def000000
+S A$banked_code_1$57 Def000000
+S XG$foo$0$0 Def000003
+S C$banked_code_1.c$3$0_0$1 Def000000
+S C$banked_code_1.c$5$1_0$1 Def000000
+S C$banked_code_1.c$6$1_0$1 Def000003
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 07 00
+T 00 00 00 21 01 00 C9
+R 00 00 07 00
