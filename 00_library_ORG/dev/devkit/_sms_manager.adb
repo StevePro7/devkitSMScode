@@ -231,8 +231,6 @@ S:L_sms_manager.devkit_SMS_addSprite_bulk12$tile$1$306({2}SI:S),B,1,6
 F:G$devkit_SMS_setTilePriority$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:L_sms_manager.devkit_SMS_setTilePriority$tile$1$308({1}SC:U),B,1,4
 F:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),Z,0,0,0,0,0
-F:G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0({2}DF,SV:S),Z,0,0,0,0,0
-F:G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:G$ROM_bank_to_be_mapped_on_slot2$0$0({1}SC:U),E,0,0
 S:G$SRAM_bank_to_be_mapped_on_slot2$0$0({1}SC:U),E,0,0
 S:G$SMS_SRAM$0$0({0}DA0d,SC:U),E,0,0

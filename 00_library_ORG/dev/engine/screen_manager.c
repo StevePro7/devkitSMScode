@@ -13,7 +13,7 @@ void engine_screen_manager_update()
 	input = engine_input_manager_hold_fire1();
 	if( input )
 	{
-		engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM.", 3, 7 );
+		engine_font_manager_draw_text( "HELLO SEGA MASTER SYSTEM!", 3, 7 );
 		return;
 	}
 }
