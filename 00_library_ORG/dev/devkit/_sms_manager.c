@@ -170,7 +170,7 @@ void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )
 }
 
 /* functions for the tilemap */
-void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char *src, int size )
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, void *src, unsigned int size )
 {
 	SMS_loadTileMap( x, y, src, size );
 }
@@ -200,11 +200,11 @@ void devkit_SMS_crt0_RST18( unsigned int tile )
 }
 
 /* function for setting tiles/moving 'cursor' */
-void devkit_SMS_setTile( const unsigned char tile )
+void devkit_SMS_setTile( const unsigned int tile )
 {
 	SMS_setTile( tile );
 }
-void devkit_SMS_setAddr( const unsigned char addr )
+void devkit_SMS_setAddr( const unsigned int addr )
 {
 	SMS_setAddr( addr );
 }
@@ -259,14 +259,6 @@ void devkit_SMS_initSprites()
 void devkit_SMS_addSprite( unsigned char x, unsigned char y, int tile )
 {
 	SMS_addSprite( x, y, tile );
-}
-void devkit_SMS_addTwoAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile )
-{
-	SMS_addTwoAdjoiningSprites( x, y, tile );
-}
-void devkit_SMS_addThreeAdjoiningSprites( unsigned char x, unsigned char y, unsigned char tile )
-{
-	SMS_addThreeAdjoiningSprites( x, y, tile );
 }
 signed char devkit_SMS_reserveSprite( void )
 {
@@ -533,11 +525,11 @@ unsigned char devkit_SMS_getHCount( void )
 }
 
 /* low level functions */
-void devkit_SMS_VRAMmemcpy( unsigned int dst, const void *src, unsigned int size )
+void devkit_SMS_VRAMmemcpy( unsigned int dst, void *src, unsigned int size )
 {
 	SMS_VRAMmemcpy( dst, src, size );
 }
-void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, const void *src, unsigned char size )
+void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, void *src, unsigned char size )
 {
 	SMS_VRAMmemcpy_brief( dst, src, size );
 }

@@ -74,7 +74,7 @@ void devkit_SMS_crt0_RST18( unsigned int tile );
 
 /* function for setting tiles/moving 'cursor' */
 void devkit_SMS_setTile( const unsigned int tile );
-void devkit_SMS_setAddr( const unsigned char addr );
+void devkit_SMS_setAddr( const unsigned int addr );
 
 /* PNT define (has address and VDP flags) */
 //#define SMS_PNTAddress            0x7800
@@ -83,10 +83,6 @@ void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
 void devkit_SMS_setNextTileatLoc( unsigned int loc );
 void devkit_SMS_setNextTileatAddr( const unsigned char a );
 void devkit_SMS_setTileatXY( unsigned int x, unsigned char y, unsigned int tile );
-
-//#define SMS_VDPVRAMWrite          0x4000
-/* macro for turning tile numbers into VRAM addr for writing */
-void devkit_TILEtoADDR( unsigned int tile );
 
 /* handy defines for tilemaps entry */
 unsigned int devkit_TILE_FLIPPED_X();
@@ -179,8 +175,8 @@ void devkit_SMS_enableLineInterrupt(); /* turns on line IRQ */
 void devkit_SMS_disableLineInterrupt(); /* turns off line IRQ */
 
 /* low level functions */
-void devkit_SMS_VRAMmemcpy( unsigned int dst, const void *src, unsigned int size );
-void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, const void *src, unsigned char size );
+void devkit_SMS_VRAMmemcpy( unsigned int dst, void *src, unsigned int size );
+void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, void *src, unsigned char size );
 void devkit_SMS_VRAMmemset( unsigned int dst, unsigned char value, unsigned int size );
 void devkit_SMS_VRAMmemsetW( unsigned int dst, unsigned int value, unsigned int size );
 
